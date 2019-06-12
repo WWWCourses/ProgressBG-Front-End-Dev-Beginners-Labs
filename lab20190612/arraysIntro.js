@@ -10,20 +10,37 @@ if(0){
     var maxScore = Math.max(studentScore1,studentScore2,studentScore3);
 }
 
+if(0){
 
-var studentsNames = [ 'Maria', 'Pesho','Asen' ];
+    console.log( studentsNames);
+
+    // big bug !!!!
+    if( studentsNames.length = 0 ){
+        console.log('Empty')
+    }
+
+    console.log( studentsNames);
+
+
+}
+
+var studentsNames = [ 'Maria', 'Pesho','Asen'];
 var studentsScores = [4,5,6 ];
 
+// TODO: send HW: log the name of the student with max score
+var max = 0;
+for(var i=0; i<studentsScores.length; i++){
+    if( studentsScores[i]>max ){
+        max = studentsScores[i];
+    }
+}
+console.log(max);
 
-var maxScore = Math.max(
-    studentsScores[0],
-    studentsScores[1],
-    studentsScores[2],
-);
 
-console.log( studentsNames );
-// add 'Ivan' to the of studentsNames
-// TODO: ?
-studentsNames[-1] = 'Ivan';
-console.log( studentsNames );
+
+
+
+// console.log( studentsNames );
+// add 'Ivan' to the beginnig of studentsNames
+studentsNames.unshift('Ivan');
 
