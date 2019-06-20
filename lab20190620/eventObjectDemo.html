@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <label>user Name: <input type="text"></label>
+    <button>Show</button>
+
+    <script>
+        // get input node:
+        let input = document.querySelector('input[type="text"]');
+        // get Show btn node
+        let btn = document.querySelector('button');
+
+        function showHandler() {
+            console.log(`Hello ${input.value}`);
+        }
+
+        // addEventListener to btn element
+        btn.addEventListener('click', showHandler );
+
+
+        // on 'a' in the input => console.log('A was entered');
+        input.addEventListener('keydown',onKeyDownHandler );
+
+
+        function onKeyDownHandler(event){
+            // check what key was entered
+            if( event.code === 'KeyA'){
+                console.log('====================================');
+                console.log(`A was entered`);
+                console.log('====================================');
+            }
+        }
+
+
+    </script>
+</body>
+</html>

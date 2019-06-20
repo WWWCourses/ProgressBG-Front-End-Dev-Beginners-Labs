@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Document</title>
+    <style>
+
+        .red{
+            background-color : #F00;
+            color : #FFF;
+            opacity : 0.5;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id='test'>Welcome</h1>
+
+    <script>
+        let h1 = document.querySelector('h1');
+
+        // set style with style object properties:
+        // h1.style.backgroundColor = "#F00";
+        // h1.style.color = "#FFF";
+        // h1.style.opacity = "0.5";
+
+        // set style by predefined class:
+        h1.className = 'red';
+
+        // let h1Style = window.getComputedStyle( h1 );
+        // console.dir( h1Style.backgroundColor);
+        // console.dir( h1.style.backgroundColor )
+    </script>
+</body>
+</html>
