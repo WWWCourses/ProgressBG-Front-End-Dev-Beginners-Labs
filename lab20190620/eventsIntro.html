@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .redFont{
+            color: #FF9999;
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <!-- TODO: oncopy did not works -->
+    <button onclick="btnClickHandler()" ondblclick="btnDblClickHandler()" oncopy="onCopyHandler()">Click me</button>
+    <p>Paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt corrupti eos aliquid error. Impedit, consequatur voluptas? Voluptatem earum corrupti quod, alias, quaerat laudantium debitis nihil ea, cumque minus enim! Cupiditate.</p>
+
+    <script>
+        let p = document.querySelector('p');
+
+        // TODO: make to bi click class toglle - send as HW
+        // get p oobject
+        function btnClickHandler() {
+            p.className = 'redFont';
+        }
+
+        function btnDblClickHandler() {
+            p.className = '';
+        }
+
+        function onCopyHandler() {
+            alert(`You can't copy!!!`);
+        }
+        // btnClickHandler();
+
+    </script>
+</body>
+</html>
