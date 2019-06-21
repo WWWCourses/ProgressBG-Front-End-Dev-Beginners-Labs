@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Image Slider</title>
+    <style>
+        .slider_cotainer{
+            position: relative;
+            width: 80%;
+            height: 30vh;
+            margin: 0 auto;
+            border: 5px solid #999;
+        }
+        .slide{
+            position: absolute;
+            top:0; bottom: 0; left: 0; right: 0;
+            border: 5px solid #F99;
+        }
+        .img{
+            height: 100%;
+        }
+        .slide:nth-of-type(1)>.img{
+            background: linear-gradient(45deg, orange, yellow);
+        }
+        .slide:nth-of-type(2)>.img{
+            background: linear-gradient(45deg, red, blue);
+        }
+        .slide:nth-of-type(3)>.img{
+            background: linear-gradient(45deg, blue, green);
+        }
+
+        .btnContainer{
+            width: 80%;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="slider_cotainer">
+        <div class="slide"><div class="img">img1</div></div>
+        <div class="slide"><div class="img">img2</div></div>
+        <div class="slide"><div class="img">img3</div></div>
+    </div>
+    <div class="btnContainer">
+        <button class="btnPrev">Prev</button>
+        <button class="btnNext">Next</button>
+    </div>
+
+    <script>
+        // DOM cache
+        let slides = document.querySelectorAll('.slide');
+        let btnPrev = document.querySelector('.btnPrev');
+        let btnNext = document.querySelector('.btnNext');
+
+        function hideAllSlides(slides) {
+            for (let i = 0; i < slides.length; i++) {
+                const slide = slides[i];
+                slide.style.display = "none";
+
+            }
+        }
+
+        function showSlide(slideNumber, slides) {
+            hideAllSlides(slides);
+
+            const slide = slides[slideNumber-1]
+            slide.style.display = "block";
+        }
+        function showNextSlide() {
+            if( i === slides.length){
+                i=0;
+            };
+
+            i += 1;
+            console.log(`i = ${i}`);
+
+            showSlide(i, slides);
+
+        }
+
+        var intervalId;
+
+
+
+        btnNext.addEventListener('click', function (params) {
+            clearInterval(intervalId);
+            showNextSlide;
+        });
+        btnPrev.addEventListener('click', function () {
+            if( i === 1){
+                i=slides.length;
+            };
+
+            showSlide(i, slides);
+
+            i -= 1;
+            console.log(`i = ${i}`);
+
+        } );
+
+        var i = 1;
+        showSlide(i, slides);
+
+        // on window load => slide images on Interval
+        window.addEventListener('load', function (params) {
+            intervalId = setInterval(showNextSlide, 1000)
+        } )
+
+
+    </script>
+</body>
+</html>
