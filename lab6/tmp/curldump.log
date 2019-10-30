@@ -1,0 +1,42 @@
+== Info:   Trying 104.31.90.73...
+== Info: Connected to progressbg.net (104.31.90.73) port 80 (#0)
+=> Send header, 78 bytes (0x4e)
+0000: GET / HTTP/1.1
+0010: Host: progressbg.net
+0026: User-Agent: curl/7.47.0
+003f: Accept: */*
+004c: 
+<= Recv header, 32 bytes (0x20)
+0000: HTTP/1.1 301 Moved Permanently
+<= Recv header, 37 bytes (0x25)
+0000: Date: Wed, 30 Oct 2019 19:07:57 GMT
+<= Recv header, 40 bytes (0x28)
+0000: Content-Type: text/html; charset=UTF-8
+<= Recv header, 28 bytes (0x1c)
+0000: Transfer-Encoding: chunked
+<= Recv header, 24 bytes (0x18)
+0000: Connection: keep-alive
+<= Recv header, 145 bytes (0x91)
+0000: Set-Cookie: __cfduid=d2a6a48aeff99c9f52119c6c7096e1e031572462476
+0040: ; expires=Thu, 29-Oct-20 19:07:56 GMT; path=/; domain=.progressb
+0080: g.net; HttpOnly
+<= Recv header, 23 bytes (0x17)
+0000: Vary: Accept-Encoding
+<= Recv header, 35 bytes (0x23)
+0000: Location: https://progressbg.net/
+<= Recv header, 29 bytes (0x1d)
+0000: Cache-Control: max-age=3600
+<= Recv header, 40 bytes (0x28)
+0000: Expires: Wed, 30 Oct 2019 20:07:56 GMT
+<= Recv header, 26 bytes (0x1a)
+0000: CF-Cache-Status: DYNAMIC
+<= Recv header, 20 bytes (0x14)
+0000: Server: cloudflare
+<= Recv header, 30 bytes (0x1e)
+0000: CF-RAY: 52dfaccdca907215-AMS
+<= Recv header, 2 bytes (0x2)
+0000: 
+<= Recv data, 5 bytes (0x5)
+0000: 0
+0003: 
+== Info: Connection #0 to host progressbg.net left intact
