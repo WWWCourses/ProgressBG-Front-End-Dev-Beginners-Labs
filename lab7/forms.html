@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="../cgi-bin/reg.py.html" method="get">
+        <fieldset><legend>Personal data</legend>
+            <div>Име: <input type="text"
+                            name="name"
+                            autofocus
+                            required
+                            placeholder="Enter your name"></div>
+
+            <div>Парола: <input type="password" name="pass"></div>
+            <div>date: <input type="date" name="date"></div>
+            <div>email: <input type="email" name="email"></div>
+            <div>text: <input type="text" name="text"></div>
+            <div>tel: <input type="tel" name="tel"></div>
+        </fieldset>
+
+        <fieldset><legend>gender:</legend>
+            <label for="male">male:</label> <input id="male" type="radio" name="gender" value="1">
+            <label for="female">female:</label> <input id="female" type="radio" name="gender" value="2">
+            <label for="other">other:</label> <input id="other" type="radio" name="gender" value="3">
+        </fieldset>
+
+        <fieldset><legend>drinks</legend>
+            <label>wine: <input type="checkbox" name="drinks" value="w"></label>
+            <label>beer: <input type="checkbox" name="drinks" value="b"></label>
+            <label>cola: <input type="checkbox" name="drinks" value="c"></label>
+        </fieldset>
+        <fieldset><legend>town</legend>
+            <select name="town" multiple title="press shift for multiple">
+                <optgroup label="bg">
+                    <option value="sofia">София</option>
+                    <option value="burgas">Бургас</option>
+                    <option value="plovdiv">Пловдив</option>
+                </optgroup>
+                <optgroup label="other">
+                    <option value="1">Париж</option>
+                    <option value="2">Лондон</option>
+                    <option value="3">Ню йорк</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <fieldset><legend>Your Comment</legend>
+            <textarea name="comment" cols="30" rows="10" placeholder="something"></textarea>
+        </fieldset>
+        <hr>
+        <button>Submit</button>
+        <button type="reset">reset</button>
+        <button type="button">button</button>
+    </form>
+</body>
+</html>
