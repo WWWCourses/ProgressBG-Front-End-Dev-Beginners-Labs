@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Selectors 1</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
+    <style>
+        li{
+            color: red;
+        }
+        #l1, #l3{
+            /* color: green; */
+        }
+
+        .green{
+            color: green;
+        }
+        a.green{
+            color: yellow;
+        }
+        .orange-bg{
+            background: orange;
+        }
+
+        #a1{
+            color: aquamarine;
+        }
+        #l3{
+            border: 5px solid red;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="green" id="a1" href="https://google.com">link1</a>
+    <h1 class="green orange-bg">Welcome</h1>
+    <ul>
+        <li class="green">Item 1</li>
+        <li id="l2">Item 2</li>
+        <li id="l3" class="green">Item 3</li>
+    </ul>
+</body>
+</html>
