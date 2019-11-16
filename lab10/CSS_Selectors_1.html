@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Selectors 1</title>
+    <style>
+        ul>li{
+            color:blue;
+        }
+        li+li{
+            color:red
+        }
+        a>img{
+            border: 5px solid red;
+        }
+        a{
+            color:green
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Item 1 - blue</li>
+        <li>Item 2 - red</li>
+        <li>Item 3 - red</li>
+    </ul>
+
+
+    <a href="image.png"><img height="50" src="image.png" alt="image1"></a>
+
+    <a href="#">LInk1</a>
+
+    <img src="image2.png" alt="image2">
+    <img src="image2.png" alt="image3">
+    <img src="image2.png" alt="image3">
+</body>
+</html>

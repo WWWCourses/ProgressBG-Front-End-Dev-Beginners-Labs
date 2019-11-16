@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Box model</title>
+    <style>
+        a,p{
+            color: red;
+            border: 5px solid blue;
+        }
+        #a1{
+            position: fixed;
+            bottom: 0%;
+            right: 0;
+        }
+
+
+        h1{
+            /* display: inline; */
+            width: 200px;
+            padding-left: 5px;
+            border: 20px solid green;
+            background: gray;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        p{
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Съдържание</h1><h1>Съдържание</h1>
+    <hr>
+    <div>
+        <a href="#" id="a1">Link1 lorem</a>
+        <a href="#">Link1</a>
+        <a href="#">Link1</a>
+        <a href="#">Link1</a>
+        <a href="#">Link1</a>
+    </div>
+    <div>
+        <p>P1</p>
+        <p>P1</p>
+        <p>P1</p>
+        <p>P1</p>
+        <p>P1</p>
+    </div>
+</body>
+</html>

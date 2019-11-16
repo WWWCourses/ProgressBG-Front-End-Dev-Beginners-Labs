@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tests</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        /* selector1<combinator>selector2 */
+        main p>b.test{
+            background: orange;
+        }
+        h1~p{
+            border: 5px solid red;
+        }
+    </style>
+
+</head>
+<body>
+    <main>
+        <b class="test">B</b>
+        <h1>H1</h1>
+        <p><b class="test">#p1</b></p>
+        <p><b class="test">#p2</b></p>
+        <p><b>#p3</b></p>
+    </main>
+    <footer>
+        <p><b class="test">#p1</b></p>
+        <p><b class="test">#p2</b></p>
+    </footer>
+</body>
+</html>
