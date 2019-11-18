@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Box Model</title>
+    <style>
+        body{
+            margin: 0;
+            border: 20px solid blue;
+        }
+        .outer{
+            width: 600px;
+            /* height: 400px; */
+            margin: 0 auto;
+            border: 10px solid orange;
+        }
+        .inner{
+            /* width: 300px; */
+            /* height: 200px; */
+            padding: 10px 50px;
+            margin: 0 auto;
+            font-size: 30px;
+            box-sizing: border-box;
+            border: 20px solid darkred;
+            background: red;
+            /* text-align: center; */
+        }
+        .block{
+            border: 5px solid green;
+        }
+        .inline{
+            width: 300px;
+            padding: 20px;
+            border: 20px solid yellow;
+        }
+        #l2{
+            margin-left: -5px;
+            border: 20px solid orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <h1>Heading 1</h1>
+        <div class="inner">Welcome Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem perspiciatis ducimus incidunt veritatis, repellat error nulla quae quia commodi illum est molestiae atque, quidem id optio et omnis, similique fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ut quo in perspiciatis cum, repellat maiores, iste aperiam tenetur labore animi! Libero, eveniet! Iste, velit non necessitatibus sed animi doloribus?</div>
+    </div>
+
+    <p class="block">Block Element</p>
+    <hr>
+    <div style="margin-top: 100px;">
+        <a href="#" class="inline">link1</a>
+        <a href="#" class="inline" id="l2">Link23</a>
+    </div>
+    AB
+    <hr>
+    <!-- wrong -->
+    <a href="#"><p>Тези елементи не носят семантичен смисъл и се използват единствено като контейнер за други елементи.</p></a>
+    <!-- wright -->
+    <p><a href="#">Тези елементи не носят семантичен смисъл и се използват единствено като контейнер за други елементи.</a></p>
+
+</body>
+</html>
