@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <title>Test</title>
+    <style>
+        /* HW: why there is a vertical scroll */
+        .left,.right{
+            display: inline-block;
+            height: 100vh;
+        }
+        .left{
+            width: 30%;
+            background: red;
+        }
+        .right{
+            width: 70%;
+            background: blue;
+        }
+        .left>a{
+            display: block;
+            width: 50px;
+            border: 5px solid green;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="left">
+    </div><div class="right"></div>
+</body>
+</html>
