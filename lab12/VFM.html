@@ -6,15 +6,16 @@
     <style>
         /* HW: why there is a vertical scroll */
         .left,.right{
-            display: inline-block;
-            height: 100vh;
+            display: block;
+            height: 300px;
+            width: 300px;
         }
         .left{
-            width: 30%;
+            /* display: none; */
+            visibility: hidden;
             background: red;
         }
         .right{
-            width: 70%;
             background: blue;
         }
         .left>a{
@@ -26,7 +27,7 @@
     </style>
 </head>
 <body>
-    <div class="left">
-    </div><div class="right"></div>
+    <div class="left">x</div>
+    <div class="right"></div>
 </body>
 </html>
