@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Positioning</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+        }
+        .position-relative .wrapper{
+            margin-top: 100px;
+            border: 5px solid green;
+        }
+        .position-relative .red{
+            position: relative;
+            /* top: 50px;
+            left:50px; */
+            bottom: 50px;
+            background: red;
+        }
+        .position-relative .blue{
+            background: blue;
+        }
+
+        /* Position fixed */
+        .position-fixed .wrapper{
+            margin-top: 100px;
+            border: 5px solid green;
+        }
+        .position-fixed .red{
+            position: fixed;
+            right: 0;
+            top:50px;
+            background: red;
+        }
+        .position-fixed .blue{
+            background: blue;
+        }
+
+        /* Position absolute */
+        .position-absolute .wrapper{
+            position: relative;
+            margin-top: 100px;
+            border: 5px solid green;
+        }
+        .position-absolute .red{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+        .position-absolute .blue{
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="position-relative">
+        <div class="wrapper">
+            <div class="box red"></div>
+            <div class="box blue"></div>
+        </div>
+    </div>
+    <hr>
+    <div class="position-fixed">
+        <div class="wrapper">
+            <div class="box red"></div>
+            <div class="box blue"></div>
+        </div>
+    </div>
+    <hr> -->
+    <div class="position-absolute">
+        <div class="wrapper">
+            <div class="box red"></div>
+            <div class="box blue"></div>
+        </div>
+    </div>
+
+
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae mollitia illo, iste eveniet inventore quaerat maxime suscipit ipsam ex quasi atque ratione quibusdam fuga earum commodi, debitis exercitationem sed voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nostrum reprehenderit, saepe repellat corporis ut odit impedit aperiam provident officia fugit sunt maiores facilis ex suscipit nam quia nulla ab. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, error officiis iste soluta suscipit odit necessitatibus itaque, inventore minus quae adipisci vel laborum dolorum repellat alias reprehenderit illum nisi nobis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est aliquid nihil quo facilis, deleniti consequuntur ratione numquam? Facilis repellendus voluptate illum necessitatibus dignissimos doloremque id hic amet saepe laboriosam! Aspernatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum aperiam quibusdam laudantium modi est voluptatum itaque soluta. Dolor rem deleniti fugiat, est voluptatem totam hic? Tenetur ipsam iure in sint? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa labore incidunt, repellat blanditiis officiis, veritatis excepturi accusantium maiores commodi quis optio! Quae magni exercitationem esse, aliquam suscipit atque incidunt excepturi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus reiciendis voluptatem in cum. Sequi, distinctio assumenda. At esse, nulla ut explicabo iusto nesciunt quas voluptates quaerat quasi odit assumenda dolore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt soluta ut unde voluptate, possimus fugiat laboriosam! Quam ipsa nesciunt sunt commodi itaque possimus asperiores placeat quisquam? Placeat ullam officiis esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eum beatae assumenda ullam, eligendi aperiam impedit totam necessitatibus ex dolores molestias in dolor, adipisci similique! Quae cupiditate et nostrum quia.</p>
+    </main>
+</body>
+</html>
