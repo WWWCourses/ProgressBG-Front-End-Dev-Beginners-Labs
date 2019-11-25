@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=	, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Display Demo</title>
+    <style>
+        body{
+            font-size: 5em;
+        }
+        /* Position relative demo */
+        .relative-position-demo .box{
+           width: 100px;
+           height: 100px; 
+        }
+        .relative-position-demo #red{
+            position: relative;
+            top: 50px; left:50px;
+            background: red;
+        }
+        .relative-position-demo #blue{
+            background: blue;
+        }
+
+        /* Position fixed demo */
+        .fixed-position-demo{
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border: 20px solid green;
+        }
+        .fixed-position-demo .box{
+           width: 100px;
+           height: 100px; 
+        }
+        .fixed-position-demo #red{
+            position: absolute;
+            top:0; left: 0;
+            height: 100px;   
+            width: 100px;     
+            background: red;
+        }
+        .fixed-position-demo #blue{
+            position: absolute;
+            top: 0px; left:110px;
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="relative-position-demo">
+        <div class="box" id="red"></div>
+        <div class="box" id="blue"></div>
+    </div> -->
+    <div class="fixed-position-demo">
+        <div id="red"></div>
+        <div class="box" id="blue"></div>
+    </div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, quos nemo unde laudantium consequatur, voluptate sint itaque quis ipsa consequuntur adipisci aliquam. Porro cupiditate repellendus inventore beatae doloremque blanditiis <excepturi class="lorem"></excepturi></p>
+</body>
+</html>
