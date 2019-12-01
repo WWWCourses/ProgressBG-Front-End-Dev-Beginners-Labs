@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pseudo Elements</title>
+    <style>
+        p::first-line{
+            color: red;
+            font-size: 2em;
+        }
+        span.quote{
+            color: gray;
+        }
+        span.quote::before{
+            content: '"';
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In molestiae, <span class="quote">culpa excepturi</span> maiores saepe laboriosam id, eum officia animi voluptate omnis sed autem <span class="quote">accusantium dolores</span> odio maxime nobis sit esse.</p>
+</body>
+</html>

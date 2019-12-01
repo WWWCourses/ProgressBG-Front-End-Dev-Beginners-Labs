@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pseudo-classes</title>
+    <style>
+        a:link:hover{
+            background: aqua;
+        }
+        .links a{
+          text-decoration: none;
+        }
+        .links a:link{
+            border: 2px dotted orange;
+            color: green;
+        }
+        .links a:visited{
+            border: 10px solid green;
+            color: gray
+        }
+
+
+
+        .test div{
+            border: 50px solid orange;
+        }
+        .test div:hover{
+            background: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="links">
+        <a href="https://google.com">Visited</a>
+        <a href="#dshhfdsd">Unvisited</a>
+    </div>
+    <div class="test">
+        <div>Test</div>
+    </div>
+</body>
+</html>

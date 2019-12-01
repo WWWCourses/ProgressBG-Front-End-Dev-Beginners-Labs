@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Checked</title>
+    <style>
+
+        input[type="checkbox"]{
+            display: none;
+        }
+        label>div{
+            width: 1em;
+            height: 1em;
+            border: 1px solid gray;
+        }
+        input:checked+div{
+            background: red
+        }
+    </style>
+</head>
+<body>
+    <input type="text">
+    <input type="password">
+    <hr>
+    <label><input type="checkbox"><div></div></label>
+
+
+
+    <label for="c1"><div></div></label><input type="checkbox" id="c1">
+</body>
+</html>

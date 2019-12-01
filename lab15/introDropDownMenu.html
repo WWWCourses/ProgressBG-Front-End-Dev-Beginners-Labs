@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DropDown Menu</title>
+    <style>
+        .red{
+            width: 10em;
+            height: 10em;
+            background: red;
+        }
+        .blue{
+            width: 5em;
+            height: 5em;
+            background: blue;
+        }
+
+        .blue:hover{
+            background: green;
+        }
+        .red:hover{
+            background: green;
+        }
+        .red:active{
+            background: yellow;
+        }
+        .red .blue{
+            border: 2px solid orange;
+        }
+        .red:hover .blue{
+            background: aqua;
+        }
+        .test:active{
+            background: orange;
+        }
+        input:focus{
+            border: 5px solid red;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="red">
+        <div class="blue"></div>
+    </div>
+    <div class="blue test"></div>
+    <input type="text">
+    <input type="text">
+</body>
+</html>

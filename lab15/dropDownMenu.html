@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DropDown Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <style>
+        ul, li{
+            border: 2px solid red;
+        }
+        ul.submenu{
+            display: none;
+        }
+        li:hover .submenu{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <strong>супи</strong>
+                <ul class="submenu">
+                    <li>Супа 1</li>
+                    <li>Супа 2</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
