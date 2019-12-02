@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tabindex</title>
+    <style>
+        input[type="text"]{
+            border: 5px solid green;
+            outline: none;
+        }
+        input:focus{
+            border: 5px solid red;
+        }
+        li:focus{
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" autofocus>
+    <input type="password">
+    <ul>
+        <li tabindex="1">item1</li>
+        <li tabindex="3">item1</li>
+        <li tabindex="2">item1</li>
+    </ul>
+</body>
+</html>

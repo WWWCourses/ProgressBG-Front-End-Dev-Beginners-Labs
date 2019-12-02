@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checked</title>
+    <style>
+        input[type="radio"]{
+            display: none;
+        }
+        input[type="radio"]{
+            width: 50px;
+        }
+        
+        
+      
+        .box{
+            width: 5em;
+            height: 5em;
+        }
+
+        .red{background: red}
+        .blue{background: blue}
+        .red:hover + .blue{
+            background: green;
+        }
+
+        input[type="radio"]+div{
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            border: 2px solid gray;
+            border-radius: 100%;
+        }
+        input[type="radio"]+div:checked{
+            background: red;
+        }
+        input[type="radio"]+div:hover{
+            background: #f005;
+        }
+        input[type="radio"]:checked + div{
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="reg.py">
+        <fieldset>
+            <legend>Gender</legend>
+            <label>
+                male:                
+                <input type="radio" name="gender" value="male">
+                <div></div>
+            </label>            
+            <label>
+                 female:
+                <input type="radio" name="gender" value="female">
+                <div></div>
+            </label>
+        </fieldset>
+       <button>Send</button>
+    </form>
+    <hr>
+    <div class="red box"></div>
+    <div class="blue box"></div>    
+</body>
+</html>

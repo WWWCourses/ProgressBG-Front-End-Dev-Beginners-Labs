@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pseudo Element</title>
+    <style>
+        /* p:first-letter{
+            font-weight: 900;
+            font-size: 2em;
+        }
+        p:first-line{
+            font-style: italic;
+        } */
+        .quote{
+            border: 2px solid red;
+            font-weight: bold;
+        }
+        .quote:before, .quote:after{
+            content:'"';
+            color: aqua;
+        }
+        body::before{
+            display: block;
+            content: '';
+            width: 50px;
+            height: 50px;  
+            background: blue;
+        }
+        .uni::after{
+            content: '~03E2'
+            /'щюЮЮ##~~@?¬{}>?**````
+        }
+    </style>
+</head>
+<body>
+    <p>paragraph 1</p>
+    <p>Lorem <span class="quote">ipsum dolor</span> sit amet consectetur adipisicing elit. A laudantium voluptatibus <span class="quote">corrupti ut aut, unde</span> omnis dolorem odio sit dolorum ea fugit labore voluptatum eos earum maiores, officiis natus illo!</p>
+    <!-- <div class="red"></div> -->
+    <hr>
+    <i class="uni"></i>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        /* p:nth-of-type(-2n+4){
+            border: 5px solid red;
+        }  */
+        /* :nth-child(2n){
+            border: 5px solid blue;
+        }  */
+        /* p:nth-of-type(3){
+            border: 5px solid blue;
+        }  
+        div:nth-child(5){
+            border: 5px solid green;
+        }     */
+        /* TODO: why select 4th */
+        p:nth-last-child(4){
+            border: 5px solid red;
+        }
+    </style>
+</head>
+<body>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <div>Div 1</div>
+    <p>Paragraph 3</p>
+    <div>Div 2</div>
+    <div>Div 3</div>
+</body>
+</html>
