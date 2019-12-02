@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <title>Document</title>
+    <style>
+        .container{
+            position: relative; 
+            width: 30vh;
+            height: 30vh;
+            background: #99FF99;
+        }
+        .centered{
+            position: absolute;     /* could be relative, as well. */
+            top:  50%; left: 50%;   /* this do the trick . The percentage here reffer to PARENT height/width */
+        /*     transform: translate(-50%, -50%); /* this do the trick. The percentage here reffer to ELEMENT height/width; */ 
+            transform: translate(-3em,-3em);
+            width: 15vh;
+            height: 15vh;
+            background: #9999FF;
+        }
+    </style>
+</head>
+<body>
+    <h1>How to center an absolute/relative block in a container?</h1>
+    <h2>Vertically and Horizontally</h2>
+    <div class="container">
+        <div class="centered"></div>
+    </div>
+</body>
+</html>

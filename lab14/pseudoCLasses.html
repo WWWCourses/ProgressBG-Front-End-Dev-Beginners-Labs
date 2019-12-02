@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PSeudo classes</title>
+    <style>
+        .linksExample{
+          display: block;
+          font-size: 4em;  
+        }
+
+
+        nav a:active{
+            background: orange;
+        }
+
+        nav a:hover{
+            background: blue;
+        }
+
+        nav a:visited{
+            padding: 50px; 
+            color: gray;
+            border: 10px dotted green;
+        }
+        
+        nav a:link{
+            color: red;   
+            border: 5px solid green;
+        }        
+        
+
+
+        
+        .box{
+            width: 10em;
+            height: 10em;
+            background: red;
+        }
+        .box:hover{
+            background: blue;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="linksExample">
+        <nav>
+            <a href="https://google.com">google.com - visited</a>
+            <a href="#hfjfhdjhfjsdds">Unvisited</a>
+        </nav>
+        <a href="https://google.com">google.com - visited</a>
+        <a href="#hfjfhdjhfjsdds">Unvisited</a>
+    </div>
+    <div class="hover">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

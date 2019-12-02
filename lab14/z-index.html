@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <title>Document</title>
+    <style>
+        .box{
+            width: 5em;
+            height: 5em;
+        }
+        .red{
+            position: relative;
+            z-index:3;
+            background: red
+        }
+        .green{
+            position: relative;
+            z-index:2;
+            margin: -2em 0 0 2em;
+            background: green;
+        }
+        .blue{
+            position: relative;
+            z-index:1;
+            margin: -2em 0 0 4em;
+            background: blue
+        }
+    </style>
+</head>
+<body>
+    <div class="box red">
+        <div class="b1"></div>
+        <div class="b2"></div>
+    </div>
+    <div class="box green">green</div>
+    <div class="box blue">blue</div>
+</body>
+</html>

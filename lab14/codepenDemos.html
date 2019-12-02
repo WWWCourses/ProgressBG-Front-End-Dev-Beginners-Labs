@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+            box-sizing: border-box;
+        }
+        .float {
+            float: left;
+        }
+        .cleared {
+            clear: left;
+        }
+        p{
+            border: 5px solid #f99A;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+    <section class="example1">
+        <h2>Clear on non-floating elements</h2>
+        <div class="box float">I float</div>
+        <div class="box float">I float 2</div>
+        <div class="box float">I float 3</div>
+        <p class="cleared">cleared non floating element</p>
+        <p>just a paragraph</p>
+    </section>
+    <hr>
+    <section class="example2">
+        <h2>Clear on floating elements</h2>
+        <div class="box float">I float 1</div>
+        <div class="box float">I float 2</div>
+        <div class="box float cleared">I float 3 (cleared)</div>
+        <p>just a paragraph</p>
+    </section>
+</body>
+</html>

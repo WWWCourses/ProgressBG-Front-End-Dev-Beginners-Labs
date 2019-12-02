@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 20em;
+            height: 20em;
+            background: red;
+        }
+        .child{
+            width: 10em;
+            height: 10em;
+            background: blue;
+            display: none;
+        }
+
+        .parent:hover{
+}
+        .parent:hover > .child{
+            background: green;
+            display: block;
+        }
+        
+        li{
+            font-size: 4em;
+            border: 2px solid green;
+        }
+        ol{
+            display: none;
+        }
+        ul>li:hover ol{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+   <div class="parent">
+       <div class="child"></div>
+   </div> 
+
+   <ul>
+       <li><strong>Link1</strong>
+           <ol>
+               <li>sublink1</li>
+               <li>sublink1</li>
+           </ol>
+       </li>
+       <li><a href="">link1</a></li>
+   </ul>
+
+</body>
+</html>
