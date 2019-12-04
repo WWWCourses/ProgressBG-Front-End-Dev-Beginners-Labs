@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Регистрация:</h1>
+    <form action="../Back End/registration.py/" method="GET">
+    <fieldset><legend>Лични данни:</legend>
+        <div>Име: <input type="text" name="UsrName"></div>
+        <div>Име: <input type="text" name="UsrSurName"></div>
+        <div>Пол:
+           Мъж: <input type="radio" name="gender" value="1">
+           Жена: <input type="radio" name="gender" value="2">
+        </div>
+    </fieldset>
+        <h3>Коментар:</h3>
+        <textarea name="comment" cols="30" rows="10" placeholder="напишете ми нещо"></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

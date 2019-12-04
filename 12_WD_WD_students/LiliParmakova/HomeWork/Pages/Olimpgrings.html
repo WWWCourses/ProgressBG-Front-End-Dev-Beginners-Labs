@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Olimpic rings</title>
+    <style>
+        body{
+            height: 100vh;
+            background-image: url("../Image/ocean-through-window-frame.jpg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        .Olimpic{
+            position: relative;
+            margin: 0 auto;
+            margin-top: 20vh;
+            height: 20em;
+            width: 30.5em;
+        }
+        .Olimpicrings{
+            position: relative;
+            height: 10em;
+            width: 10em;
+            opacity: .5;
+            text-align: center;
+            font-weight: bold;
+            
+            border-radius: 100%;
+            display: inline-block;
+            
+        }
+        .europa{  
+            z-index: 3;
+            position: absolute;
+            top:0; left: 0;    
+            border: 0.5rem double red;
+        }
+        .Africa{
+            z-index: 2;
+            position: absolute;
+            top:0; left:10em;
+            border: 0.5rem double blue;
+        }
+        .Asia{
+            z-index: 1;
+            position:absolute;
+            top:0; left: 20em;
+            border: 0.5rem double green;
+        }
+        .America{
+            z-index: 5;
+            position: absolute;
+            top:5em; left:5em;
+            border: 0.5rem double black;
+        }
+        .Australia{
+            z-index: 4;
+            position: absolute;
+            top:5em; left: 15em;
+            border: 0.5rem double purple;
+        }
+    </style>
+</head>
+<body>
+   <div class="Olimpic">
+       <div class="Olimpicrings europa">Europa</div>
+       <div class="Olimpicrings Africa">Africa</div>
+       <div class="Olimpicrings Asia">Asia</div>
+       <div class="Olimpicrings America">America</div>
+       <div class="Olimpicrings Australia">Australia</div>
+   </div> 
+</body>
+</html>
