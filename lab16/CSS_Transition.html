@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <title>Transitions</title>
+    <style>
+        .box{
+            width: 5em;
+            height: 5em;
+            margin-left:0;
+            background: red;
+            border: 5px solid #000;
+            transition:  5s;
+            
+        }
+        /* TODO: why in some browsers margin works only partial.. */
+        .box:hover{
+            width: 10em;
+            height: 10em;
+            background: blue;
+            margin-left: 20em;            
+
+        }
+        .blur{
+            color: #000;
+            transition: 2s;
+        }
+        .blur:hover{
+            color: #FFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <p class="blur">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse sint nostrum, facere at non error porro. Mollitia placeat quam dolores cupiditate voluptas, deleniti ipsam sunt. Veniam dolorem earum vitae esse!</p>
+</body>
+</html>

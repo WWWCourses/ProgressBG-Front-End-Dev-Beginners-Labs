@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+    <title>Envelope effect</title>
+    <style>
+        body{
+            /* background: #9F9; */
+        }
+        .envelope-effect{
+            width: 10em;
+            margin: 2em auto;
+        }
+        .box{            
+            height: 8em;           
+            background: #FFF;
+            border: 1px solid blue;            
+        }
+        .envelope-effect:after{
+            content: "";
+            display: block;
+
+            position: relative;
+            width: 5em;
+            height: 0;
+            margin: -3px 0 0 8px;
+            z-index: -1;
+            transform: rotate(-15deg);
+            transform-origin: top left;
+            /* border: 5px solid #000; */
+            box-shadow: 0 .5em 0 .5em green;
+        }
+    </style>
+</head>
+<body>
+    <div class="envelope-effect">
+        <div class="box"></div>
+        <!-- <div class="box-shadow"></div> -->
+    </div>
+</body>
+</html>
