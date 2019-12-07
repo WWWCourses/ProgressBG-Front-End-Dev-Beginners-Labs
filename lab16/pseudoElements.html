@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pseudo Elements</title>
+    <style>
+        .quote{
+            /* border: 2px solid red; */
+        }
+        .quote::before,.quote::after{
+            content: '`';
+            color: red;
+        }
+        p::before{
+            content: '';
+            display: block;
+            width: 2em;
+            height: 2em;
+            background: red;
+        }
+        .icon::before{
+            content:"\0160";
+        }
+        ul.test{
+            list-style-type: none;
+        }
+        ul.test>li::before{
+            content:"\1F8A9";
+            display: inline-block;
+            /* TODO:: height not works */
+            height: 5px;
+            padding: 0 5px 0 0;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+   <i class="icon"></i>
+   <ul class="test">
+       <li>Item 1</li>
+       <li>Item 2</li>
+       <li>Item 3</li>
+   </ul>
+</body>
+</html>

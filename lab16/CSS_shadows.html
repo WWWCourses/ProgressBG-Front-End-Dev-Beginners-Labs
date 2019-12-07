@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shadows</title>
+    <style>
+        .text-shadow{
+            font-size: 50px;
+            color: #CCC;
+            /* text-shadow: h-shadow v-shadow [blur-radius] color; */
+            text-shadow:
+                1px 0px #000,
+                1px 0px 1px #000;
+            ;
+        }
+        .box{
+            width: 200px;
+            height: 400px;
+            margin: 20px;
+            border: 1px solid #000;
+            border-radius: 50%;
+        }
+        .box-shadow{
+            box-shadow:
+                inset 0px 0px 3px 3px green,
+                10px 1px 0px 10px red;
+
+        }
+    </style>
+</head>
+<body>
+    <span class="text-shadow">A</span>
+    <div class="box box-shadow"></div>
+</body>
+</html>

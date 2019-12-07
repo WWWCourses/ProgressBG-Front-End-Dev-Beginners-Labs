@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clear fix demo</title>
+    <style>
+        .wrapper{
+            border: 5px solid #f99;
+        }
+        .box{
+            float: left;
+            width: 5em;
+            height: 5em;
+            margin: .5em;
+            border: 2px solid #99f;
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper clearfix">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <p>Изполваме съшия код, както при <a href="https://codepen.io/webdesigncourse/pen/qBBzKoo?editors=1100">grid with floats and clear</a>, но тук спестяваме в HTML празния div, който служи единствено за визуализацията.</p>
+</body>
+</html>
