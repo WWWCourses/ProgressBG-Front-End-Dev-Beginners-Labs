@@ -7,17 +7,28 @@
             width: 100px;
             height: 100px;
             background: red;
+            border: 2px solid blue;
+            transition: 5s;
 
         }
-        .box:active{
-            width: 200px;
+        .box:hover{
+            width: 100px;
             height: 200px;
-            background: blue;
-            transition: 5s;
+            border: 20px solid green;
+        }
+        p{
+            font-size: 5em;
+            transition: 3s;
+            color: #000;
+            border: 2px solid red;
+        }
+        p:hover{
+            color: #FFF;
         }
     </style>
 </head>
 <body>
     <div class="box"></div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, ducimus distinctio impedit beatae sequi quia fugit, quaerat perspiciatis aspernatur nostrum earum vel ut. Corrupti veritatis repellendus minima itaque laudantium aliquid.</p>
 </body>
 </html>

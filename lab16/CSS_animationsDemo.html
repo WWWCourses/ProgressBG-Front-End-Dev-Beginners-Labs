@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animations</title>
+    <style>
+        .tail{
+            width: 40px;
+            height: 300px;
+            margin: 0 auto;
+            background: red;
+            border-top-left-radius: 50%;
+            transform-origin: center bottom;
+            animation: shake;
+        }
+        .bouncing_area{
+            position: relative;
+            width: 80vw;
+            height: 50vw;
+            border: 2px solid gray;
+        }
+        .ball{
+            position: absolute;
+            top:0; left:0;
+            width:100px;
+            height:100px;
+            background: aqua;
+            border-radius: 100%;
+            animation: bouncing 5s, colors 3
+            s;
+        }
+
+        @keyframes bouncing{
+            0%{
+                top:0; left:0;
+            }
+            30%{
+                top: calc(80vh - 100px); left:200px;
+            }
+            60%{
+                top:0; left:600px;
+            }
+
+        }
+        @keyframes colors {
+            0%,100%{
+                background: aqua;
+            }
+            50%{
+                background: green;
+            }
+        }
+
+        @keyframes shake{
+            0%,100%{
+                transform: rotate(0deg);
+            }
+            33.3%{
+                transform: rotate(90deg);
+            }
+            66.6%{
+                transform: rotate(-90deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <hr>
+    <div class="bouncing_area">
+        <div class="ball"></div>
+    </div>
+    <hr>
+    <div class="tail"></div>
+</body>
+</html>
