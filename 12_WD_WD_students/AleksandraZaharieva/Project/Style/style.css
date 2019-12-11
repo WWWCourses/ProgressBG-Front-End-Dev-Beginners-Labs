@@ -48,6 +48,7 @@ body{
 }
 #banner{
     background-image:url('../Images/timothy-dykes-x7Xn9yMyf30-unsplash.jpg');
+    background-size: 100% 100%;
     min-height: 100px;
     background-position: center right;
     text-align: center;
