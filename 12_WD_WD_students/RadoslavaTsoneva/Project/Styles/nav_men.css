@@ -1,0 +1,37 @@
+
+nav.sticky ul{
+    background-color: black;
+    text-align: right;
+   
+}
+nav{
+    position: -webkit-sticky;
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+}
+.hr{
+    margin: 0;
+    padding: 0;
+}
+ul.main_menu li{
+    display: inline; 
+}
+ul.main_menu li a{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+}
+
+ul.dropdown-menu li a{
+    display: none;
+}
+
+ul.main_menu li a:hover{
+    color: gray;
+}
+li.products a:hover ul.dropdown-menu li a{
+    display: block;
+    color: white;
+}

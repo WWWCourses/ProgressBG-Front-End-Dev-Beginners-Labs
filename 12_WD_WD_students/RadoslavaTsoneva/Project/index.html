@@ -5,36 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="Styles/main.css">
+    <link rel="stylesheet" href="Styles/nav_men.css">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap" rel="stylesheet">
     <script src="https://fontawesome.com/icons/facebook-f?style=brands"></script>
 </head>
 <body>
     <header>
-        <div>
-             <span class="contact_header">Телефон: +359 889 833 123</span><span id="email" class="contact_header">Email: bebeshki@obuvki.com</span> 
-             <span id="moto_header"><img src="../Project/images/girl-694924_640.png" alt="logo" width="50">Бебешки обувки</span>  
-        </div>
-        <hr class="main_menu">
-        <div>
-            <ul id="main_menu">
-                <li> <a href="index.html">Начало</a></li>
-                <li> <a href="about_us.html">За нас</a></li>
-                <li> <a href="products.html">Продукти</a>
-                    <li id="girls" >
-                         <a href="#момичета">За Момичета 0-6м</a> 
-                    </li>
-                    <li id="boys">
-                         <a href="#момчета"> За Момчета 0-6м</a>
-                    </li>
-                </li>
-
-                <li> <a href="promotion.html">Промоция</a></li>
-                <li> <a href="numbering.html">Номерация</a></li>
-                <li> <a href="conatcts.html">Контакти</a></li>
-            </ul>
+        <div class="top-header">
+             <span class="contact_header">Телефон: +359 889 833 123</span><span id="email" class="contact_header">Email: bebeshki@obuvki.com</span>
+             <span id="moto_header"><img src="../Project/images/girl-694924_640.png" alt="logo" width="50">Бебешки обувки</span>
+             <hr class="hr">
         </div>
     </header>
+    <!-- iep: position: sticky : It's treated as relatively positioned until its containing block crosses a specified threshold (such as setting top to value other than auto) within its flow root (or the container it scrolls within), at which point it is treated as "stuck" until meeting the opposite edge of its containing block. -->
+    <nav class="sticky">
+        <ul class="main_menu">
+            <li> <a href="index.html">Начало</a></li>
+            <li> <a href="about_us.html">За нас</a></li>
+            <li> <a href="promotion.html">Промоция</a></li>
+            <li> <a href="numbering.html">Номерация</a></li>
+            <li> <a href="conatcts.html">Контакти</a></li>
+            <li class="products"><a href="products.html">Продукти</a>
+                <!-- iep: why this ul has the same .main_menu class as parent? -->
+                <ul class="dropdown-menu main_menu">
+                    <li><a href="#момичета">За Момичета 0-6м</a></li>
+                    <li><a href="#момчета"> За Момчета 0-6м</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
     <main>
         <div class="pic_slider">
             <ul>
@@ -43,24 +44,26 @@
                 <li><img src="../Project/images/pic_slider3.jpg" alt="pic3"></li>
             </ul>
         </div>
-        <div class="moreUs">
-            <h3>Повече за нас</h3>
-            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita autem a ut eos maiores? Exercitationem adipisci officia consequatur. Illo tempora illum velit animi neque, minus culpa amet quibusdam harum architecto? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, tenetur iure? Corporis iste, reiciendis necessitatibus, repudiandae aspernatur iure nesciunt ipsa aut, itaque placeat asperiores vitae corrupti cumque culpa suscipit laudantium?</span>
+        <div class="container1">
+            <div class="moreUs">
+                <h3>Повече за нас</h3>
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita autem a ut eos maiores? Exercitationem adipisci officia consequatur. Illo tempora illum velit animi neque, minus culpa amet quibusdam harum architecto? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, tenetur iure? Corporis iste, reiciendis necessitatibus, repudiandae aspernatur iure nesciunt ipsa aut, itaque placeat asperiores vitae corrupti cumque culpa suscipit laudantium?</span>
+            </div>
+            <div class="button">
+                <span>
+                    <a href="mailto:tsoneva.radoslava@gmail.com" target="_blank"><button id="button" class="button1">Изпратете запитване</button></a>
+                </span>
+                <span>
+                    <a href="https://www.facebook.com/anna.antonova.35728466" target="_blank"><button id="button" class="button2">Направете поръчка</button></a>
+                </span>
+            </div>
         </div>
-        <div id="button">
-            <span>
-                <a href="mailto:tsoneva.radoslava@gmail.com" target="_top"><button>Изпратете запитване</button></a>
-            </span>
-            <span>
-                <a href="https://www.facebook.com/anna.antonova.35728466" target="_blank"><button>Направете поръчка</button></a>
-            </span>
-        </div> 
-       
-        <hr style="margin-block-end: 0;">  
+
+        <hr style="margin-block-end: 0;">
     </main>
     <footer>
-        <div>
-            <span id="moto_header"><img src="../Project/images/girl-694924_640.png" alt="logo" width="50"></span>
+        <div class="footer">
+            <span><img src="../Project/images/girl-694924_640.png" alt="logo" width="50"></span>
             <div>Свържете се с нас!</div>
             <div>Социални мрежи</div>
             <div id="contacts_footer">Контакти
@@ -75,6 +78,6 @@
             </div>
         </div>
     </footer>
-    
+
 </body>
 </html>

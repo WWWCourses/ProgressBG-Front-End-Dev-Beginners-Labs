@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html,
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style-type: none;
+}
+
+/*главно меню*/
+nav{
+  width:90vw;
+  float: right;
+}
+nav > ul {
+  margin: 0 auto;
+}
+/*елемент от главното меню = етикет + блок с подменю*/
+nav > ul > li {
+  float: left;
+  width: 33.3%;
+  cursor: pointer;
+}
+/*етикет на главното меню*/
+nav > ul > li > strong {
+  display: block;
+  padding: 1em 0;
+  text-align: center;
+  background-color: #555;
+  color: #dedede;
+}
+/*етикет на главното меню, когато е посочен */
+nav > ul > li:hover > strong {
+  color: #fff;
+}
+/*блок с подменю*/
+nav > ul > li > ul {
+/*   първоначално искаме да не се показват */
+  display: none;
+  background-color: #F99;  
+}
+/*подменюто, когато мишката е над елемента в главното меню*/
+nav > ul > li:hover > ul {
+  display: block;
+}
+/*елемент на подменюто*/
+nav > ul > li > ul > li {
+  padding: 0.5em 0 0.5em 0.5em;  
+}
+/*елемент на подменюто,когато е посочен*/
+nav > ul > li > ul > li:hover {
+  font-weight: bold;
+}
+
+
+nav > ul > li > ul > li{
+  border: 1px solid #f77; 
+  border-top:0;
+}
+    </style>
+</head>
+<body>
+        <ul class="menu">
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="x">За нас</a></li>
+                <li><a href="x">Услуги</a>
+                    <ul>
+                        <li><a href="x">Link1</a></li>
+                        <li><a href="x">Link2</a></li>
+                    </ul>
+                </li>
+                <li><a href="x">Лечение</a>
+                    <ul>
+                       <li><a href="x">Link1</a></li>
+                       <li><a href="x">Link2</a></li>
+                    </ul>
+                </li>
+                <li><a href="x">Заболявания</a></li>
+                <li><a href="x">За пациента</a></li>
+                <li><a href="x">Профилактика</a></li>
+                <li><a href="x">Полезно</a></li>
+                <li><a href="x">Галерия</a></li>
+                <li><a href="x">Контакти</a></li>
+            </ul>
+</body>
+</html>
