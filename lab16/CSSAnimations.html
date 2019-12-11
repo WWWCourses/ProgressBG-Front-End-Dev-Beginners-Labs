@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ANimations</title>
+    <style>
+        .box{
+            width: 10px;
+            height: 200px;
+            background: blue;
+            margin: 0 auto;
+            /* transition: 3s; */
+            transform: rotate(0deg);
+            transform-origin: center bottom;
+            animation: wag 5s infinite linear, colorfy .5s infinite;
+        }
+        .fade{
+            animation: fade 2s infinite;
+        }
+        @keyframes fade{
+            0%,100%{
+                opacity: 1;
+            }
+            50%{
+                opacity: .2;
+            }
+        }
+
+        @keyframes wag {
+            0%,100% {transform: rotate(0deg);}
+            25% {transform: rotate(90deg);}
+            50% {transform: rotate(-90deg);}  
+        }
+        @keyframes colorfy{
+            0%,100%{
+                background: red;
+            }
+            50%{
+                background: blue;
+            }
+        }
+    
+    </style>
+</head>
+<body>
+    <p class="fade">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos fugiat maxime rem laboriosam, velit accusamus deserunt dolorum odit consectetur deleniti? Non, temporibus? Quibusdam dolorem officia saepe rerum similique aliquam commodi.</p>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odit quis doloribus itaque sit fuga animi aliquam, autem voluptates fugiat qui vitae culpa enim esse quam, eligendi voluptas consectetur aspernatur.</p>
+    <!-- <div class="box"></div> -->
+</body>
+</html>
