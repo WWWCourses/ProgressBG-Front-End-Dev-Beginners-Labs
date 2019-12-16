@@ -6,6 +6,8 @@ function getUserBirthYear() {
     console.log(`userBirthYear: ${userBirthYear}`);
 
     let currentYear = 2019;
+    console.log( typeof(userBirthYear) );
+
 
     console.log(currentYear + userBirthYear); // note the BUG!
 }
