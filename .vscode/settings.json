@@ -4,5 +4,6 @@
         "markdown",
         "latex",
         "plaintext",
-    ]
+    ],
+    "workbench.colorTheme": "Default Light+"
 }
