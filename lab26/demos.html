@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head lang="bg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Demos</title>
+    <style>
+        section>ul>li:nth-child(2){
+            background-color: red;
+        }
+    </style>
 </head>
 <body>
-    <section><h1>Forms Demo</h1>
-        <form action="" id="form1">
-            <input type="text">
+    <section>
+        <h1>Forms Demo</h1>
+        <form action="reg.php" id="form1">
+            <input type="text" id="inputTest">
             <button>OK</button>
         </form>
     </section>
@@ -23,6 +29,10 @@
 
 
     <!-- <script src="theGlobalObject.js"></script> -->
-    <script src="documentObject.js"></script>
+    <!-- <script src="documentObject.js"></script> -->
+    <!-- <script src="BOM.js"></script> -->
+    <script src="DOM_demos.js"></script>
 </body>
 </html>
+
+<!-- 3, 5,  -->
