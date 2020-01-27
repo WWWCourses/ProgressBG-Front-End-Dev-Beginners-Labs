@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Events demo</title>
+    <style>
+        .btnSubmit{
+            border: 5px solid red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="test.php">
+        <label>
+            pass: <input id="pass" type="password">
+            <div class="error"></div>
+        </label>
+        <label>repeat pass: <input id="pass2" type="password"></label>
+        <!-- <button onclick="comparePasswords()">OK</button> -->
+        <div class="btnSubmit">OK</div>
+    </form>
+
+    <!-- <script src="events.js"></script> -->
+    <script>
+        // DOM cache
+        let inputNode1 = document.querySelector('#pass');
+        let inputNode2 = document.querySelector('#pass2');
+        let outputNode = document.querySelector('.error');
+        let btnNode = document.querySelector('.btnSubmit');
+
+
+        function checkPasswordLength(){
+            let passLength = inputNode.value.length;
+
+            if(passLength < 8){
+                outputNode.innerText = "<b>Very short passs</b>";
+            }else{
+                outputNode.innerText = "";
+            }
+        }
+
+        function comparePasswords() {
+            console.log(`@@@@@@@@@@@@@@@@@@@@@@@@`);
+            if( inputNode1.value !== inputNode2.value){
+                outputNode.innerHTML = "<b>NOT EQUAL PASS</b>"
+            }else{
+                outputNode.innerHTML = "";
+            }
+        }
+
+
+        inputNode2.addEventListener('keyup', function(e) {
+            console.dir(e);
+            if( e.keyCode=== 13){
+                console.log(`ENTER IS PRESSED`);
+            }
+
+        })
+        btnNode.addEventListener('click', comparePasswords() );
+
+    </script>
+</body>
+</html>

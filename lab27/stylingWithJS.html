@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 5em;
+            height: 5em;
+            border: 1px solid red;
+        }
+        .clickedBox{
+            background-color: "#f00";
+            opacity: 0.2;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" style="margin-top:10em;"></div>
+    <button>Change BG</button>
+
+    <script>
+        let btn = document.querySelector('button');
+        let div = document.querySelector('.box');
+
+        const changeBGColor = function (e) {
+            // div.style.backgroundColor= "#F00";
+            // div.style.opacity = "0.1";
+
+            // console.dir(div.className);
+            // console.dir(div.classList);
+
+            // // div.classList.push("clickedBox");
+            // div.classList.add("clickedBox");
+
+            console.dir(div.style);
+            div.style.width = "20em";
+
+
+        }
+        btn.addEventListener('click', changeBGColor );
+    </script>
+</body>
+</html>
