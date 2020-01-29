@@ -6,16 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Event object</title>
     <style>
-        .playlist{
-            border: 5px solid #000;
+        ul, li{
+            padding: 0;
+            margin: 0;
         }
-        li{
+        ul.playlist{
+            border: 2px solid #000;
+        }
+        ul.playlist>li{
             list-style-type: none;
-            border: 1px solid red;
+            border: 1px solid #9FF;
             padding: 5px;
         }
-        li:hover{
+        ul.playlist>li:hover{
             cursor: pointer;
+        }
+        div.output{
+            margin: 1em 0 0 0;
+            font-size: 1.5em;
         }
     </style>
 </head>
@@ -28,22 +36,22 @@
         <li>Song 4</li>
         <li>Song 5</li>
     </ul>
+    <div class="output"></div>
 
 
     <script>
-        // let li = document.querySelector('#s0');
-
-        $('')
-        // li.addEventListener('click', function (params) {
-        //     console.log( li.innerHTML );
-        // })
-
+        // get DOM elements:
         let ul = document.querySelector('ul.playlist');
+        let output = document.querySelector('.output');
+
+        // atach one event to the parent UL, but access each LI node with event.target:
         ul.addEventListener('click', function (e) {
             // console.dir(e);
+            console.log( e.currentTarget);
+            console.log( e.target);
 
-            // console.log( e.currentTarget);
-            console.log( e.target.innerText);
+            // write LI text content to DIV.output:
+            output.innerHTML = `<b>${e.target.innerText}</b> is playing now`
         })
     </script>
 </body>
