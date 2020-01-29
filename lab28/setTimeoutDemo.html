@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button class="btnChange">Change</button>
+    <script>
+        let btnChange = document.querySelector('.btnChange');
+        let body = document.body;
+
+        const changeBGTimeout = function() {
+            setTimeout( function () {
+                body.style.background = "red";
+            });
+        }
+
+        const createDiv = function () {
+            let div = document.createElement('div');
+            div.innerText = "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@";
+
+            body.appendChild(div);
+        }
+
+        const changeBGColors = function () {
+            let colors = ["#F00", "#0F0", "#00F"];
+
+            // body.style.background = colors[0];
+            // body.style.background = colors[1];
+            // body.style.background = colors[2];
+            // body.style.background = colors[0];
+            let ms = 0;
+            for (let i = 0; i < colors.length; i++) {
+
+                // setTimeout( function () {
+                //     body.style.background = colors[i];
+                // }, ms);
+                // ms += 3000;
+
+
+                // console.log(`i = ${i}`);
+                // if( i=== 2 ){
+                //     i=-1;
+                // }
+
+                // console.log(`i = ${i++ % 2}`);
+            }
+        }
+
+        btnChange.addEventListener('click', changeBGColors );
+
+    </script>
+</body>
+</html>

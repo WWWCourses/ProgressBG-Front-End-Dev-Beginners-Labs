@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button class="btnChange">Change</button>
+    <button class="btnClear">Stop</button>
+    <script>
+        let btnChange = document.querySelector('.btnChange');
+        let btnClear = document.querySelector('.btnClear');
+        let body = document.body;
+        let intervalID;
+
+        const changeBGColors = function () {
+            let colors = ["#F00", "#0F0", "#00F"];
+
+            // body.style.background = colors[0];
+            // body.style.background = colors[1];
+            // body.style.background = colors[2];
+            // body.style.background = colors[0];
+            let ms = 0;
+            let i = 0;
+
+            intervalID = setInterval( function(){
+                console.log(`i = ${i}`);
+                body.style.background = colors[i++ % colors.length];
+            }, 1000);
+
+        }
+
+        btnChange.addEventListener('click', changeBGColors );
+        btnClear.addEventListener('click', function(){
+            clearInterval(intervalID);
+        } );
+
+
+    </script>
+</body>
+</html>

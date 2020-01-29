@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>changeColorWithSetInterval</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <script>
+        const colors = [
+            "#9400D3",
+            "#4B0082",
+            "#0000FF",
+            "#00FF00",
+            "#FFFF00",
+            "#FF7F00",
+            "#FF0000"
+        ];
+        let i = 0;
+        let divNode = document.querySelector(".box");
+
+        function changeBGColor() {
+            divNode.style.backgroundColor = colors[i++ % colors.length];
+            console.log(`i = ${i}`);
+
+            // stop color changing after 10 times:
+            if(i === 10){
+                clearInterval(intervalID);
+            }
+        }
+
+        let intervalID = setInterval(changeBGColor, 500);
+
+    </script>
+</body>
+</html>
