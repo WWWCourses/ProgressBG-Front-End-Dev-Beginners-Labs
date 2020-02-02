@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index</title>
+    <style>
+        #heading1{
+            background: red;
+        }
+        #blue{
+            background: blue;
+        }
+    </style>
+</head>
+<body><h1 id="heading1">Welcome</h1>
+    <!-- comment1 -->
+    <ul>
+        <li>Item 1</li>
+    </ul>
+    <button>Add list item</button>
+    <!-- custom scripts -->
+    <script>
+        // get the H1 element as object
+        // let h1Node = document.getElementById("heading1");
+        // console.log(h1Node);
+        // console.dir(h1Node);
+
+        // // h1Node.setAttribute("id", "blue");
+        // h1Node.id = "blue";
+
+        // h1Node.innerHTML = "Hello";
+
+        // console.dir(["id"]);
+
+        // let h1Attributes = h1Node.attributes;
+        // let h1IdAttr = h1Attributes[0];
+        // h1IdAttr.value = "blue";
+
+        // h1Node.attributes[0].value = blue;
+
+
+        // log into console all body text objects:
+        let comments = document.body.childNodes;
+        console.dir(comments);
+
+        for (let i = 0; i < comments.length; i++) {
+            const element = comments[i];
+            if( element.nodeType === 8 ){
+                console.log( element.data );
+            }
+
+        }
+    </script>
+</body>
+</html>

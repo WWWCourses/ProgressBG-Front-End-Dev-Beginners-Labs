@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Get element object</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+    <h1 id="heading1" class="red">Welcome</h1>
+    <h1>test</h1>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <button>Add</button>
+
+
+    <script>
+        // get H1 element object:
+        // let h1Obj = document.getElementById("heding1");
+        // let h1Obj = document.getElementsByTagName("h1");
+        // h1Obj[1].innerHTML = "<b>Hello</b>";
+
+        // $("#heading1").html("@@@@@@@@@@@@@@@@@222");
+
+        // $$('#heading1').innerHTML = "<b>Hello</b>";
+
+        // let secondLi = document.getElementsByTagName('li')[1];
+        // let secondLi = document.querySelectorAll('li')
+        // secondLi.innerText = "@@@@@@@@@@@@@@@@@@@@@@@@@";
+
+        // add new li item
+       function addNewLi(text){
+            let newLi = document.createElement('li');
+            newLi.innerHTML = text;
+
+            document.querySelector('ul').appendChild(newLi);
+       }
+
+
+    //    addNewLi('ITEMMMMMMMMM 4');
+
+       let btn = document.querySelector('button');
+       btn.addEventListener('click', addNewLi('ITEMMMMMMMMM 4') );
+
+
+    </script>
+
+
+
+</body>
+</html>
