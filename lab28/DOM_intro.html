@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .pageToggle{
+            display: inline-block;
+            width: 10em;
+            height: 5em;
+            border: .3em solid darkblue;
+        }
+
+        .page{
+            margin-top: 1em;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="pageToggle" title="click to see page 1" oncopy="alert('DO NOT COPY!!!')">Show page 1</div>
+    <div class="pageToggle" style="border-color:red;">Show page 2</div>
+
+    <div class="page" id="p1">
+       Page 1: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem eaque possimus, sunt natus enim, aliquam est quibusdam voluptatem, tenetur rerum quis eius? Eius, id eum. Numquam, deserunt ullam! Voluptas, temporibus.
+    </div>
+
+    <div class="page" id="p2">
+       Page 2: Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto hic sed ea dolorem adipisci debitis porro deserunt quisquam natus numquam quae saepe magni officiis, eaque repudiandae iste commodi voluptatem molestias.
+    </div>
+
+    <script>
+        let p1 = document.querySelector('.page');
+        let pageToggle1 = document.querySelector('.pageToggle:nth-of-type(1)');
+        let pageToggle2 = document.querySelector('.pageToggle:nth-of-type(2)');
+
+        console.dir(pageToggle2);
+
+        function showPage() {
+            p1.style.display = "block";
+        }
+
+
+        // attach onclick on pageToggle1 => showPage();
+        // onclick="showPage()"
+        pageToggle1.addEventListener('click', showPage );
+
+    </script>
+</body>
+</html>
