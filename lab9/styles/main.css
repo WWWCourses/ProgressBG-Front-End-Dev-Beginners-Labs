@@ -1,0 +1,29 @@
+@font-face {
+    /* задаваме име на шрифта":*/
+    font-family: ChasingEmbers;
+
+    /* указваме пътя до файловете със шрифта */
+    src:url("../fonts/chasing_embers_demo_version.ttf");
+}
+
+h1{
+    /* използваме "нашия шрифт", с името, което сме указали по-горе: */
+    font-family: "ChasingEmbers", cursive;
+    font-size: 5em;
+    font-weight: normal;
+}
+h2{
+    font-family: 'Marck Script', cursive;
+}
+#s1{
+    text-decoration: underline wavy orange;
+
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+}
+#s2{
+    text-decoration: underline wavy orange;
+    /* font: font-style font-variant font-weight font-size/line-height font-family */
+    font:italic bold 30px/30px "Arial";
+}
