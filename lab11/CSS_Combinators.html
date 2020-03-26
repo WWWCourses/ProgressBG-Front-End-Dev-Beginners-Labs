@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Combinators</title>
+    <style>
+        #header{
+            border: 2px solid red;
+        }
+        #footer{
+            border: 2px solid blue;
+        }
+        /* selector1<combinator>selector2 */
+        /* #header a{
+            color: red;
+        } */
+
+        a>img{
+            color: green;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h2>h2 (child1)</h2>
+        <a href="#">link (child2)</a>
+        <h3>heading 3 in header (child3)</h3>
+        <a href="#">link (child4) green</a>
+        <a href="#">link (child5)</a>
+    </div>
+    <div id="footer">
+        <h2>footer</h2>
+        <a href="#">link1</a>
+        <a href="#">link2</a>
+        <a href="#">link3</a>
+    </div>
+</body>
+</html>
