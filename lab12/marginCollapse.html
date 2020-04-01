@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>margin collapse</title>
+	<style>
+		body{
+			margin: 0;
+			border: 5px solid orange;
+		}
+		.box{
+			width: 100px;
+			height: 100px;
+		}
+		.red{
+			background-color: red;
+			margin-bottom: 50px;
+		}
+		.blue,{
+			background-color: blue;
+			margin-top: 100px;
+		}
+		.parent{
+			height: 200px;
+			background-color: green;
+			border: 1px solid green;
+		}
+		.child{
+			height: 100px;
+			margin-top: 50px;
+			background-color: blue;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="box parent">
+		<div class="box child"></div>
+	</div>
+	<div class="box red">block1</div>
