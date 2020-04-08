@@ -1,0 +1,6 @@
+# отваряте gitbash с десния на мишката върху папка labs
+
+# в терминала въвеждате (copy-paste) следните 2 команди:
+
+git fetch --all
+git reset --hard origin/Ind_Kalin
