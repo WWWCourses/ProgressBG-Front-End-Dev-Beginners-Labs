@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>floatFOr LayoutDemo </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+	<style>
+		.floatContainer{
+			border: 5px solid #9f9;
+		}
+		.left{
+			float: left;
+			width: 10em;
+			height: 20em;
+			background-color: #F99;
+		}
+		.right{
+            float: left;
+			width: 10em;
+			height: 20em;
+			background-color: #99F;
+		}
+		p{
+			border: 5px solid #ff9;
+		}
+		.clear{
+			clear:both;
+			/* border: 5px solid red; */
+		}
+	</style>
+</head>
+<body>
+	<div class="floatContainer">
+		<div class="left">line 1 <br> line2 </div>
+		<div class="right">line 1</div>
+		<div class="clear"></div>
+	</div>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, sint, praesentium doloribus tempora possimus rem non necessitatibus ad perferendis, debitis optio repudiandae labore enim doloremque quia voluptatum placeat quibusdam repellendus?</p>
+</body>
+</html>
