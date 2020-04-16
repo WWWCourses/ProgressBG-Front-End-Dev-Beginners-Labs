@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>nthChildSlectors </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<style>
+		/* .container>div:nth-child(2n + 1){
+			background-color: #F99;
+		}
+		.container>div:nth-child(2n){
+			background-color: #99F;
+		} */
+
+		.container>div:nth-of-type(5){
+			background-color: #99F;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<!-- <div>Item 1 (Child 1) selected</div> -->
+		<div>Item 2 (Child 2)</div>
+		<h2>Heading 1</h2>
+		<div>Item 3 (Child 4)</div>
+		<div>Item 4 (Child 5 selected)</div>
+		<h2>Heading 2</h2>
+		<h2>Heading 3</h2>
+
+		<div>Item 5 (Child 6)</div>
+		<div>Item 6 (Child 7 sele)</div>
+	</div>
+
+</body>
+</html>

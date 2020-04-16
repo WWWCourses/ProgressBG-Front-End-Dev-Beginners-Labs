@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>dropDownMenuTask </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+	<style>
+		.mainMenu>li{
+			width: 150px;
+			height: 50px;
+			float: left;
+			border: 2px solid #F99;
+		}
+		.clearfix{
+			clear: both;
+		}
+		#test:hover{
+            font-size:2em;
+        }
+
+		li ul{
+			display: none;
+			margin-top: 35px;
+			background-color: #9f9;
+		}
+		li:hover ul{
+			display: block;
+			border: 5px solid orange;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul class="mainMenu">
+			<li>Супи
+				<ul>
+					<li>Cупа 1</li>
+					<li>Cупа 2</li>
+					<li>Cупа 3</li>
+				</ul>
+			</li>
+			<li id="test">Основни
+				<ul>
+					<li>Основни 1</li>
+					<li>Основни 2</li>
+					<li>Основни 3</li>
+				</ul>
+			</li>
+			<div class="clearfix"></div>
+		</ul>
+	</nav>
+</body>
+</html>

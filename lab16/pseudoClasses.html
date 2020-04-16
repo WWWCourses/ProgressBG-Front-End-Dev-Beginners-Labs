@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>pseudoClasses </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+	<style>
+		a{
+			display: inline-block;
+			text-decoration: none;
+			margin-top: 1em;
+		}
+		a:link{
+			color: red;
+			border: 5px solid #000;
+		}
+		a:visited{
+			color: gray;
+		}
+		a:hover{
+			background-color: #9F9;
+		}
+		a:active{
+			background-color: orange;
+		}
+
+
+		.parent{
+			width: 10em;
+			height: 10em;
+			background-color: #9f9;
+		}
+		.parent:active{
+			border: 5px solid orange;
+		}
+
+		.child{
+			width: 5em;
+			height: 5em;
+			background-color: #f99;
+		}
+
+		.parent:hover .child{
+			background-color: #99F;
+		}
+		input:focus{
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<a href="https://progressbg.net/">progressbg.net</a>
+	<a href="hffsdkjhfjfhds.com">hffsdkjhfjfhds.com</a>
+	<hr>
+	<div class="parent">
+		<div class="child"></div>
+	</div>
+	<hr>
+	<form action="">
+		userName: <input type="text">
+		pass: <input type="text">
+		<fieldset><legend>Gender</legend>
+			male: <input type="radio" name="gender">
+			female: <input type="radio" name="gender">
+		</fieldset>
+	</form>
+
+</body>
+</html>

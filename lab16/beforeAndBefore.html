@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>beforeAndBefore </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<style>
+		.box{
+			width: 10em;
+			height: 10em;
+			background-color: #F99;
+		}
+		.box::before{
+			display: block;
+			content: "iva";
+
+			width: 50%;
+			height: 50%;
+			background-color: #99f;
+			/* background-image: ; */
+		}
+
+		li{
+			border: 1px solid red;
+		}
+		li:before{
+			content: '\2023';
+		}
+		li:after{
+			content: '\2031';
+			col
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+	<ul class="banners">
+		<li>Item 1</li>
+		<li>Item 2</li>
+		<li>Item 3</li>
+	</ul>
+</body>
+</html>

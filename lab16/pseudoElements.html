@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>pseudoElements </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<style>
+		p::first-letter{
+			font-size: 2em;
+		}
+		p::first-line{
+			color: #F99;
+		}
+		.quote{
+			color: #9f9;
+		}
+        .quote::before{
+			content: '"';
+			color: red;
+			font-weight: bold;
+        }
+	</style>
+</head>
+<body>
+	<p>Lorem ipsum <span class="quote">dolor sit</span> amet consectetur adipisicing elit. Nobis quas libero, cumque <span class="quote">illo ipsum repudiandae</span> facere sequi! Voluptatem tempore itaque voluptate accusamus voluptas quos est ad nam, eaque repellendus ipsa?</p>
+</body>
+</html>
