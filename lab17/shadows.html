@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>shadows </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<style>
+		.box{
+			width: 10em;
+			height: 3em;
+			background-color: bisque;
+			/* border: 1px solid #000; */
+		}
+		.text-shadow{
+			font-size: 3em;
+			/* color: red; */
+
+			text-shadow:
+				20px 20px 0px #C00,
+				50px 50px 0px #9F9;
+
+			text-align: center;
+		}
+
+		.button{
+			margin: 50px;
+			text-align: center;
+			line-height: 3em;
+			vertical-align: middle;
+			border-radius: 50%;
+			box-shadow:  5px 5px 5px 0px red;
+		}
+
+		.box-shadow:active{
+
+			box-shadow:  5px 5px 5px 5px red;
+			/* box-shadow: [inset] h-shadow v-shadow blur-radius spread-radius color; */
+
+		}
+	</style>
+</head>
+<body>
+	<p class="box text-shadow">Logo</p>
+	<div class="box button box-shadow">OK</div>
+</body>
+</html>

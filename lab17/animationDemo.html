@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>transitionDemo </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<style>
+		.box{
+			width: 10em;
+			height: 10em;
+			opacity: 1;
+			background-color: red;
+			animation: test 2s, blur 3s;
+		}
+
+		@keyframes test {
+			0%, 100%{
+				width: 10em;
+				height: 10em;
+			}
+			50%{
+				width: 20em;
+				height: 20em;
+				/* opacity: 0; */
+			}
+		}
+
+		.opacity-animation{
+			animation: blur 2s 3;
+		}
+
+		@keyframes blur {
+			0%,100%{
+				opacity: 1;
+			}
+			25%, 75%{
+				opacity: 0.2;
+			}
+			50%{
+				opacity: 0;
+			}
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+	<p class="opacity-animation">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque exercitationem ducimus amet, atque ut impedit nobis ipsum vitae debitis. Minus nihil rerum autem non quia optio, tenetur voluptates vel quo.</p>
+</body>
+</html>
