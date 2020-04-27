@@ -5,16 +5,19 @@ let output = document.querySelector('.output');
 
 function calcVAT(params) {
 
-	let basePrice = basePriceInput.value*1;
-	let vat = vatInput.value;
+	let basePrice = basePriceInput.value; // '1000'
+	let vat = vatInput.value; // '20'
 
+	// console.log(typeof basePrice); // basePrice = '1000'
+
+	// let priceWithVAT = basePrice * (vat/100) + basePrice;
+
+	// Task: make it work as number
 	let priceWithVAT = basePrice * (vat/100) + basePrice;
-	// 1000 * 0.2 + 1000
-	// 200 + 1000
 
-	// 2001000
 
-	output.innerHTML = priceWithVAT;
+
+	output.innerHTML = priceWithVAT; // 1200
 };
 
 btnCalc.addEventListener('click', calcVAT)
