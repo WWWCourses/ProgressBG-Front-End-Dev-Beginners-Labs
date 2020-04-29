@@ -13,7 +13,7 @@ function calcVAT(params) {
 	// let priceWithVAT = basePrice * (vat/100) + basePrice;
 
 	// Task: make it work as number
-	let priceWithVAT = basePrice * (vat/100) + basePrice;
+	let priceWithVAT = basePrice * (vat/100) + basePrice*1;
 
 
 
