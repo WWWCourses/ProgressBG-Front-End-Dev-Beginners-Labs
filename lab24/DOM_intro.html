@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DOM_intro </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<style>
+		h1{
+
+		}
+	</style>
+</head>
+<body>
+	<h1 id="title">Main title</h1>
+	<h2>Heading 2</h2>
+	<script>
+		// console.log(window.document);
+		// console.dir(document);
+
+		// innerHTML of body:
+		// console.dir(document.body.innerHTML);
+		// document.body.innerHTML = "Hello";
+
+		// log property 'platform' of navigator object:
+		// window.console.log(navigator.platform)
+
+		// get h1 element as DOM object:
+		let h1 = document.querySelector('h1');
+		console.dir(h1);
+
+
+		let h2 = document.getElementsByTagName('h2');
+		console.dir(h2);
+
+		h2.style
+	</script>
+</body>
+</html>
