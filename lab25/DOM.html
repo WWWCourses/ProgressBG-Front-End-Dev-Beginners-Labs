@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DOM </title>
+	<style>
+		/* label{
+			border: 3px solid red;
+		} */
+
+
+	</style>
+</head>
+<body>
+	<label>ДДС %: <input type="number" name="dds"></label>
+	<label>Цена без ДДС: <input type="number" name="basePrice"></label>
+	<button id="btnCalc">Calculte</button>
+	<hr>
+	<div id="out" class="output">test</div>
+
+	<script>
+		// get node object for div.output
+		// let output =  document.getElementById('out');
+		// console.dir(output);
+
+		// change the innerText = 'hello'
+		// output.innerText = 'hello';
+
+		// set red border to ALL label elements:
+		// let labels = document.querySelectorAll('label');
+		// console.dir(labels);
+
+		// for(let i = 0; i<labels.length; i++){
+		// 	labels[i].style.border = '5px solid red';
+		// }
+		// labels[1].style.border = '5px solid red';
+
+		let output = document.querySelector('#out');
+		console.dir(output);
+		output.style.border = '5px solid red';
+
+
+		// let arr =
+		// [
+		// 	{
+		// 		'name': 'ivan',
+		// 		'age':23
+		// 	}
+		// ];
+
+		// console.dir(arr[0].name = 'pesho');
+		// console.dir(arr);
+
+	</script>
+</body>
+</html>

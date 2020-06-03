@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<button class="btnColor">Color body</button>
+
+
+	<script>
+		let button = document.querySelector('.btnColor');
+		function colorBody() {
+			document.body.style.backgroundColor = '#F99';
+		}
+		button.addEventListener('click', colorBody);
+
+		setTimeout( colorBody, 5000);
+
+	</script>
+</body>
+</html>

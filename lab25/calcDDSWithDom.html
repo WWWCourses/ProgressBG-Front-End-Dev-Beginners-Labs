@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DOM </title>
+	<style>
+		/* label{
+			border: 3px solid red;
+		} */
+	</style>
+</head>
+<body>
+	<label>ДДС %: <input type="number" name="dds"></label>
+	<label>Цена без ДДС: <input type="number" name="basePrice"></label>
+	<button id="btnCalc">Calculte</button>
+
+
+	<hr>
+	<div id="out" class="output">test</div>
+
+	<script>
+		// get DDS input element:
+		let inputDDS = document.querySelector('[name="dds"]');
+		let inputBasePrice = document.querySelector('[name="basePrice"]');
+		let output = document.querySelector('#out');
+
+		let button = document.querySelector('#btnCalc');
+
+		function calculateDDS() {
+			let dds = inputDDS.value*1;
+			console.log(`dds = ${dds}`);
+
+			let basePrice = inputBasePrice.value*1;
+			console.log(`basePrice = ${basePrice}`);
+
+			let priceWithDDS = basePrice + (dds/100)*basePrice;
+			console.log(`priceWithDDS: ${priceWithDDS}`);
+
+			output.innerHTML = priceWithDDS;
+
+			// background-color = 'red'
+			output.style.backgroundColor = 'red';
+
+		}
+
+		// after a button is left mouse button click
+		// onclick = "calculateDDS()"
+
+		// element.addEventListener(eventName, functionDefinition [, options])
+		button.addEventListener('click', calculateDDS );
+
+
+	</script>
+</body>
+</html>
