@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM_Travers </title>
+</head>
+
+<body>
+    <p>Find all HTML , in any HTML document - recursive soluttion</p>
+    <p>kjdskjdkfdj</p>
+    <ul>
+        <li class="red">
+            <ol>
+                <li>red</li>
+                <li>green</li>
+            </ol>
+        </li>
+        <li>blue</li>
+    </ul>
+    <ol>
+        <li class="red">red</li>
+    </ol>
+
+
+
+    <script>
+        function traverseDOM(node) {
+            console.log(node.innerText);
+
+            // TODO: finish and upload with comments
+            let children = node.children;
+            for (let i = 0; i < children.length; i++) {
+                let el = children[i];
+
+                if (node.innerText.includes("red")) {
+                    node.style.backgroundColor = "red";
+                    console.log(node.innerText);
+                }
+
+                traverseDOM(el);
+            }
+
+        }
+
+        // traverseDOM(document.querySelector("ul"));
+
+
+    </script>
+</body>
+
+</html>
