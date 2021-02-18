@@ -1,3 +1,8 @@
-Slides (advancedJSfunctions):
+advancedJSfunctions:
 	more on Functions Best Practices;
 	more examples
+ArrowSyntax:
+	example for handleClick and why wee need bind
+
+
+Remove var in : http://wwwcourses.github.io/ProgressBG-Front-End-Dev/pages/themes/advanced/newESfeatures/newESfeatures.html#/7
