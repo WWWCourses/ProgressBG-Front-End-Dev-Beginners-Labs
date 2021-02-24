@@ -1,5 +1,6 @@
-.swp
+.*
+!.gitignore
+!.students
 *~
 tmp/
-students
 .bin

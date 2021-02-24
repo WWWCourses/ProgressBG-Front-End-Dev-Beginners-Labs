@@ -1,0 +1,6 @@
+ябълка
+
+// should be oppend as windows-1251
+
+
+
