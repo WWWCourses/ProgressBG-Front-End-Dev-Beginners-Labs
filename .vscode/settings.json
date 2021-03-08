@@ -31,6 +31,8 @@
     "liveshare.focusBehavior":"prompt",
     // "liveshare.nameTagVisibility": "Activity",
     "liveshare.allowGuestTaskControl": true,
+    "liveshare.languages.allowGuestCommandControl": true,
+
     "peacock.color": "#215732",
     "extensions.ignoreRecommendations": true,
     "files.autoSave": "off",
