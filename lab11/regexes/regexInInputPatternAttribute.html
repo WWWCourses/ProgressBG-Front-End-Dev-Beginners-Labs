@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>regexInInputPatternAttribute </title>
+</head>
+<body>
+	<form action="test.py">
+		<label>user name: <input type="text" pattern="^[A-Za-z]" title="Starting with letter "></label>
+		<label>phone: <input type="tel" pattern="\+359 \d{2} \d{8}" title="+359 XX YYYYYY"></label>
+		<label>pass: <input type="password" pattern="\w{6,}" title="at least 6 symbols (a-z,A-Z,0-9, -)"></label>
+		<button>Send</button>
+	</form>
+</body>
+</html>
