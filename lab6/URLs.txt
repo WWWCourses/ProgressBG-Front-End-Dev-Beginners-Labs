@@ -1,0 +1,15 @@
+URLs:
+
+https://www.abv.bg/
+https://194.153.145.104/lklkflsdklds
+https://nstatic.nova.bg/public/pics/nova/article/980x551_1615734963.jpg
+https://www.google.com/search?q=serverless+application&oq=servless+app&aqs=chrome.1.69i57j0i13l9.8988j0j7&sourceid=chrome&ie=UTF-8
+
+http://127.0.0.1:8080/pages/products.html
+file:///home/nemsys/projects/courses/ProgressBG/ProgressBG-Front-End-Dev/Labs/lab6/mysite.com/pages/products.html
+
+borisnetsov.teachersprogressbg.net      PROJBM606
+
+// Domains
+DNS:
+abv.bg:194.153.145.104
