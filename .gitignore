@@ -1,6 +1,6 @@
 .*
 !.gitignore
 !.students
+!.bin
 *~
 tmp/
-.bin
