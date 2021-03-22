@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>index </title>
+</head>
+<body>
+	<h1>HTML Forms</h1>
+
+	<form action="/cgi-bin/registration.cgi" method="GET">
+
+		<input type="text" name="userName" autocomplete="off" autofocus placeholder="user name"><br>
+		password:  <input type="password" name="pass" autocomplete="off"><br>
+		<hr>
+
+		Gender:
+		male <input type="radio" name="gender" value="male">
+		female <input type="radio" name="gender" value="female">
+
+		<hr>
+		Colors:
+		red: <input type="checkbox">
+		blue: <input type="checkbox">
+		green: <input type="checkbox">
+
+		<button type="submit">Registration</button>
+		<button type="reset">reset</button>
+		<input type="submit" value="Registration">
+
+		<!-- ?userName=Pesho&pass=123&gender=male -->
+		<!-- ?userName=anonymous&pass=123&gender=on -->
+
+
+	</form>
+
+	<a href="./продукти.html">продукти</a>
+
+</body>
+</html>
