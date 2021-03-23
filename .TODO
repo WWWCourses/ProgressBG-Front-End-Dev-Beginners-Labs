@@ -4,7 +4,16 @@ advancedJSfunctions:
 ArrowSyntax:
 	example for handleClick and why wee need bind
 
-More simple tasks on regex (no groups)
+RegExes:
+	slides example:
+		use Velin's Hangman use case
+	tasks:
+		: use Velin's Hangman use case
+jQuery:
+	upload in slides (mark:advanced) custom foo('selector').action() simple functionality using module pattern
+
+	include github repo for jquery demos
+
 
 
 
