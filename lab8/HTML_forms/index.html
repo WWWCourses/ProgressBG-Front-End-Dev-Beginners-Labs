@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>index </title>
+</head>
+<body>
+	<form action="/cgi-bin/test.py">
+		<fieldset>
+			<label>user name: <input type="text" name="userName"></label><br>
+			pass: <input type="password" pattern="\w{6,}" title="Letters or digits, at least 6" name="pass"><br>
+			tel: <input type="tel"><br>
+			age: <input type="number"><br>
+		</fieldset>
+		<hr>
+		<fieldset>
+			<legend>Gender</legend>
+			<label for="male">male</label><input type="radio" name="gender" value="male" id="male">
+			<label>female <input type="radio" name="gender" value="female"></label>
+			<label>other <input type="radio" name="gender" value="other"></label>
+		</fieldset>
+
+		<fieldset>
+			<legend>Town</legend>
+			<select name="address">
+				<optgroup label="town">
+					<option value="Sofia">София</option>
+					<option value="Burgas">Бургас</option>
+					<option value="Plovdiv">Пловдив</option>
+					<option value="Plovdiv">Пловдив</option>
+					<option value="Plovdiv">Пловдив</option>
+				</optgroup>
+				<optgroup label="countries">
+					<option value="Plovdiv">Пловдив</option>
+					<option value="Plovdiv">Пловдив</option>
+					<option value="Plovdiv">Пловдив</option>
+					<option value="Plovdiv">Пловдив</option>
+					<option value="Plovdiv">Пловдив</option>
+					<option value="Plovdiv">Пловдив</option>
+				</optgroup>
+			</select>
+		</fieldset>
+		birth date: <input type="date">
+		<hr>
+		<textarea name="" id="" cols="30" rows="10"></textarea>
+		<br>
+
+		<button>Send</button>
+
+		<!-- SQL Injection -->
+	</form>
+</body>
+</html>
