@@ -1,0 +1,10 @@
+.menu li{
+	cursor: pointer;
+}
+.menu li:hover{
+	font-weight:bold;
+}
+.choosen{
+	/* opacity: .5; */
+	color: red;
+}

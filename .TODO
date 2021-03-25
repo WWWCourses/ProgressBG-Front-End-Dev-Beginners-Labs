@@ -2,17 +2,14 @@ advancedJSfunctions:
 	more on Functions Best Practices;
 	more examples
 ArrowSyntax:
-	example for handleClick and why wee need bind
+	example for handleClick and why wee need bind (before React demo)
 
-RegExes:
-	slides example:
-		use Velin's Hangman use case
-	tasks:
-		: use Velin's Hangman use case
 jQuery:
 	upload in slides (mark:advanced) custom foo('selector').action() simple functionality using module pattern
-
 	include github repo for jquery demos
+
+Dataset:
+	upload more examples and HW in slides
 
 
 

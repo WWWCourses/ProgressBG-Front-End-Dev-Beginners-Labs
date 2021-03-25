@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dataset demo</title>
+	<style>
+		#tooltip:hover span{
+			display: block;
+		}
+		#tooltip span{
+			border-radius: 5px;
+			background-color: aqua;
+
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<!-- TODO: set as HW -->
+	<span id="tooltip" title="" data-tooltip="see a custom tooltip">
+		hover on me
+	</span>
+	<!-- end: TODO -->
+
+	<hr>
+	<ol class="mainCourses">
+		<li data-price="1.5">Main 1 - <span>1.5 лв</span></li>
+		<li data-price="2" data-name="item2">Main 2 - <span>2</span></li>
+		<li id="test">Main 3 - <span>3</span></li>
+		<li>Main 4 - <span>4</span></li>
+	</ol>
+	<button class="btnGetTotal">Get total</button>
+
+	<script>
+		const li = document.querySelector('li[data-price="2"]');
+		const test = document.querySelector('#test');
+
+		let price = 3;
+
+		test.dataset.price = price;
+		test.dataset.name = 'item3';
+
+		// console.log(li.dataset.price);
+	</script>
+</body>
+</html>
