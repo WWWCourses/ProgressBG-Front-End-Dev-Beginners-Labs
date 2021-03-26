@@ -3,14 +3,10 @@ advancedJSfunctions:
 	more examples
 ArrowSyntax:
 	example for handleClick and why wee need bind (before React demo)
-
 jQuery:
 	upload in slides (mark:advanced) custom foo('selector').action() simple functionality using module pattern
 	include github repo for jquery demos
-
-Dataset:
-	upload more examples and HW in slides
-
+Add topic for JS linters
 
 
 
