@@ -1,0 +1,24 @@
+body{
+	width: 80%;
+	margin: 0 auto;
+}
+.menu li{
+	/* list-style: none ; */
+	cursor: pointer;
+}
+.menu li::before{
+	content:
+}
+.menu li:hover{
+	font-weight:bold;
+}
+.output{
+	margin: 1em 0;
+	color: #99F;
+}
+.output>span{
+	font-weight: bold;
+}
+.selected{
+	color: #F99;
+}

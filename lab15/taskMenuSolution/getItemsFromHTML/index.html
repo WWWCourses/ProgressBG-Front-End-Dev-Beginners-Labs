@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Menu Task </title>
+	<link rel="stylesheet" href="./main.css">
+</head>
+<body>
+	<main>
+		<h1></h1>
+		<section class="menu">
+			<h2>Restaurant Menu</h2>
+			<h3>Main Courses</h3>
+			<ol class="mainCourses">
+				<li data-id="1"
+					data-price="1"
+					data-selected="false">Main - <span>1 лв.</span></li>
+				<li data-id="2"
+					data-price="2"
+					data-selected="false">Main - <span>2 лв.</span></li>
+				<li data-id="3"
+					data-price="3"
+					data-selected="false">Main - <span>3 лв.</span></li>
+				<li data-id="4"
+					data-price="4"
+					data-selected="false">Main - <span>4 лв.</span></li>
+			</ol>
+			<h3>Desserts</h3>
+			<ol class="deserts">
+				<li data-name="desert1" data-price="2">Dessert - <span>2 лв.</span></li>
+				<li data-name="desert2" data-price="1">Dessert - <span>1 лв.</span></li>
+				<li data-name="desert3" data-price="6">Dessert - <span>6 лв.</span></li>
+			</ol>
+		</section>
+		<button class="btnGetTotal">Calc Total</button>
+		<button class="btnReset">Reset</button>
+		<div class="output">Total: <span>0</span> лв.</div>
+	</main>
+	<script src="./main.js"></script>
+</body>
+</html>
