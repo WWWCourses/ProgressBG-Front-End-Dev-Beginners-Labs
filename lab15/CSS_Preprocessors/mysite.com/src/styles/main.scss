@@ -1,0 +1,19 @@
+$color     : #F100FF;
+$bg_color  : #5C5454;
+$short     : 200px;
+$bordered   : false;
+
+.alert{
+  color: $color;
+  background: $bg_color;
+  width: $short*2;
+  border: if($bordered, 5px solid red, null);
+}
+
+footer{
+  background: red;
+
+  .alert{
+    background: $color;
+  }
+}

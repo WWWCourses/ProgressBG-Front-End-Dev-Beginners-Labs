@@ -1,0 +1,12 @@
+.alert {
+  color: #F100FF;
+  background: #5C5454;
+  width: 400px;
+}
+
+footer {
+  background: red;
+}
+footer .alert {
+  background: #F100FF;
+}
