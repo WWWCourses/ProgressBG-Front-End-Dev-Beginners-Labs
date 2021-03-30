@@ -1,4 +1,3 @@
-// Note: in practice we get the same data structure by Ajax call to a server
 let itemsData = [
 	{
 		'id': '1',

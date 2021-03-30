@@ -1,7 +1,7 @@
 function getItemsData() {
 	// just a demo how to get data-* values into array of objects;
 	// in practice it will be vice versa: we get the data from server as
-	// array of objects and will set the data-* atributes
+	// array of objects and will set the data-* atributes, if needed
 
 	let itemsData = [];
 
@@ -10,6 +10,7 @@ function getItemsData() {
 	// items.forEach( item =>
 	// 	itemsData.push( item.dataset )
 	// )
+
 	// same as above: perfect for this case
 	itemsData = [...items].map( item=> item.dataset );
 
