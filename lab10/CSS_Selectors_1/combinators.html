@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>combinators </title>
+	<style>
+		/* selector1<combinator>selector2{
+
+		} */
+
+
+		#green b{
+			color:green;
+		}
+
+		#green li{
+			border-bottom: 1px dotted green;
+		}
+		/* <select li child of #red> */
+		#red>li{
+			border-bottom: 1px dotted red;
+		}
+
+	</style>
+</head>
+<body>
+	<h1 class="green-font">Book Title</h1>
+	<h2 class="chapter1">Chapter 1</h2>
+	<ul id="green">
+		<li><b>Item 1</b> (green border)</li>
+		<li><b>Item 2</b> (green border)</li>
+		<li><b>Item 3</b> (green border)</li>
+	</ul>
+	<h2 >Chapter 2</h2>
+	<ul id="red">
+		<li><b>Item 1</b> (red border</li>
+		<li><b>Item 2</b> (red border</li>
+		<li><b>Item 3</b> (red border</li>
+	</ul>
+
+
+</body>
+</html>
