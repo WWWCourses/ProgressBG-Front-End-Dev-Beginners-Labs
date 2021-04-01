@@ -1,0 +1,24 @@
+@import "predefinedMediaQueries";
+
+body{
+	@media screen and #{$mobileQuery}{
+		background-color:red;
+	}
+
+	@media screen and #{$tablet}{
+		background-color:green;
+	}
+}
+
+// @media screen and #{$mobileQuery}{
+// 	body{
+// 		background-color: red;
+// 	}
+// }
+
+
+// @media screen and #{$tablet}{
+// 	body{
+// 		background-color: green;
+// 	}
+// }

@@ -1,0 +1,16 @@
+.test {
+  width: 10em;
+  height: 10em;
+  background-color: #99F;
+  color: #000033;
+}
+.test:hover {
+  background-color: #ccccff;
+}
+.test .child {
+  width: 5em;
+  height: 5em;
+  background-color: blue;
+  // TODO: show settings for generating vendor prefix
+  box-sizing: border-box;
+}/*# sourceMappingURL=test.css.map */

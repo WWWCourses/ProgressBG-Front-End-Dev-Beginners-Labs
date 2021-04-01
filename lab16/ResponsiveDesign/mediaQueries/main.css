@@ -1,0 +1,28 @@
+/* @media [media_type and] [(feature:value)*]{CSS Rules} */
+
+.box{
+	border: 1px solid red;
+}
+
+/* if viewport max-width : 800px => no float  */
+/* @media screen and (max-width:800px) {
+	.box{
+		width: 100%;
+	}
+} */
+
+
+/* if viewport min-width= 800px => float columns  */
+/* @media screen and (min-width:800px) {
+	.box{
+		float: left;
+		width: 30%;
+	}
+}  */
+
+@media screen and (min-width:800px) ,
+	   screen and (orientation: landscape){
+	.box{
+		background:green;
+	}
+}

@@ -1,0 +1,16 @@
+body{
+	margin: 0;
+	background: #B8ADCB;
+}
+header{
+	height: 20vh;
+	background: #666;
+	color: #ccc;
+	text-align: center;
+	font-size: 3em;
+	padding-top: .7em;
+}
+main{
+	text-align: center;
+}
+
