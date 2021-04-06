@@ -102,4 +102,7 @@ header{
     line-height: 3em;
 }
 
+.completed{
+    text-decoration: line-through;
+}
 

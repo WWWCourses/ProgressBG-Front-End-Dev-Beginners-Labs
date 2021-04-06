@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>rightAlignedMenuFlexboxes </title>
+	<style>
+		/*"reset css" - do not use in prod :)*/
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		/************************************************/
+		/*the header                                    */
+		/************************************************/
+		header{
+			height: 10vh;
+			background: #666;
+			color: #CCC;
+		}
+
+		/************************************************/
+		/*the menu row (logo + menu list container)     */
+		/************************************************/
+		.nav-menu{
+			display: flex;
+			height: 3em;
+			background: #CCC;
+			border: 3px solid orange;
+		}
+
+		/************************************************/
+		/*the logo part: 2/5 form the main container    */
+		/************************************************/
+		.logo{
+			flex: 4;
+			align-self: center;
+			text-align: center;
+		}
+
+		/************************************************/
+		/*the menu list: 3/5 from the main container    */
+		/************************************************/
+		.menu{
+			flex: 3;
+
+			/*a flex container of its own*/
+			display: flex;
+			background: #F4F3B1;
+			list-style-type: none;
+		}
+
+		/************************************************/
+		/*the menu list items                           */
+		/************************************************/
+		.menu>li{
+			/*spread all items equally*/
+			flex-grow: 1;
+
+			/* smooth flex-grow on hover*/
+			transition: flex-grow .6s;
+		}
+		.menu>li:hover{
+			flex-grow: 10;
+		}
+
+		.menu>li:nth-child(1){
+			background: #F99;
+		}
+		.menu>li:nth-child(2){
+			background: #9F9;
+		}
+		.menu>li:nth-child(3){
+			background: #99F;
+		}
+
+		/************************************************/
+		/*the links                                     */
+		/************************************************/
+		.menu>li>a{
+			/*just another way to align text in a box => make it flex*/
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			width: 100%;
+			height: 100%;
+
+			text-decoration: none;
+		}
+
+		main{
+			padding: 0 0 0 2em;
+		}
+		h2{
+			margin: 2em 0 1em 0;
+		}
+		p{
+			font-family: sans-serif;
+			margin: .6em 0;
+			font-size: 1.2em;
+		}
+	</style>
+</head>
+<body>
+	<header>HEADER</header>
+	<nav class="nav-menu">
+		<div class="logo">LOGO</div>
+		<ul class="menu">
+			<li><a href="#">About</a></li>
+			<li><a href="#">Products</a></li>
+			<li><a href="#">Contacts</a></li>
+		</ul>
+	</nav>
+	<main>
+		<h2>Description</h2>
+		<p>The LOGO part width is <b>2/5</b> form the menu row container.</p>
+		<p>The menu part (the ul list container of Items) width is <b>3/5</b> from the main row container.<br> The menu part is aligned on right. Its items are equally spread.</p>
+	</main>
+</body>
+</html>

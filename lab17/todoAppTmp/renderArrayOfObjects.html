@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>renderArrayOfObjects </title>
+	<style>
+		.red{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+	</ul>
+
+
+	<script>
+		function generateElement() {
+
+
+			// let li = document.createElement('LI');
+
+			// li.innerHTML = `${todos[0].id} . ${todos[0].title} - ${todos[0].completed}`;
+			// console.dir(li);
+
+			// ul.appendChild(li);
+
+
+			ul.innerHTML = `<li>${todos[0].id} . ${todos[0].title} - ${todos[0].completed}</li>`;
+
+		}
+
+		let ul = document.querySelector('ul');
+
+		let todos = [
+			{
+				"id": 1,
+				"title": "Learn HTML",
+				"completed":false
+			},
+			{
+				"id": 2,
+				"title": "Learn CSS",
+				"completed":false
+			}
+		];
+
+
+		// for (let index = 0; index < array.length; index++) {
+		// 	const element = array[index];
+
+		// }
+
+		todos.forEach( el => {
+			console.log(el.title);
+			ul.innerHTML +=  `<li>${el.id} . <span class="red">${el.title}</span> - ${el.completed}</li>`;
+		} )
+	</script>
+</body>
+</html>
