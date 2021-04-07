@@ -1,0 +1,47 @@
+@charset "UTF-8";
+.player {
+  font-size: 1.2em;
+  padding: 0.2em;
+  background: #333;
+  color: #FFF;
+}
+.player h2 {
+  font-size: 2em;
+  margin: 0.5em 0 0.8em 0.5em;
+}
+
+.genre-options #classical {
+  color: #00F1FF;
+}
+.genre-options #rock {
+  color: #FF0078;
+}
+.genre-options #newWave {
+  color: #D293F2;
+}
+
+.track-list {
+  list-style-type: none;
+  margin: 1em 0;
+  padding: 0.5em;
+  border: 1px solid red;
+}
+.track-list li {
+  line-height: 1.3em;
+  cursor: pointer;
+}
+.track-list li::before {
+  content: "";
+  font-family: FontAwesome;
+  font-size: 0.8em;
+  margin-right: 0.5em;
+}
+.track-list li[data-genre=classical]::before, .track-list li[data-genre=classical]:hover {
+  color: #00F1FF;
+}
+.track-list li[data-genre=rock]::before, .track-list li[data-genre=rock]:hover {
+  color: #FF0078;
+}
+.track-list li[data-genre=newWave]::before, .track-list li[data-genre=newWave]:hover {
+  color: #D293F2;
+}

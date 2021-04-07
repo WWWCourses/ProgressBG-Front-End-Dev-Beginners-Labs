@@ -1,0 +1,72 @@
+@use "sass:map";
+
+$colors:(
+	"player-bg":#333,
+	"player-fg":#FFF,
+	"classical-fg": #00F1FF,
+	"rock-fg": #FF0078,
+	"newWave-fg": #D293F2,
+);
+
+.player{
+	font-size: 1.2em;
+	padding: .2em;
+	background: map.get($colors,"player-bg");
+	color: map.get($colors,"player-fg");
+
+	h2{
+		font-size: 2em;
+		margin: .5em 0 .8em .5em;
+	}
+}
+
+.genre-options{
+	#classical{
+		color: map.get($colors,"classical-fg")
+	}
+	#rock{
+		color: map.get($colors,"rock-fg")
+	}
+	#newWave{
+		color: map.get($colors,"newWave-fg")
+	}
+
+}
+
+.track-list{
+	list-style-type: none;
+	margin: 1em 0;
+	padding: .5em;
+	border: 1px solid red;
+
+	li{
+		line-height: 1.3em;
+		cursor: pointer;
+
+		&::before{
+			content: "\f04b";
+			font-family: FontAwesome;
+			font-size: 0.8em;
+			margin-right: .5em;
+		}
+
+		&[data-genre="classical"]{
+			&::before, &:hover{
+				color: map.get($colors,"classical-fg");
+			}
+		}
+
+		&[data-genre="rock"]{
+			&::before, &:hover{
+				color: map.get($colors,"rock-fg");
+			}
+		}
+
+		&[data-genre="newWave"]{
+			&::before, &:hover{
+				color: map.get($colors,"newWave-fg");
+			}
+		}
+	}
+}
+
