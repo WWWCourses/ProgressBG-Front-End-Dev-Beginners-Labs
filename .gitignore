@@ -1,6 +1,7 @@
 .*
 !.gitignore
 !.students
+!.vscode
 # !.bin
 *~
 tmp/
