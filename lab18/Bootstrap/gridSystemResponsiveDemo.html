@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>gridSystemDemo </title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<style>
+		.row>div:nth-child(1) {
+			background: #f99;
+		}
+		.row>div:nth-child(2) {
+			background: #9f9;
+		}
+		.row>div:nth-child(3) {
+			background: #99f;
+		}
+
+	</style>
+</head>
+<body>
+
+	<section>
+		<h2>Grid system example</h2>
+		<!-- .col-* :for screens narrower than 576px.
+		.col-sm-* :for screens wider than 576px.
+		.col-md-* :for screens wider than 768px.
+		.col-lg-* :for screens wider than 992px.
+		.col-xl-* :for screens wider than 1200px. -->
+		<div class="container">
+			<h2>Widen column on different sceen sizes</h2>
+			<div class="row">
+				<div class="col-sm-6 col-md-4">Col1</div>
+				<div class="col-sm-6 col-md-4">Col2</div>
+				<div class="col-sm-12 col-md-4">Col3</div>
+			</div>
+			<hr>
+			<!-- <h2>Hide column on different sceen sizes</h2>
+			<div class="row">
+				<div class="col-sm-6 col-md-4">Col 1</div>
+				<div class="col-sm-6 col-md-4 d-none d-sm-block">Col 2</div>
+				<div class="col-sm-12 col-md-4 d-none d-sm-none d-md-block">Col 3</div>
+			</div>
+			<hr> -->
+
+
+		</div>
+	</section>
+</body>
+</html>

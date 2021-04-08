@@ -24,6 +24,8 @@ dom.genreOptions.addEventListener('change',function (e) {
 	filterList(dom.trackListItems, e.target.value);
 })
 
+
+
 // play track on click - this is just a simple demo using Sound Cloud embeded player.
 dom.trackList.addEventListener('click', function(e){
 	// we need to process only click event on 'LI' elements
