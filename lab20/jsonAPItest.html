@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jsonAPItest </title>
+</head>
+<body>
+	<div class="joke"></div>
+
+	<script>
+
+		function render(data) {
+			// console.log(data);
+			document.querySelector('.joke').innerHTML = data.value.joke;
+		}
+		let jokeURL = "http://api.icndb.com/jokes/random";
+
+		function fetchJoke() {
+			fetch(jokeURL,)
+			.then(response => response.json())
+			.then(data => {
+				render(data);
+			});
+		}
+
+		setInterval(() => {
+			fetchJoke();
+		}, 2000);
+	</script>
+</body>
+</html>

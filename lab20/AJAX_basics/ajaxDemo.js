@@ -14,14 +14,10 @@ const dataURL = '/data/data.txt';
 
 let fetchAPI = function(method, url) {
 	fetch(url)
-	.then(function (response){
-		console.log(response.text());
-		return response.text();
-	})
-	.then(function (responseText){
-			// do something with responseText
-			nodes.output.innerHTML = responseText;
-	})
+	.then(resp=>resp.text())
+	.then(data=>render(data))
+
+	.catch( err=>console.log(`ERROR`))
 }
 
 let fetchDataByXHR = function(method, url){
@@ -38,7 +34,7 @@ let fetchDataByXHR = function(method, url){
 			// the server has give us the data
 			// finally do something with content:
 			// 20 sec to get the data
-			return this.responseText
+			render(this.responseText);
 		};
 	};
 
@@ -47,7 +43,7 @@ let fetchDataByXHR = function(method, url){
 };
 
 dom.getDataBtn.addEventListener('click', function(){
-	// fetchDataByXHR("GET", dataURL);
-
+	fetchDataByXHR("GET", dataURL);
+	// fetchAPI("GET", dataURL);
 
 });

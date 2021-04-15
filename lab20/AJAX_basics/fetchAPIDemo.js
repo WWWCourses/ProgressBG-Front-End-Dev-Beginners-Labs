@@ -1,20 +1,26 @@
 function fetchAPI(url) {
 	fetch(url)
 	.then( resp=> {
-		console.dir(resp);
+		// console.dir(resp);
+
 		// log response headers
-		resp.headers.forEach( (name, value)=>{
-			console.log(`${name}: ${value}`);
-		})
+		// resp.headers.forEach( (name, value)=>{
+		// 	console.log(`${name}: ${value}`);
+		// })
+
+		// get body data
+		// let body = resp.text();
+		// console.log( body);
+		// body.then( data=>console.log(data))
+		return resp.text()
 	} )
-	.catch( err=>{
-		console.log(`Ups, something went wrong!!!!`)
-	})
+	.then(data=>console.log(data))
+
 
 
 }
 
 
-fetchAPI("/data/Data.txt");
+fetchAPI("/data/data.txt");
 
 console.log(`Hello`);
