@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>z-index </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<style>
+		.box{
+			width: 200px;
+			height: 200px;
+		}
+		.red{
+			position: relative;
+			background-color:red;
+			z-index:1000;
+		}
+		.green{
+			position: relative;
+			top: -100px;
+			left: 100px;
+			background-color:green;
+			z-index:10001;
+		}
+		.blue{
+			position: relative;
+			top: -200px;
+			left: 200px;
+			background-color:blue;
+			z-index:3;
+		}
+	</style>
+</head>
+<body>
+	<div class="box red"></div>
+	<div class="box green"></div>
+	<div class="box blue"></div>
+
+</body>
+</html>

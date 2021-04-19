@@ -1,0 +1,69 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>classicPageLayout</title>
+	<style>
+		body{
+			margin: 0;
+			font-size: 20px;
+			background-color: #FDAFB1;
+		}
+		main{
+			/* display: flex; */
+		}
+		#header,#footer{
+			height: 10vh;
+			margin: 1em;
+			text-align: center;
+			color: #FFF;
+			background-color: #98D1C7;
+		}
+		#aside, #article{
+			margin: 1em ;
+			float: left;
+		}
+		#aside{
+			width: 30%;
+			height: 70vh;
+			background-color: #62B7B6;
+		}
+		#article{
+			background-color: #FA7A7B;
+
+			height:70vh ;
+			width: 60%;
+		}
+		.img{
+			background-color: #D6D5D5;
+			display: inline-block;
+			position: relative;
+			box-sizing: border-box;
+			text-align: center;
+			margin: 25px;
+			top: 14em;
+			color: #FFF;
+			padding: 5px;
+			width: 10em;
+			height: 10em;
+		}
+		.clearfix{
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">Header</div>
+	<main>
+		<div id="aside">Aside</div>
+		<div id="article">Article
+			<div class="img">Apple Image</div>
+			<div class="img">Image</div>
+			<div class="img">Image</div>
+		</div>
+	</main>
+	<div class="clearfix"></div>
+	<div id="footer">Footer</div>
+</body>
+</html>

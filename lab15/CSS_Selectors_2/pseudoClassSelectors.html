@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>pseudoClassSelectors</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<style>
+		.test{
+			width: 200px;
+			height: 200px;
+			background-color: antiquewhite;
+			cursor: pointer;
+		}
+		/* unvisited links */
+		a{
+			font-size: 3em;
+			text-decoration: none;
+		}
+
+		a:visited{
+			color:green;
+			border: none;
+
+		}
+		a:link{
+			border: 5px dotted orange;
+			color: red;
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	<a href="https://www.google.com/">google</a>
+	<a href="#sjdsk">un visited</a>
+	<!-- <div class="test"></div> -->
+
+
+</body>
+</html>
+
