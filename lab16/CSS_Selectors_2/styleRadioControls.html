@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		[type="radio"]{
+			display: none;
+		}
+
+		label::after{
+			content:"";
+			display: inline-block;
+			width: .6em;
+			height: .6em;
+			border: 1px solid red;
+			border-radius: 100%;
+
+		}
+		/* TASK: make it work with pseude elements */
+		[type="radio"]:checked+div{
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<label>
+		male
+		<input type="radio" name="gender">
+	</label>
+	<label>
+		fwmale
+		<input type="radio" name="gender">
+	</label>
+</body>
+</html>

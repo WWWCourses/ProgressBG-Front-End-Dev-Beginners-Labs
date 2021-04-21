@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>beforeAndAfter </title>
+	<style>
+		.quote::before,.quote::after{
+			content:"\\";
+			color:red;
+		}
+		.parent{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+		}
+		.parent::before{
+			content:"";
+			display: block;
+			width: 50%;
+			height: 50%;
+			background-color:blue;
+		}
+	</style>
+</head>
+<body>
+	<p>Lorem ipsum <span class="quote">dolor sit</span> amet consectetur adipisicing elit. Dolorum modi minima molestias, soluta velit ipsum magnam debitis, ad obcaecati ipsa nobis voluptatum tenetur excepturi nisi libero laboriosam! Sunt, magnam praesentium.</p>
+	<hr>
+	<div class="parent">
+		<!-- <div class="child"></div> -->
+	</div>
+</body>
+</html>

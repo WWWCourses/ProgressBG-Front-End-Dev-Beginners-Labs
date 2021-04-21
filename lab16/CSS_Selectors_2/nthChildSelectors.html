@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>nthChildSelectors </title>
+	<style>
+		/* select even children */
+		li:nth-child(2n){
+			background-color: red;
+		}
+		/* select odd children */
+		li:nth-child(2n+1){
+			background-color: green;
+		}
+
+
+		p:nth-of-type(3){
+			background-color: green;
+		}
+		div:nth-of-type(2){
+			background-color: red
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<p>Paragraph 1</p>
+		<p>Paragraph 2</p>
+		<div>Div 1</div>
+		<p>Paragraph 3</p>
+		<div>div 2 red</div>
+		<p>Paragraph 5</p>
+	</div>
+
+	<hr>
+	<!-- <ul>
+		<li>Item 1</li>
+		<li>Item 2</li>
+		<li>Item 3</li>
+		<li>Item 4</li>
+		<li>Item 5</li>
+		<li>Item 6</li>
+	</ul> -->
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>pseudoElements </title>
+	<style>
+		p>span:nth-child(1){
+			font-size: 2em;
+			font-weight: bold;
+			color: red;
+		}
+		p::first-line:hover{
+			color:green;
+		}
+		p:hover::first-line{
+			color:blue;
+		}
+	</style>
+
+</head>
+<body>
+	<p><span></span>L orem ipsum <span>dolor</span>	 sit amet consectetur adipisicing elit. Dignissimos delectus sed illum nam, quos nulla exercitationem! Ipsa animi nam, dolor sunt officiis doloribus magnam. Delectus dolorum facilis tenetur rem cumque.</p>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, harum! Quam sunt, autem error nesciunt doloribus nihil unde. Voluptatibus earum doloremque soluta natus saepe magnam mollitia provident sunt expedita blanditiis.</p>
+</body>
+</html>

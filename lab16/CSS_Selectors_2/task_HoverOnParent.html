@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS_Selectors_2 </title>
+	<style>
+		.parent{
+			width: 300px;
+			height: 300px;
+			background-color: #F99;
+		}
+		.child{
+			width: 50%;
+			height: 50%;
+			background-color: #99F;
+		}
+		.parent:hover{
+			/* background-color:yellow; */
+		}
+		.child:hover{
+			background-color: green;
+		}
+
+		/* select child, when the parent is hovered */
+		/* select child, when it's hovered and when is in parent */
+		.parent:hover>.child{
+			background-color: orange;
+		}
+
+	</style>
+</head>
+<body>
+	<p>Task:</p>
+	<ol>
+		<li>Set parent bg color to yellow, when hover on itself</li>
+		<li>Set child bg color to:
+			<ul>
+				<li>green, when hovered on itself</li>
+				<li>orange, when hover on parent</li>
+			</ul>
+		</li>
+	</ol>
+
+	<hr>
+	<div class="parent">
+		<div class="child"></div>
+	</div>
+</body>
+</html>

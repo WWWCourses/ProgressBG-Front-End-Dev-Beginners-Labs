@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		[type="radio"]{
+			display: none;
+		}
+		label div{
+			display: inline-block;
+			width: .6em;
+			height: .6em;
+			border: 1px solid black;
+			border-radius: 100%;
+
+		}
+		[type="radio"]:checked+div{
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<label>
+		male
+		<input type="radio" name="gender">
+		<div></div>
+	</label>
+	<label>
+		fwmale
+		<input type="radio" name="gender">
+		<div></div>
+	</label>
+</body>
+</html>
