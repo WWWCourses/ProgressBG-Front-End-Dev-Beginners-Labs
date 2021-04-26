@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>transtionOnHidingElements </title>
+	<style>
+		.test{
+			margin-left: 0px;
+			opacity: 1;
+			width: 200px;
+			height: 200px;
+			background-color:red;
+			/* завъртян на 90 градуса: */
+			transform: rotate(45deg);
+
+			transition: 1s;
+		}
+		/* 201px, 202px,  */
+		.test:hover{
+			margin-left: 50px;
+			/* opacity: 0; */
+			/* width: 300px; */
+			transform: rotate(90eg);
+		}
+	</style>
+</head>
+<body>
+	<div class="test">test</div>
+</body>
+</html>
