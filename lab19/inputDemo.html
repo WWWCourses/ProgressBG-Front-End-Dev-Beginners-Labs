@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>inputDemo </title>
+</head>
+<body>
+	<label> user first name: <input type="text" id="firstName"></label>
+	<label> user last name: <input type="text" id="lastName"></label>
+	<button>Say Hello</button>
+	<hr>
+	<div class="output"></div>
+
+	<script>
+		let button = document.querySelector('button');
+		let firstName = document.querySelector('#firstName');
+		let lastName = document.querySelector('#lastName');
+		let output = document.querySelector('.output');
+
+		button.addEventListener("click", function() {
+			let userFirstName = firstName.value;
+			let userLastName = lastName.value;
+
+			console.log(userFirstName);
+			console.log(userLastName);
+
+			// let userFullName = "Hello, Ada Byron"
+			output.innerHTML = userFullName;
+		})
+	</script>
+</body>
+</html>
