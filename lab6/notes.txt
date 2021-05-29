@@ -1,0 +1,15 @@
+Iva's Client Machina =>
+
+	Internet Service Provider (ISP)
+		give IP address => 85.118.76.109
+
+
+
+Iva's Server Machine =>
+	Internet Service Provider (ISP)
+		=> give IP address => 231.45.76.109
+
+
+
+Domain Name System
+mysite.com => 231.45.76.109
