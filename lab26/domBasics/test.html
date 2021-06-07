@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>test </title>
+	<style>
+		h1{
+			color: red;
+			background-color: white;
+		}
+		.btn{
+			border: 2px solid red;
+		}
+		.btn:nth-of-type(2){
+			border: 5px solid green;
+		}
+	</style>
+</head>
+<body >
+	BODY TEXT
+	<h1 id="test"  style="font-size: 50px;">
+		H1 TEXT
+		<!-- h1 element -->
+		<i>Heading1</i>
+	</h1>
+
+	<button class="btn">OK</button>
+	<div id="vip">
+		<button class="btn">NOT OK</button>
+	</div>
+
+
+	<script>
+
+		// get node of H1 element
+		// let h1 = document.body.children[0];
+
+		// console.dir(h1.childNodes);
+		// console.dir(h1.children);
+
+		// let btn = document.body.children[2];
+		// let btn = document.getElementsByClassName("btn")[0]
+		// let btn = document.querySelector(".btn:nth-of-type(2)")
+		// console.log(btn.innerHTML);
+
+		// console.log( document.querySelector(".btn"));
+
+		// console.log( document.getElementById("test"));
+		// console.log( document.querySelector("#test"));
+
+
+
+
+		// console.log(h1);
+		// console.log(test);
+		// console.dir(h1.attributes[0].value);
+		// console.dir(h1.getAttributeNode("id").value);
+		// h1.attributes[0].value = "h1"
+
+		// console.log(btn1.innerHTML);
+
+		// let buttons = document.querySelectorAll(".btn")
+		// console.log(buttons);
+
+		// console.log( vip.querySelectorAll(".btn") );
+
+	</script>
+
+	<!-- END OF MY DOCUMENT -->
+</body>
+</html>
+
+<!-- DOM standard -->
+<!-- document = {
+	"html_version": "HTML5"
+	"body": {
+		"children":[
+		]
+		"childNodes": [
+			{
+				 // textNodeProps
+			}
+			{
+				"tagName": "H1",
+				"attributes": [
+					"0": {
+						"name": "id"
+						"value":"test"
+					},
+					"1":{
+
+					}
+				]
+			},
+			{
+				"tagName": "SPAN",
+				"attributes": "",
+				"innerText":"@@@@@@@"
+			},
+			{
+				// comment node
+			}
+		]
+	}
+}
+
+let test = h1
+let div = {
+				"tagName": "Div",
+
+			}
+
+
+-->

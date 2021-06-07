@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>fromCodepen </title>
+	<style>
+		#output{
+			color: red;
+			font-size: 3em;
+		}
+	</style>
+</head>
+<body oncopy=onCopy()>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quo quisquam ipsam totam voluptate ad culpa, minima voluptatem itaque debitis fuga cupiditate suscipit deleniti optio incidunt officiis quae eligendi qui?</p>
+	<input id="textInput" type="text" placeholder="Enter some text here"
+		onkeypress="onChange(this)"
+		>
+	<!-- <button id="btn-show"	onclick="onBtnClick();">SHOW</button> -->
+	<button id="btn-show">SHOW</button>
+	<div id="output"></div>
+
+	<script>
+		let btn = document.querySelector('#btn-show');
+		// let input = document.querySelector('[type="text"]');
+
+		function onBtnClick() {
+			console.log(`BTN was clicked ${n} times!!!`);
+			n += 1;
+		}
+		btn.addEventListener("click", onBtnClick)
+
+
+
+		function onChange(param) {
+
+			console.log(param.value);
+		}
+
+		function onCopy() {
+			console.log(`DO NOT COPY`);
+		}
+
+
+		let n = 0;
+		// onBtnClick();
+	</script>
+</body>
+</html>

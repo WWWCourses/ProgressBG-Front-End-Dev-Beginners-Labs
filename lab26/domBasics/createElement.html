@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>createElement </title>
+</head>
+<body>
+
+	<span`>SPAN</span>
+	<!-- <div>DIV</div> -->
+	<script>
+		function createDiv() {
+			let div = document.createElement("div");
+			console.dir(div);
+			let body = document.body;
+			div.innerHTML ="DIV"
+
+			body.appendChild(div);
+		}
+
+		function getElement() {
+			let span = document.body.children[0];
+			// console.dir(span);
+
+			// get innerText
+			console.log( span.innerText );
+
+			// set innerText
+			span.innerHTML = "<b>NewBold Text</b>"
+
+			span.id = "span1"
+		}
+
+		getElement();
+		createDiv();
+	</script>
+</body>
+</html>
