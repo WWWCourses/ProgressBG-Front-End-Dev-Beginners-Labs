@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>targetVScurrentTarget </title>
+	<style>
+		.outer {
+			width: 10em;
+			height: 10em;
+		}
+		.inner {
+			width: 5em;
+			height: 5em;
+		}
+		.outer,
+		.inner {
+			cursor: pointer;
+		}
+		#red {
+			background: #f99;
+		}
+		#blue {
+			background: #99f;
+		}
+		#green {
+			background: #9f9;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="outer" id="red">
+		<div id="green" class="inner"></div>
+		<div id="blue" class="inner"></div>
+	</div>
+	<div class="output">
+
+	</div>
+
+	<script>
+		let redNode = document.querySelector("#red");
+		let greenNode = document.querySelector("#green");
+		let outputNode = document.querySelector(".output");
+
+		redNode.addEventListener("click", function (e) {
+			outputNode.innerHTML += "Red was clicked<br>"
+		});
+
+		greenNode.addEventListener("click", function(){
+			outputNode.innerHTML += "Green was clicked<br>"
+		});
+
+		document.body.addEventListener("click", function(e){
+			outputNode.innerHTML += "Body was clicked<br>"
+			outputNode.innerHTML += `<br>e.target: ${e.target.tagName} was clicked<br>`
+			outputNode.innerHTML += `<br>e.currentTarget: ${e.currentTarget.tagName} was clicked<br>`
+		});
+
+
+
+
+	</script>
+</body>
+</html>

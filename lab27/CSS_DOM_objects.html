@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS_DOM_objects </title>
+	<style>
+		.big{
+			font-size: 2em;
+		}
+
+	</style>
+</head>
+<body>
+	<h1 class="big"	style="color: red;">Heading 1</h1>
+	<button>Click me</button>
+
+	<script>
+		let h1 = document.querySelector(".big");
+		let computedH1 = window.getComputedStyle( h1 );
+
+		function changeFontSize(e) {
+			// h1.style.fontSize = "20px";
+			h1.style.color = "green";
+			console.dir(h1.style);
+
+			// TODO:
+			console.dir(computedH1);
+		}
+
+		// get button element node
+		let btn = document.querySelector('button');
+		btn.addEventListener("click", changeFontSize);
+	</script>
+</body>
+</html>
+
+
+<!-- css={
+	"fontSize":"100px"
+}
+-->

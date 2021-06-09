@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>events </title>
+</head>
+<body>
+	<input id="textInput" type="text" placeholder="Enter some text here">
+	<!-- <button id="btn-show"	onclick="onBtnClick();">SHOW</button> -->
+	<button id="btn-show">SHOW</button>
+	<div id="output"></div>
+
+
+	<script>
+		let btn = document.querySelector("#btn-show");
+		btn.addEventListener("click", onBtnClick );
+
+		function onBtnClick(event) {
+			console.dir(event);
+			let userName = document.querySelector("#textInput").value;
+		}
+
+
+
+
+	</script>
+</body>
+</html>
