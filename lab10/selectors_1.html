@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>selectors_1 </title>
+
+	<style>
+		/* selector1<combinator>selector2 */
+		nav li{
+			color:red
+		}
+		main>h2{
+			border:5px solid green;
+		}
+
+		h1~h2{
+			background-color: aqua;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS Selectors</h1>
+	<nav>
+		<ul>
+			<li>Menu Item 1</li>
+			<li>Menu Item 2</li>
+			<li>Menu Item 3</li>
+		</ul>
+	</nav>
+	<h2>Test test</h2>
+
+
+	<main>
+		<h1>Test</h1>
+		<h2>Heading2 in main</h2>
+		<ul>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+			<li><h2>Heading2 in li</h2></li>
+		</ul>
+	</main>
+</body>
+</html>

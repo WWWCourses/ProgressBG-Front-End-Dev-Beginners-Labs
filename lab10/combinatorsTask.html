@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>combinatorsTask </title>
+
+	<style>
+		/* selector1 <comb> selector2 */
+		a{
+			color: gray;
+		}
+		/* p+p{
+			color: orange;
+		} */
+		header p+p{
+			color:green
+		}
+
+		main p+p{
+			color:blue
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h2 class="green">H2 green</h2>
+		<p>p1</p>
+		<p>p2 (green)</p>
+		<a href="#">link in header</a>
+	</header>
+	<main>
+		<h2 class="blue">H2 blue</h2>
+		<p>p3</p>
+		<p>p4 (blue)</p>
+		<a href="#">link in main</a>
+	</main>
+	<p class="green">just a p</p>
+	<p class="blue">just a p</p>
+</body>
+</html>
