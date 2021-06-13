@@ -12,13 +12,16 @@
 			width: 100px;
 			height: 100px;
 
-			/* background-color: #F00; */
+			background-color: rgba(255,0,0);
+			/* border: 50px solid #34badf; */
+			background-clip:content-box;
+		}
 
-			background-image: url(../images/big/netherlands-5039354_1920.jpg);
-			color: transparent;
-			border: 50px solid #F008;
-			-webkit-background-clip: text;
-			background-clip:text;
+		img{
+			width: 300px;
+			height: 300px;
+			/* opacity: 0.2; */
+			filter: sepia(100%);
 		}
 	</style>
 </head>
@@ -29,6 +32,8 @@
 	<div id="test">
 		test
 	</div>
+	<hr>
+	<img src="../images/big/netherlands-5039354_1920.jpg" alt="netherlands-5039354_1920.jpg">
 
 
 </body>
