@@ -6,14 +6,19 @@
 	<title>colorValues </title>
 	<style>
 		body{
-			background-color: #FF0000;
+			background-color: #333;
 		}
 		#test{
 			width: 100px;
 			height: 100px;
-			/* TODO: why trasperent border is not applied  */
-			background-color: rgb(200, 200, 200);
-			border: 50px solid #00000000;
+
+			/* background-color: #F00; */
+
+			background-image: url(../images/big/netherlands-5039354_1920.jpg);
+			color: transparent;
+			border: 50px solid #F008;
+			-webkit-background-clip: text;
+			background-clip:text;
 		}
 	</style>
 </head>
@@ -21,7 +26,9 @@
 	<h1>Color values</h1>
 	<h2>RGB sytax</h2>
 
-	<div id="test"></div>
+	<div id="test">
+		test
+	</div>
 
 
 </body>
