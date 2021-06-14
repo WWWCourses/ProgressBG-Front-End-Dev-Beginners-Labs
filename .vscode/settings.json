@@ -5,8 +5,7 @@
     ],
     "spellright.documentTypes": [
         "markdown",
-        "latex",
-        "html"
+        "latex"
     ],
     "workbench.colorCustomizations": {
         "activityBar.activeBackground": "#2f7c47",

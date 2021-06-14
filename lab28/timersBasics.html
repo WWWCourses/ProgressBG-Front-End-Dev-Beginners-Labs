@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>timersBasics </title>
+</head>
+<body>
+
+
+	<script>
+		// console.log(`1`);
+		// alert('2');
+		// console.log(`3`);
+
+
+		// function foo(x) {
+		// 	x+=1;
+		// 	console.log(`x = ${x}`);
+		// }
+
+		// // foo(3);
+		// // 19:00:00 0001
+		// setTimeout(foo, 1000, 3);
+
+
+
+		// 19:00:00 0001
+		// console.log(`1`);
+		// 19:00:00 0002
+		// setTimeout(foo,1000); // foo()=> 19:00:01 0002
+
+		// 19:00:00 0003
+		// console.log(`3`);
+
+		// setTimeout(function[, delay]);
+		// setTimeout(foo,500);
+
+		// setInterval(foo,1000);
+
+
+		// Log in console incremented counter in 1 second intervale
+		let counter = 0;
+		let counterID = setInterval(function () {
+			console.log(++counter);
+		}, 1000)
+		// Stop interval after 5 seconds
+		setTimeout(function () {
+			clearInterval(counterID)
+		}, 3000)
+
+	</script>
+</body>
+</html>

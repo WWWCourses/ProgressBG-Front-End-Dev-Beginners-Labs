@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>loadRandomImage </title>
+	<style>
+		.galery img{
+			width: 200px;
+			height: 200px;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="galery">
+		<img src="http://imageshack.com/a/img922/3858/5Pd5dc.jpg" alt="">
+		<img src="http://imageshack.com/a/img923/3776/lKVbAp.jpg" alt="">
+		<img src="http://imageshack.com/a/img923/6770/WXkPF9.jpg" alt="">
+		<img src="http://imageshack.com/a/img923/2200/SzDjvi.jpg" alt="">
+		<img src="http://imageshack.com/a/img924/8715/tz0p3T.jpg" alt="">
+	</div>
+
+
+	<script>
+		function getRandomInt(min, max) {
+			// min = Math.ceil(min);
+			// max = Math.floor(max);
+			return Math.ceil(Math.random() * (max - min) + min);
+		}
+
+		images = document.querySelectorAll('.galery img');
+		let i = getRandomInt(0, 5);
+		console.log(`i = ${i}`);
+
+
+		// 1. When the page is loaded, display a random iamge
+		window.onload = function() {
+			images[i].style.display = "block";
+		};
+
+	</script>
+</body>
+</html>

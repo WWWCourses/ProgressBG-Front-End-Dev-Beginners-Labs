@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>eventPreventDefault </title>
+	<style>
+		.test{
+			width: 200px;
+			height: 200px;
+			background-color: gray;
+		}
+	</style>
+</head>
+<body>
+	<div class="test">test</div>
+	<a href="https://google.com">dfkfkdsj</a>
+
+	<script>
+		// window.oncontextmenu = (e) => {
+		// 	e.preventDefault();
+		// }
+
+
+		// window.oncontextmenu = function(e) {
+		// 	console.dir(e);
+		// 	e.preventDefault();
+		// }
+
+
+
+
+
+		const test = document.querySelector(".test")
+		test.addEventListener("contextmenu", function(e) {
+			console.dir(e);
+			e.preventDefault();
+		})
+
+	</script>
+</body>
+</html>
