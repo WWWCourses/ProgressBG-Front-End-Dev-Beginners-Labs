@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>basicLayout </title>
+	<style>
+		html{
+			height: 100%;
+		}
+		body{
+			height:100% ;
+			margin: 0px;
+			color: #DDD;
+		}
+		header, footer{
+			background-color:#666;
+		}
+
+		header{
+			/* width: 50%; */
+			/* width: 50vmin; */
+
+			/* font-size: 10em; */
+			/* height: 100px; */
+			height: 10vw;
+			/* height: 10%; */
+		}
+		main{
+			/* height: 450px; */
+			min-height: 450px;
+			background-color: #F99;
+			/* overflow: hidden; */
+
+		}
+		main p{
+			font-size: 5em;
+		}
+		footer{
+			height: 200px;
+		}
+
+		aside{
+			width: 25%;
+			/* TODO: */
+			min-height: 100%;
+			background: #99F;
+		}
+		article, aside{
+			display: inline-block;
+		}
+		article{
+			width:75%;
+			background: #9F9;
+			/* padding: 1em; */
+		}
+		main article h1{
+			/* margin: 0; */
+		}
+
+	</style>
+</head>
+<body>
+	<header>Header</header>
+	<main>
+		<aside>aside</aside><article>
+			<h1>Article H!</h1>
+		</article>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat animi, nihil nulla facilis provident possimus aspernatur sint cum ea! Odio dolorum, quo nam repudiandae minima facilis similique nemo ipsum tempora! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, unde? Labore aliquid deleniti consequatur neque dignissimos architecto dicta, quaerat adipisci laudantium cum quia ratione. Corporis eius iste tempore fugiat. Atque.</p>
+	</main>
+	<footer>footer</footer>
+</body>
+</html>
