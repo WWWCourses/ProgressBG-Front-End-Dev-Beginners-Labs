@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>nav </title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		nav ul{
+			font-size: 1.3em;
+			border: 5px solid #666;
+			list-style-type: none;
+			padding: 0;
+		}
+		nav ul li{
+			display: inline-block;
+
+			width: 20%;
+			height: 5em;
+			margin-left: -0.33rem;
+
+			vertical-align: top;
+			border: 5px solid orange;
+			background-color: red;
+
+		}
+		li.big{
+			border-color:darkblue;
+			font-size: 1.5em;
+		}
+
+		nav ul li a{
+			display: block;
+			/* height: inherit; */
+			height: 100%;
+
+			padding: 16px;
+			border: 5px solid green;
+		}
+
+
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li class="big"><a href="#">About</a></li>
+			<li><a href="#">Menu</a></li>
+			<li><a href="#">Gallery</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+</body>
+</html>
