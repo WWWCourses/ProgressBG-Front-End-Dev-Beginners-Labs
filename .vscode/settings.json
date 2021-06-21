@@ -1,0 +1,48 @@
+{
+    "spellright.language": [
+        "Bulgarian",
+        "English (American)"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex"
+    ],
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#2f7c47",
+        "activityBar.activeBorder": "#422c74",
+        "activityBar.background": "#2f7c47",
+        "activityBar.foreground": "#e7e7e7",
+        "activityBar.inactiveForeground": "#e7e7e799",
+        "activityBarBadge.background": "#422c74",
+        "activityBarBadge.foreground": "#e7e7e7",
+        "statusBar.background": "#215732",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#2f7c47"
+    },
+    "liveServer.settings.port": 5501,
+
+    "liveshare.shareExternalFiles": false,
+    "liveshare.autoShareServers": true,
+    "liveshare.focusBehavior":"prompt",
+    // "liveshare.nameTagVisibility": "Activity",
+    "liveshare.allowGuestTaskControl": true,
+    "liveshare.languages.allowGuestCommandControl": true,
+
+    "peacock.color": "#215732",
+    "extensions.ignoreRecommendations": true,
+    "files.autoSave": "off",
+    "debug.allowBreakpointsEverywhere": true,
+    "extensions.ignoreRecommendations": true,
+    "files.autoSave": "off",
+    "debug.allowBreakpointsEverywhere": true,
+    "typescript.tsc.autoDetect": "off",
+    "npm.autoDetect": "off",
+    "typescript.tsc.autoDetect": "off",
+    "npm.autoDetect": "off",
+    "html.autoClosingTags": false,
+    "typescript.tsc.autoDetect": "off",
+    "npm.autoDetect": "off",
+    "html.autoClosingTags": false,
+    "typescript.tsc.autoDetect": "off",
+    "npm.autoDetect": "off",
+}

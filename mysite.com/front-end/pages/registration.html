@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registration </title>
+</head>
+<body>
+	<form action="/back-end/hfddsdskjs.php" method="get">
+		Име: <input type="text" name="uname" size="5" autofocus required>
+		Парола: <input type="password" name="pass" required>
+		Възраст: <input type="number" name="age" autocomplete="off">
+		<br><br>
+		Gender:
+		<label for="female">female:</label> <input type="radio" name="gender" value="f" id="female">
+		<label>male: <input type="radio" name="gender" value="m"></label>
+		Drink:
+		beer: <input type="checkbox" name="drink" value="beer">
+		coca-cola: <input type="checkbox" name="drink" value="coca-cola">
+		<br>
+		tel: <input type="tel">
+		color: <input type="color">
+		<hr>
+
+		<select name="town" id="" multiple>
+			<optgroup label="България">
+				<option value="Sofia">София</option>
+				<option value="Varna">Варна</option>
+			</optgroup>
+			<optgroup label="Англия">
+				<option value="Sofia">София</option>
+				<option value="Varna">Варна</option>
+			</optgroup>
+
+		</select>
+		<hr>
+
+
+		<textarea name="" id="" cols="30" rows="10"></textarea>
+
+
+		<button>Default button</button>
+		<input type="submit" value="Изпрати" >
+		<button type="submit">Изпрати</button>
+		<button type="reset">Изчисти</button>
+		<button type="button">Бутон</button>
+	</form>
+
+	<hr>
+</body>
+</html>
