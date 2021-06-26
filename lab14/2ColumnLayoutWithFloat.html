@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2ColumnLayoutWithFloat </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<style>
+		header,
+		footer {
+			height: 5em;
+			background-color: #999;
+		}
+
+		footer {}
+
+		main {
+			/* margin-top: -2em; */
+			/* padding-top: 2em; */
+			min-height: calc(100vh - 10em);
+			background-color: #F99;
+		}
+
+		.left {
+			float: left;
+			width: 30%;
+			min-height: 100%;
+			/* margin-left: 1em; */
+			background-color: #99F;
+		}
+
+		.right {
+			float: left;
+			width: 70%;
+			background-color: #9F9;
+		}
+		.clearfix{
+			/* display: inline; */
+			clear:both;
+			border: 50px solid red;
+		}
+	</style>
+</head>
+
+<body>
+	<header></header>
+	<main>
+		<aside class="left">Left - 30% from viewport</aside>
+		<article class="right">
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis natus itaque esse? Omnis, quos
+				officiis. Veritatis voluptas ab vel ratione suscipit fuga. Suscipit soluta quae veritatis debitis harum
+				aspernatur aliquid!</p>
+		</article>
+		<div class="clearfix"></div>
+	</main>
+	<footer>Footer</footer>
+</body>
+
+</html>

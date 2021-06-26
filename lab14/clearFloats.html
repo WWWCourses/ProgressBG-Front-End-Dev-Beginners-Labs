@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>clearFloats </title>
+	<style>
+		.container{
+			border: 5px solid #666;
+		}
+		.left, .right{
+			/* border: 5px solid yellow; */
+			background-color: yellow;
+			width: 4em;
+		}
+		.left{
+			float:left;
+			height: 2em;
+		}
+		.right{
+			float: right;
+			height: 3em;
+		}
+		p{
+			margin: 0;
+			clear:both;
+			border: 5px solid red;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="left"></div>
+		<div class="right"></div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime voluptates sint alias tenetur, quo, tempore totam similique quasi, itaque aliquam impedit ratione. Reiciendis rerum consectetur rem, voluptates exercitationem dolorum eius.</p>
+	</div>
+</body>
+</html>
