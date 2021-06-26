@@ -6,19 +6,31 @@
 	<title>absoluteposition </title>
 	<style>
 		.product{
+			position: relative;
 			background-color: gray;
+
 			width: 30%;
 			height: 20em;
 		}
 		.image{
 			/* position: absolute; */
 			/* left:20px; */
-			/* TODO: fix calc */
-			margin-left: calc((30% - 10em) / 2);
+			margin: 0 auto;
 			background-color: red;
 			width: 10em;
 			height: 10em;
 			opacity: .5;
+		}
+		.bordered{
+			/* make it as HW: bordered arround .description */
+			border:5px solid yellow;
+		}
+		.description{
+			position: absolute;
+			bottom:0; right: 0;
+			width: 5em;
+			height: 2em;
+			background-color: green;
 		}
 
 	</style>
@@ -27,7 +39,12 @@
 <body>
 	<div class="product">
 		<div class="image"></div>
-		<div class="description">product 1</div>
+		<div class="bordered">
+			<div class="description">product 1</div>
+		</div>
 	</div>
+	<main>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque excepturi impedit ducimus fugit alias minus reiciendis, totam numquam nostrum. Incidunt minus impedit quo saepe optio quos amet rem voluptas ipsam.</p>
+	</main>
 </body>
 </html>
