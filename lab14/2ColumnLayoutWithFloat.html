@@ -13,19 +13,20 @@
 			background-color: #999;
 		}
 
-		footer {}
-
 		main {
 			/* margin-top: -2em; */
 			/* padding-top: 2em; */
-			min-height: calc(100vh - 10em);
+			/* min-height: calc(100vh - 10em); */
 			background-color: #F99;
 		}
 
+		/* TODO: DONE => fix min-height */
+		.left,.right{
+			min-height: calc(100vh - 10em);
+		}
 		.left {
 			float: left;
 			width: 30%;
-			min-height: 100%;
 			/* margin-left: 1em; */
 			background-color: #99F;
 		}
@@ -38,7 +39,7 @@
 		.clearfix{
 			/* display: inline; */
 			clear:both;
-			border: 50px solid red;
+			/* border: 50px solid red; */
 		}
 	</style>
 </head>
@@ -48,9 +49,9 @@
 	<main>
 		<aside class="left">Left - 30% from viewport</aside>
 		<article class="right">
-			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis natus itaque esse? Omnis, quos
-				officiis. Veritatis voluptas ab vel ratione suscipit fuga. Suscipit soluta quae veritatis debitis harum
-				aspernatur aliquid!</p>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis natus itaque esse? Omnis, quos officiis. Veritatis voluptas ab vel ratione suscipit fuga. Suscipit soluta quae veritatis debitis harum aspernatur aliquid!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente laborum consequuntur, fuga consequatur, amet reprehenderit non molestiae corporis deleniti alias animi assumenda, aliquam porro blanditiis sunt mollitia a harum cupiditate.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam corporis non, tenetur sapiente vero reprehenderit earum recusandae cumque id vel facere pariatur obcaecati dignissimos eius quia provident autem? Asperiores, ipsam.</p>
 		</article>
 		<div class="clearfix"></div>
 	</main>
