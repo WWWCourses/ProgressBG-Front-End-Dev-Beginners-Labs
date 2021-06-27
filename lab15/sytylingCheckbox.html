@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>sytylingCheckbox </title>
+	<style>
+		input[type="radio"]{
+			display: none;
+		}
+
+
+		.radio{
+			display: inline-block;
+			width: 1em;
+			height: 1em;
+			border: 1px solid #666;
+			/* border-radius: 100%; */
+			/* background-color: red; */
+		}
+
+		input[type="radio"]:checked + .radio{
+			background-color:red;
+		}
+	</style>
+</head>
+<body>
+
+	<form action="">
+		gender:
+		<label>yes:
+			<input id="yes" type="radio" name="answer">
+			<!-- TODO: HW with ::after -->
+			<div class="radio"></div>
+		</label>
+		<label>no:
+			<input id="no" type="radio" name="answer">
+			<!-- TODO: HW with ::after -->
+			<div class="radio"></div>
+		</label>
+	</form>
+</body>
+</html>

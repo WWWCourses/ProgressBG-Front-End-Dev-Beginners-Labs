@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>pseudoElements </title>
+	<style>
+		p:hover::first-line{
+			color: red;
+		}
+
+		p::first-letter{
+			font-size: 2em;
+			font-weight: bold;
+		}
+
+		.wrapper{
+			width: 10em;
+			height: 10em;
+			background-color: red;
+		}
+		.wrapper::before{
+			content:"";
+			display: block;
+			width: 50%;
+			height: 50%;
+			background-color: blue;
+		}
+
+		.quoted{
+			color: green;
+		}
+		.quoted::before, .quoted::after{
+			content:'"';
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<!-- <div class="blue"></div> -->
+	</div>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos <span class="quoted">eum quasi</span> fugiat architecto, debitis atque deserunt reiciendis quis totam quia est aliquid iure. Enim eos vitae nemo illo, maiores ipsam.</p>
+</body>
+</html>

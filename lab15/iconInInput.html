@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>iconInInput </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<style>
+		label{
+			position: relative;
+			display: block;
+			width: 10em;
+			height: 2em;
+			padding: 0.1em;
+			border: 1px solid green;
+		}
+		input{
+			outline: none;
+			border:none;
+			height: 100%;
+		}
+
+		.my-icon::after{
+			content:"\f39e";
+			font-family: 'Font Awesome 5 Brands';
+			font-size: 1em;
+			color: #99f;
+			background-color: #9F9;
+
+			position: absolute;
+			right: .2em;
+			top:.3em;
+			bottom: .3em;
+
+			/* border: 1px solid red; */
+			padding-top:.2em;
+		}
+
+		/* from FA css */
+		.fa-facebook-f:before {
+  			content: "\f39e";
+		}
+	</style>
+</head>
+<body>
+	<!-- &#10549; -->
+	<label class="my-icon">
+		<input type="text" placeholder="enter your name">
+	</label>
+	<hr>
+	<i class="fab fa-facebook-f"></i>
+</body>
+</html>

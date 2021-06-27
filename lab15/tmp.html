@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>tmp </title>
+	<style>
+		.red{
+			width: 10em;
+			height: 10em;
+			background-color: #F99;
+		}
+		.blue{
+			display: none;
+			width: 50%;
+			height: 50%;
+			background-color: #99F;
+		}
+
+
+		.red:hover>.blue{
+			display: block;
+		}
+
+		/* select .blue when it's parent is hovered{
+
+		} */
+
+		.main{
+			width: 30%;
+			border: 1px solid green;
+		}
+		.main>ul{
+			display: none;
+			border: 1px solid red;
+		}
+
+		.main:hover>ul{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="red">
+		<div class="blue"></div>
+	</div>
+	<hr>
+	<ul>
+		<li class="main"><strong>main 1</strong>
+			<ul>
+				<li>sub 1</li>
+				<li>sub 2</li>
+				<li>sub 3</li>
+			</ul>
+		</li>
+	</ul>
+</body>
+</html>

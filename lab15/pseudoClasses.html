@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>pseudoClasses </title>
+	<style>
+		/* selector:pseudo­class{
+
+		} */
+
+		/* unvisited links */
+		a:link{
+			color: red;
+		}
+		a:visited{
+			color: gray
+		}
+
+		.wrapper{
+			border:5px solid #666;
+		}
+		.wrapper:hover{
+			padding: 2em;
+			border:5px solid #9F9;
+		}
+
+		.box{
+			border:1px solid #666;
+			padding: 2em;
+		}
+		.box:hover{
+			background-color: #F99;
+		}
+		.box:active{
+			background-color: #99F;
+		}
+		.box:focus{
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<a href="https://google.com">google.com</a>
+	<a href="#1233">Link1</a>
+
+	<div class="wrapper">
+		<div class="box" contenteditable>box</div>
+	</div>
+	<hr>
+
+
+
+</body>
+</html>
