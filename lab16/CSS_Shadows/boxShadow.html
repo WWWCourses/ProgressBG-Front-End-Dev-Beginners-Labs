@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>boxShadow </title>
+	<style>
+		.box{
+			width: 200px;
+			height: 200px;
+			border: 5px solid #000;
+			/* outline:50px solid red; */
+			margin: 0em auto;
+		}
+		.box-shadow{
+			/* box-shadow: [inset] h-shadow v-shadow blur-radius spread-radius color; */
+			box-shadow:0px 20px 0 10px red;
+
+		}
+		.box-shadow:active{
+			box-shadow:
+				0px 0px 5px 20px red,
+				0px 0px 5px 20px blue;
+		}
+	</style>
+</head>
+<body>
+	<div class="box box-shadow"></div>
+	<!-- <div class="box box-shadow"></div> -->
+</body>
+</html>

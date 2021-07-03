@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>transitions </title>
+	<style>
+		.ball{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			transition-duration: 3s;
+			/* transition-delay: 1s; */
+			/* transition-property: width, height; */
+			/* transition-timing-function: cubic-bezier(1, 0.14, 1, 0.25); */
+		}
+		.ball:hover{
+			background-color: blue;
+			width: 100px;
+			height: 100px;
+		}
+
+		.fade-out{
+			/* начално състояние */
+			font-size: 5em;
+			border: 1px solid #000;
+			/* opacity: 1; */
+			transition: 0.5s;
+
+
+		}
+		.fade-out:hover{
+			/* крайно състояние */
+			opacity: 0;
+			/* display: none; */
+
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS Transition Effects</h1>
+	<div class="ball"></div>
+	<img src="../../images/small/faceboookIcon.png" alt="" class="fade-out">
+</body>
+</html>

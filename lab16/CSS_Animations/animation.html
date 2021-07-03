@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>animation </title>
+	<style>
+		.ball{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			border-radius: 50%;
+			animation: move 3s infinite ;
+		}
+
+		@keyframes move{
+			/* В началото и края на анимацията */
+			0%,100%{
+				width: 200px;
+				height: 200px;
+				background-color: red;
+			}
+			/* В средата на анимацията */
+			50%{
+				background-color: blue;
+				width: 100px;
+				height: 100px;
+			}
+		}
+
+
+	</style>
+</head>
+<body>
+	<h1>CSS Animation Effects</h1>
+	<div class="ball"></div>
+</body>
+</html>

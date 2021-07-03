@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>envolopeEffect-BoxShadow </title>
+	<style>
+		.box, .background{
+			position: relative;
+			width: 400px;
+			height: 200px;
+			border: 1px solid #999;
+			background-color: #FFF;
+		}
+		.box::after{
+			content:"";
+			display: block;
+			position: absolute;
+			bottom: 12px; right: -7px;
+			width: 150px;
+			height: 100px;
+			z-index: -1;
+
+			transform: rotate(5deg);
+			/* border: 1px solid #F00; */
+			box-shadow: 0 20px 0 -1px #F007;
+		}
+		p{
+			margin: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="background"></div>
+		<!-- <div class="shadow"></div> -->
+	</div>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, tempora. Ex doloremque exercitationem iure eligendi ipsum ut laudantium, quas esse dicta voluptates hic impedit facilis ipsa, dignissimos libero dolor? Libero.</p>
+</body>
+</html>

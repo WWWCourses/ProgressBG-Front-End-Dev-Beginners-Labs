@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>textShadow </title>
+	<style>
+		.shadow{
+			/* text-shadow: h-shadow v-shadow [blur-radius] color; */
+			text-align: center;
+			font-size: 5em;
+		}
+		.shadow::after{
+			content:"CBA";
+			display: block;
+			font-size:2em;
+			color: #fff0;
+			/* opacity: 0; */
+			text-shadow: 5px 5px 10px red;
+			letter-spacing: 20px;
+		}
+		.shadow:hover{
+			text-shadow:
+			5px 5px hsl(0, 100%, 	20%),
+			6px 6px hsl(0, 100%, 	25%),
+			7px 7px hsl(0, 100%, 	30%),
+			8px 8px hsl(0, 100%, 	35%),
+			9px 9px hsl(0, 100%, 	40%),
+			10px 10px hsl(0, 100%,  45%),
+			11px 11px hsl(0, 100%,  50%),
+			12px 12px hsl(0, 100%,  55%),
+			13px 13px hsl(0, 100%,  60%),
+			14px 14px hsl(0, 100%,  65%),
+			15px 15px hsl(0, 100%,  70%),
+			16px 16px hsl(0, 100%,  75%),
+			17px 17px hsl(0, 100%,  80%);
+		}
+	</style>
+</head>
+<body>
+
+	<div class="shadow">ABC</div>
+
+</body>
+</html>
