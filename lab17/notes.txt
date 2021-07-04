@@ -1,0 +1,6 @@
+
+	Storage: 200GB (HDD, SSD, Flash Drive,...)
+
+	RAM: 8GB
+
+	CPU: 3.4GHz
