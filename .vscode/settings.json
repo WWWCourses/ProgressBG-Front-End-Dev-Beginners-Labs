@@ -21,4 +21,5 @@
     "html.autoClosingTags": false,
     "typescript.tsc.autoDetect": "off",
     "npm.autoDetect": "off",
+    "liveServer.settings.CustomBrowser": "chrome",
 }
