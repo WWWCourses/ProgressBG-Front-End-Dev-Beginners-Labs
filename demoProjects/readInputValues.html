@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>readInputValues </title>
+</head>
+<body>
+	<div><label>enter your name: <input type="text"></label></div>
+	<div><label>enter your age:  <input type="number"></label></div>
+	<button>OK</button>
+
+	<script>
+		let userNameInput = document.querySelector('[type="text"]');
+		let userNameAge = document.querySelector('[type="number"]');
+		let btnOk = document.querySelector('button');
+
+		btnOk.addEventListener('click', function() {
+			let userName = userNameInput.value;
+			let userAge = userNameAge.value;
+
+			console.log(userName);
+			console.log(userAge);
+
+
+
+		})
+
+
+	</script>
+</body>
+</html>

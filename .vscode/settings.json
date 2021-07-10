@@ -1,17 +1,5 @@
 {
-    "spellright.language": [
-        "Bulgarian",
-        "English (American)"
-    ],
-    // "spellright.documentTypes": [
-    //     "markdown",
-    //     "latex"
-    // ],
-
-    "liveshare.shareExternalFiles": false,
-    "liveshare.autoShareServers": true,
-    "liveshare.focusBehavior":"prompt",
-    // "liveshare.nameTagVisibility": "Activity",
-    // "liveshare.allowGuestTaskControl": true,
-    // "liveshare.languages.allowGuestCommandControl": true
+	"workbench.colorTheme": "Solarized Light"
 }
+
+

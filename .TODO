@@ -1,0 +1,2 @@
+Update slides with false calc example:
+console.log( 3.00000000000009 + 3.01);
