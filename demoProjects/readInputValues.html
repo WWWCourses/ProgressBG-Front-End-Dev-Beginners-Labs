@@ -18,11 +18,18 @@
 		btnOk.addEventListener('click', function() {
 			let userName = userNameInput.value;
 			let userAge = userNameAge.value;
+			userAge = userAge*1;
 
-			console.log(userName);
-			console.log(userAge);
+			// console.log(userName);
+			// console.log(userAge);
 
+			console.log( typeof userAge );
+			//
+			console.log( userAge + 100 );
 
+			// if( typeof userAge === "number"){
+			// 	console.log(userAge + 100);
+			// }
 
 		})
 
