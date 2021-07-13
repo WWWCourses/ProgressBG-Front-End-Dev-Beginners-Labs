@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Forms Intro</title>
+	<style>
+		label{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<h1>Forms Intro</h1>
+
+	<form action="/cgi-bin/registration.js" method="get">
+		<label>
+			<input
+				type="text"
+				name="userName"
+				autocomplete="off"
+				autofocus
+				placeholder="please, enter your name"
+				required
+			></label>
+		<label>password: <input type="password" name="pass"></label>
+
+		<em>gender:</em>
+			male: <input type="radio" name="gender">
+			female: <input type="radio" name="gender">
+		<button>Send</button>
+
+	</form>
+
+	<a href="./back-end/registration.js">registration.js</a>
+</body>
+</html>
+<!--
+
+	?userName=ада&парола=1234
+
+http://127.0.0.1:5500/cgi-bin/registration.js?userName=%D0%B0%D0%B4%D0%B0&%D0%BF%D0%B0%D1%80%D0%BE%D0%BB%D0%B0=1234
+USERS:
+
+id	| name	| pass  |gender
+1 	| pesho | 1234  |m
+1 	| ada 	| 1234  |f
