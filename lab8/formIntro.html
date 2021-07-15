@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Forms Intro</title>
+	<style>
+
+	</style>
+</head>
+<body>
+	<h1>Forms Intro</h1>
+
+
+
+	<form action="/cgi-bin/registration.js" method="get" id="retgistrationForm">
+		<fieldset><legend>User Data</legend>
+			<label>
+				<input
+					type="text"
+					name="userName"
+					autocomplete="off"
+					autofocus
+					size="5"
+					placeholder="please, enter your name"
+
+				></label>
+			<div><label>password: <input type="password" name="pass"></label></div>
+			<div><label>user age: <input type="number"></label></div>
+			<div><label>birth date: <input type="date" name="birthDate" id=""></label></div>
+			<div><label>tel: <input type="tel" name="tel"></label></div>
+		</fieldset>
+
+		<fieldset><legend>gender</legend>
+			<label>male: <input type="radio" name="gender" value="m"></label>
+			<label for="female">female:</label>
+			<input id="female" type="radio" name="gender" value="f">
+		</fieldset>
+
+		<fieldset>
+			<legend>color:</legend>
+			<label for="test">red:</label> <input type="checkbox" name="color" value="red">
+			blue: <input type="checkbox" name="color" value="blue">
+			green: <input type="checkbox" name="color" value="green" id="test">
+		</fieldset>
+
+		<fieldset>
+			<legend>Населено място</legend>
+			<select name="town" id="" multiple>
+				<option value="">ENTER SOMETHING!!!!</option>
+				<option value="sofia">София</option>
+				<optgroup label="A">
+					<option value="aidemir">Айдемир</option>
+					<option value="ааааа">Аааааааа</option>
+				</optgroup>
+			</select>
+		</fieldset>
+		<fieldset>
+			<legend>Upload CV</legend>
+			<input type="file">
+		</fieldset>
+		<button type="submit">Send</button>
+		<button type="reset">Clear</button>
+		<button type="button">Click me</button>
+	</form>
+
+
+	<a href="./back-end/registration.js">registration.js</a>
+</body>
+</html>
+<!--
+
+
+<!-- USERS:
+
+id	| name	| pass  |gender | color		| town
+1 	| pesho | 1234  |m 		| red, green| sofia
+1 	| ada 	| 1234  |f 		| blue -->
