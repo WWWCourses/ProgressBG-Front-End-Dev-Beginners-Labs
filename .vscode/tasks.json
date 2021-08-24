@@ -23,26 +23,6 @@
                 "echo": false,
                 "showReuseMessage": false
             }
-        },
-        {
-            "label": "Open in Chrome (standard)",
-            "group": "build",
-            "type": "shell",
-            "command": "/usr/bin/google-chrome",
-            "args": [
-                "${file}"
-            ],
-            "problemMatcher": []
-        },
-        {
-            "label": "Echo vscode VARS",
-            "type": "shell",
-            "command": "echo",
-            "args": [
-                "\n WORKSPACEFOLDER: ${workspaceFolder}",
-                "\n WORKSPACEROOT: ${workspaceRoot}",
-                "\n CWD: ${cwd}",
-            ]
         }
     ]
 }
