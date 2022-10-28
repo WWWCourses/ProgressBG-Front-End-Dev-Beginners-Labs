@@ -1,0 +1,9 @@
+.*
+!.gitignore
+
+*~
+tmp/
+**/config/**
+
+nohup.out
+

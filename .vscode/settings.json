@@ -1,0 +1,14 @@
+{
+	"workbench.colorTheme": "Solarized Light",
+	"spellright.language": [
+		"Bulgarian",
+		"English (American)"
+	],
+	"spellright.documentTypes": [
+		"markdown",
+		"latex",
+		"plaintext",
+		"python"
+	],
+	"liveServer.settings.port": 5502
+}
