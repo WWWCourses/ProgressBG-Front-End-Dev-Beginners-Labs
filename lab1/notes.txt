@@ -1,0 +1,16 @@
+UI/UX (User Interface/User Experience)
+
+
+Open Source: uploaded in Github/Gitlab
+
+Agile:  (small) step by step
+
+Multi-word Conventions:
+
+my_first_page // snake case
+myFirstPage // (lower) cammel case
+MyFirstPage // (upper) cammel case
+
+
+Code (Text) Editors => VSCode
+IDE = Integrated Development Environment Visual Studo
