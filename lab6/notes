@@ -1,0 +1,40 @@
+ISP
+https://www.abv.bg/
+
+
+Refresh Page:
+CTRL+R | F5 | click => cach	 it 1 den
+CTRL+F5             => make new request
+
+
+What live server (vscode Go Live button) do:
+1. Start web server with root mysite.com
+2. Start Chrome
+3. Put address of current file
+3.1 Attach JS code to current file
+4. Chrome request
+5. Web Servers send response
+
+/* ------------------------------------ . ----------------------------------- */
+live-server --host=192.168.1.2 mysite.com/
+
+
+http://192.168.1.2:9999/front-end/index.html
+
+Reguest Message <=> Response Message
+
+
+with VSCode "Go Live" server
+http://127.0.0.1:5502/lab6/mysite.com/front-end/index.html
+
+/* ----------------------------------- URL ---------------------------------- */
+
+
+HTTP: HyperText Transfer Protocol
+
+https://progressbg.net/
+http://192.168.1.2:9999/front-end/index.html
+
+file:///media/nemsys/data/projects/courses/ProgressBG/ProgressBG-Front-End-Dev/Labs/lab6/mysite.com/front-end/index.html
+
+https://www.abv.bg/
