@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Forms</title>
+</head>
+<body>
+	<h1>Forms</h1>
+	<form action="/back-end/registration.py" method="GET">
+		<hr>Sofia
+		<label>town: <input type="text"></label>
+		<hr>
+		<fieldset>
+			<legend>Personal Information </legend>
+			<div><label>name: <input type="text"></label></div>
+			<div><label>address: <input type="text"></label></div>
+		</fieldset>
+		<hr>
+		<label>user name: <input type="text" name="userName1"></label>
+		<hr>
+		<input type="submit" name="" value="Изпрати">
+		<input type="reset" name="" value="Изчисти">
+		<input type="button" name="" value="Click me">
+		<hr>
+		<button>Изпрати</button>
+		<button type="reset">Изчисти</button>
+		<button type="button">Click me</button>
+		<hr>
+		<input type="hidden" name="host" value="mail01.abv.bg">
+		<hr>
+		<div>gender:
+			<label for="male">male:</label><input id="male" type="radio" name="gender" value="0">
+			<label>female: <input type="radio" name="gender" value="1"></label>
+			other: <input type="radio" name="gender" value="2">
+		</div>
+		<hr>
+		fav. colors:
+		<label>red: <input type="checkbox" name="colors" value="red"></label>
+		<label>blue: <input type="checkbox" name="colors" value="blue"></label>
+		<label>green: <input type="checkbox" name="colors" value="green"></label>
+		<hr>
+		<div><input
+				type="text"
+				name="userName"
+				autocomplete="off"
+				autofocus
+				placeholder="user name"
+				></div>
+		<div>password: <input type="password" name="passWord"></div>
+		<h<r>
+		<div>Tel: <input type="tel"></div>
+		<div>Pass type: <input type="password"></div>
+		<div>Checkbox: <input type="checkbox"></div>
+		<div>Radio: <input type="radio"></div>
+		<div>File: <input type="file"></div>
+		<div>Color: <input type="color"></div>
+		<div>Submit button: <input type="submit"></div>
+		<div>Reset button: <input type="reset"></div>
+
+		<button>Send</button>
+	</form>
+	<!-- http://127.0.0.1:5502/back-end/registration.py
+	?userName=Ada&passWord=123 -->
+
+
+	<!-- http://127.0.0.1:5502/back-end/registration.py?
+	male=on&
+	female=on&
+	other=on&userName=&passWord=
+
+
+	http://127.0.0.1:5502/back-end/registration.py?
+	gender=on
+	userName=
+	passWord= -->
+
+	<!-- http://127.0.0.1:5502/back-end/registration.py?
+	host=mail01.abv.bg&gender=2&userName=ada&passWord= -->
+</body>
+</html>
