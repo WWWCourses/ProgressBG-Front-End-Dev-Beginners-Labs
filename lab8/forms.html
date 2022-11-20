@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Forms</title>
+</head>
+<body>
+	<form action="/back-end/form.py">
+		<fieldset>
+			<legend>Personal Data</legend>
+			<label>user name: <input type="text" name="userName"></label>
+			<label for="pass">password:</label>
+			<input type="password" id="pass" name="pass">
+			<select name="country" id="">
+				<optgroup label="A">
+					<option value="1">A1</option>
+					<option value="2">A2</option>
+					<option value="3">A3</option>
+				</optgroup>
+				<optgroup label="B">
+					<option value="1">B1</option>
+					<option value="2">B2</option>
+					<option value="3">B3</option>
+				</optgroup>
+			</select>
+			<button type="submit">Send</button>
+		</fieldset>
+
+		<!-- http://127.0.0.1:5502/back-end/form.py? -->
+		userName=ada&pass=123&country=1
+	</form>
+</body>
+</html>
