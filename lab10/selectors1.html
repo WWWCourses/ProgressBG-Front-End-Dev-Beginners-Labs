@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Selectors 1</title>
+	<style>
+		/* sel2+sel1 */
+		header>p+p{
+			background-color:lightgreen;
+		}
+		img{
+			height: 100px;
+		}
+
+		[title="pixabay"]{
+			border:5px solid red;
+		}
+		.title{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<p class="test">Paragraph 1</p>
+	<p>Paragraph 1</p>
+	<img src="https://cdn.pixabay.com/photo/2022/11/08/20/20/building-7579247_960_720.jpg" title="pixabay">
+	<img src="https://cdn.pixabay.com/photo/2022/11/08/20/20/building-7579247_960_720.jpg" title="pixabay">
+	<hr>
+	<img src="../images/business-man.png" title="business">
+	<img src="../images/business-man.png" title="business">
+
+</body>
+</html>
