@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BoxModel</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+	<style>
+		/* not a best practivce */
+		*{
+			box-sizing: border-box;
+		}
+		html{
+			background-color: white;
+			/* border:10px solid orange; */
+		}
+		body{
+			/* width: 80%;
+			height: 500px;
+			margin:0 auto; */
+			/* padding: 0 0 0 20px; */
+			/* border:5px solid blue;
+			background-color: green;
+			font-size: 20px; */
+
+		}
+		a{
+			text-decoration: none;
+		}
+		.container{
+			width: 500px;
+			/* height: 300px; */
+			/* min-height: 200px; */
+			/* padding:10px 20px; */
+
+			margin:auto;
+
+			margin: 0 auto;
+
+			text-align: justify;
+			border: 20px solid red;
+			/* overflow: scroll; */
+		}
+		.container p, .container>a, .container>img,.container>input{
+			width: 120px;
+			height: 50px;
+			margin:50px;
+			padding: 10px;
+			background-color:aquamarine;
+			border:10px solid green;
+		}
+		span{
+			color: red;
+		}
+		.b-o{
+			border:20px solid orange;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="container">
+		<div class="b-o"><p id="p1">Para1</p></div>
+		<p>Para2</p>
+	</div>
+	<hr>
+	<div class="container">
+		<a href="#">Li<span>n</span>k1</a>
+		<a href="#">Link2</a>
+	</div>
+	<hr>
+	<div class="container">
+		<input type="checkbox">
+		<input type="checkbox">
+	</div>
+	<hr>
+	<div class="container">
+		<img src="../images/checkmate-1511866_640.jpg" alt="checkmate-1511866_640.jpg" >
+		<img src="../images/checkmate-1511866_640.jpg" alt="checkmate-1511866_640.jpg" >
+	</div>
+
+</body>
+</html>

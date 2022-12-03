@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MarginColapse</title>
+	<style>
+		*{
+			box-sizing:border-box;
+		}
+		body{
+			border:10px solid blue;
+		}
+		p{
+			border:5px solid red;
+		}
+		#p1{
+			margin-top:50px;
+			margin-bottom:100px;
+		}
+		#p2{
+			margin-top:50px;
+			margin-bottom:20px;
+		}
+		.parent{
+			border-top:0.1px solid red;
+			background-color:red;
+		}
+		.child{
+			width: 200px;
+			margin-top: 50px;
+			/* border:0.1px solid green; */
+			background-color:green;
+		}
+	</style>
+</head>
+<body>
+	<!-- <h2>Adjecent Siblings Vertical Margin Collapse</h2>
+	<p id="p1">Paragraph 1</p>
+	<p id="p2">Paragraph 2</p> -->
+
+	<h2>Child-Parent Vertical Margin Collapse</h2>
+	<div class="parent">
+		<div class="child">Child</div>
+	</div>
+</body>
+</html>
