@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>horisontalMenu </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			/* font-size: 30px; */
+		}
+		nav{
+			width: 80%;
+			margin: 0 auto;
+			border:10px solid green;
+		}
+		nav li{
+			display: inline-block;
+			width:33.3%;
+			border:1px solid gray;
+			background-color:red;
+			text-align: center;
+			vertical-align: top;
+		}
+		nav li+li{
+			margin-left: -0.32em;
+		}
+		a{
+			display: block;
+			padding: 5px;
+			height: 60px;
+			/* width: 100%; */
+			background-color:orange;
+		}
+		#test{
+			font-size: 2em;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+		  <li id="test"><a href="#">Products</a></li>
+		  <li><a href="#">About</a></li>
+		  <li><a href="#">Contacts</a></li>
+		</ul>
+	</nav>
+	<hr>
+	<main>
+		<ul>
+			<li>facebook</li>
+			<li>twitter</li>
+		</ul>
+	</main>
+</body>
+</html>
