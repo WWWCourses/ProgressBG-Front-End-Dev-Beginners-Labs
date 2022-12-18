@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>horisontalMenu </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			/* font-size: 30px; */
+		}
+		nav{
+			float: right;
+			width: 80%;
+			margin: 0 auto;
+			border:10px solid green;
+		}
+		nav ul{
+			/* display: flex; */
+		}
+		nav li{
+			/* flex:0 0 33.3%; */
+
+			float: left;
+			width: 33%;
+
+			/* display: inline-block;
+			vertical-align:top; */
+
+			border:5px solid gray;
+			background-color:red;
+			text-align: center;
+		}
+		a{
+			display: block;
+			padding: 5px;
+			height: 60px;
+			/* width: 100%; */
+			background-color:orange;
+		}
+		#test{
+			font-size: 2em;
+		}
+		.clear{
+			clear:both;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+		  <li id="test"><a href="#">Products</a></li>
+		  <li><a href="#">About</a></li>
+		  <li><a href="#">Contacts</a></li>
+		</ul>
+		<div class="clear"></div>
+	</nav>
+	<div class="clear"></div>
+	<hr>
+	<main>
+		<p>@@@@@@@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est molestias labore fugiat consectetur porro, natus ipsum accusantium rem mollitia blanditiis eveniet provident commodi veritatis id asperiores praesentium suscipit, distinctio magni.</p>
+		<ul>
+			<li>facebook</li>
+			<li>twitter</li>
+		</ul>
+	</main>
+</body>
+</html>

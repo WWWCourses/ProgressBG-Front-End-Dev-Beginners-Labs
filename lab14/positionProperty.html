@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>positionProperty </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		main{
+			font-size: 3em;
+		}
+		.wrapper{
+			position: relative;
+			width: 50%;
+			height: 10em;
+			border:5px solid gray;
+		}
+		.red{
+			position: absolute;
+			bottom:0;
+			right: 0;
+			width: 50%;
+			height: 50%;
+			border:5px solid red;
+			background-color:red;
+		}
+		.blue{
+			width: 50%;
+			height: 50%;
+			border:5px solid blue;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="red"></div>
+		<div class="blue"></div>
+	</div>
+	<main>
+		<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, est ad libero dolorum molestias illum facilis dolorem minima repudiandae eveniet itaque optio harum, exercitationem tempore facere eum non, voluptatibus deleniti!</p>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ut architecto incidunt dolorem odit sapiente magni nesciunt culpa corporis veniam vero sequi labore esse nostrum quia sed, dolor voluptates placeat.</p>
+	</main>
+</body>
+</html>
