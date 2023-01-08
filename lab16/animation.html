@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Animation</title>
+	<style>
+		.move-wrapper{
+			position: relative;
+			height: 200px;
+			background-color:#ccc;
+		}
+		/* State A */
+		.box{
+			position: absolute;
+			left:0;top:0;
+			width: 200px;
+			height: 200px;
+			background-color: #F00;
+			animation: move 2s 3, color 100ms infinite;
+
+
+		}
+		@keyframes move {
+			0%, 100%{
+				left:0;
+			}
+			50%{
+				left:calc(100% - 200px);
+			}
+		}
+		@keyframes color {
+			0%, 100%{
+				background-color: #F00;
+			}
+			50%{
+				background-color: #FF0;
+			}
+		}
+
+		/* State B */
+		.move-wrapper:hover>.box{
+
+			background-color: #0F0;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="move-wrapper">
+		<div class="box"></div>
+	</div>
+
+</body>
+</html>
