@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>hoverUseCase </title>
+	<style>
+		.parent{
+			width: 400px;
+			height: 400px;
+			background-color:red;
+		}
+		.child{
+			width: 50%;
+			height: 50%;
+			background-color:blue;
+		}
+		/* when parent is hover then select child */
+		/* selctor1>selector2 */
+		.parent:hover>.child{
+			background-color:orange;
+		}
+
+		/* clear list defaults */
+		li{
+			list-style-type: none;
+		}
+		ul{
+			padding: 0;
+		}
+
+		.main>li{
+			border:2px solid orange;
+			width: 30%;
+			float: left;;
+		}
+		.submenu{
+			display: none;
+		}
+		.main>li:hover>.submenu{
+			display: block;
+		}
+		.clear{
+			clear:both
+		}
+
+	</style>
+</head>
+<body>
+	<div class="parent">
+		<div class="child"></div>
+	</div>
+
+	<ul class="main">
+		<li>Item 1
+			<ul class="submenu">
+				<li>SubItem 1.1</li>
+				<li>SubItem 1.2</li>
+				<li>SubItem 1.3</li>
+			</ul>
+		</li>
+		<li>Item 2
+			<ul class="submenu">
+				<li>SubItem 2.1</li>
+				<li>SubItem 2.2</li>
+			</ul>
+		</li>
+		<div class="clear"></div>
+	</ul>
+
+
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate obcaecati quod accusantium ad omnis, nihil temporibus? Quae pariatur corrupti iste expedita voluptatem, enim necessitatibus accusamus, eveniet distinctio asperiores nostrum nisi.</p>
+</body>
+</html>

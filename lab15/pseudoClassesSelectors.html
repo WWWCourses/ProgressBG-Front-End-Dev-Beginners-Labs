@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>pseudo classes</title>
+	<style>
+		a{
+			font-size: 2em;
+			text-decoration: none;
+			/* border:2px solid gray; */
+		}
+
+		/* selector:pseudoclass{
+			prop:value;
+		} */
+
+
+		/* unvisited links */
+		a:link{
+			color:green;
+			text-decoration:underline red dotted;
+			border:2px solid orange;
+		}
+		/* visited links */
+		a:visited{
+			color:gray;
+			text-decoration:underline green solid;
+		}
+		a:hover{
+			color: red;
+		}
+		a:active{
+			font-size: 2em;
+			color: aqua;
+		}
+
+
+		.red{
+			width: 5em;
+			height: 5em;
+			background-color: red;
+		}
+		.red:hover{
+			background-color: blue;
+		}
+		.red:active{
+			width: 10em;
+			height: 10em;
+			background-color:green;
+		}
+
+		input{
+
+		}
+		input:focus{
+			background-color:#ddd;
+			border:1px solid orange;
+			outline: none;
+		}
+	</style>
+</head>
+<body>
+	<a href="https://progressbg.net/" target="_blank">progressbg (visited)</a>
+	<a href="#123" target="_blank">unvisited</a>
+	<div class="red"></div>
+	<hr>
+	<label>user name: <input type="text" tabindex="1"></label>
+	<label>user name: <input type="text" tabindex="3"></label>
+	<label>pass: <input type="password" tabindex="2"></label>
+	<button tabindex="4">submit</button>
+</body>
+</html>

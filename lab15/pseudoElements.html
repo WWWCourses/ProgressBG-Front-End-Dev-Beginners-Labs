@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>pseudoElements </title>
+	<style>
+		p::first-line{
+			font-weight: bold;
+		}
+		p::first-letter{
+			/* font-size: 3em; */
+		}
+		p::selection{
+			background-color:red;
+		}
+		span.quote::before{
+			content:'\2602';
+			color:red;
+		}
+		span.quote::after{
+			content:'\2603';
+			color:green;
+		}
+
+	</style>
+</head>
+<body>
+	<p>Lorem <span class="quote">ipsum dolor</span> sit amet consectetur adipisicing elit.	Eos eius quia, porro, nesciunt, eaque ipsa dicta sed at ducimus <span class="quote">deleniti? Eligendi </span>	voluptatem repudiandae laudantium alias consequatur harum!</p>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>checkedDemo </title>
+	<style>
+		input[type="radio"]{
+			display: none;
+			background-color:red
+		}
+		label>div{
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			border:1px solid black;
+			border-radius: 100%;
+			background-color:gray;
+		}
+		label>div:hover{
+			background-color:yellow;
+		}
+		/* select 'label>div' when input:checked */
+		input:checked~.radio{
+			background-color:red;
+		}
+	</style>
+</head>
+<body>
+	<form action="#">
+		<label>
+			<span>male:</span>
+			<input type="radio" name="gender" value="male">
+			<div class="radio"></div>
+		</label>
+		<label>
+			<span>female:</span>
+			<input type="radio" name="gender" value="female">
+			<div class="radio"></div>
+		</label>
+		<button>Send</button>
+	</form>
+</body>
+</html>
