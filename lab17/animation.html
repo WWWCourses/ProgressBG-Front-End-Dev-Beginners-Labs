@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>animation </title>
+	<style>
+		.box {
+			width: 5em;
+			height: 5em;
+			background: red;
+			animation: move 2s 1, rotate 1s;
+		}
+		@keyframes move {
+			/*you can add as many keyframes as you need*/
+			0% {
+				margin-left:0px;
+			}
+			50% {
+				margin-left:300px;
+			}
+			100% {
+				margin-left:0px;
+			}
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+</html>

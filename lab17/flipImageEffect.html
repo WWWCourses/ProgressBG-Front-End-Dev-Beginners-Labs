@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>flipImageEffect </title>
+	<style>
+		.flip-wrapper{
+			position: relative;
+			width: 200px;
+			height: 200px;
+		}
+		.flip-wrapper>img{
+			position: absolute;
+			left:0;right: 0;
+			bottom:0; top:0;
+			display: block;
+			width: 100%;
+			height: 100%;
+			border:5px solid #F00;
+		}
+		.flip-wrapper::after{
+			content:"hello";
+			display: block;
+			position: absolute;
+			left:0;right: 0;
+			bottom:0; top:0;
+			background-color:#666;
+			border:5px solid #0F0;
+			z-index:-1;
+		}
+		/*TODO:make it work*/
+		.flip-wrapper:hover>.flip-wrapper::after{
+			z-index: 100;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="flip-wrapper">
+
+		<img src="../images/business-man.png" alt="business-man">
+		<div>hello</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>cssAnimations </title>
+	<style>
+
+		.ball-wrapper{
+			position: relative;
+			background-color: #999;
+			height: 220px;
+		}
+		/* State A */
+		.ball{
+			position: absolute;
+			left:50px;top:0px;
+
+			background: radial-gradient(circle at center, #87CEEB 0%, #c0dceeb9 100%);
+			border:5px solid #333;
+			border-radius: 50%;
+			width: 100px;
+			height: 100px;
+			transition-duration: 3s;
+			transition-property: left, top;
+
+		}
+		/* State B */
+		.ball-wrapper:hover>.ball{
+			/* left:calc(100vw - 110px); */
+			left:250px ;top:200px;
+			width: 400px;
+			background:#F00;
+
+		}
+
+		/* State A */
+		.fade-out{
+			font-size: 5em;
+			font-weight: bold;
+			opacity: 1;
+
+			transition-duration: 3s;
+		}
+		/* State B */
+		.fade-out:hover{
+			opacity: 0;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="fade-out">Hellow</div>
+	<div class="ball-wrapper">
+		<div class="ball"></div>
+	</div>
+</body>
+</html>

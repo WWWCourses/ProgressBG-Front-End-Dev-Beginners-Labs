@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>envelopeEffect</title>
+	<style>
+		.box{
+			position: relative;
+			width: 10em;
+			height: 8em;
+			margin: 3em;
+			background-color:#fff;
+			border:5px solid #000;
+		}
+		.box::after{
+			content:"";
+			display: block;
+			position: absolute;
+			left:0; bottom: -5px;
+			width: 3em;
+			height: 1em;
+			transform: rotate(-5deg);
+			box-shadow: 0 10px 6px -6px #777;
+			z-index: -1;
+		}
+
+		.effect1{
+			-webkit-box-shadow: 0 10px 6px -6px #777;
+			-o-box-shadow: 0 10px 6px -6px #777;
+			-moz-box-shadow: 0 10px 6px -6px #777;
+			box-shadow: 0 10px 6px -6px #777;
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+</html>
