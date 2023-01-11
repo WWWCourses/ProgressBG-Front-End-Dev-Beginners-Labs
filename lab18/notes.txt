@@ -1,0 +1,9 @@
+Compilator:
+	C, C++, Java,C#, ...
+	First read all the program => then generate machine code, execute it.
+Interpretator:
+	Python, JavaScript (Node, Browser JS Engine), Ruby, ...
+	Read instruction  => then execute it
+
+
+Error
