@@ -1,0 +1,4 @@
+Compilator:
+	C, C++, Java, C#
+Interpreter:
+	JavaScript, Python, PHP, Ruby
