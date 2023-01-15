@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+		.output{
+			border: 2px solid red;
+			height: 4em;
+		}
+	</style>
+</head>
+<body>
+	<div><label>x:<input id="x" type="number"></label></div>
+	<div><label>y:<input id="y" type="number"></label></div>
+	<button>+</button>
+	<div class="output"></div>
+
+	<script>
+		let xNode = document.querySelector('#x');
+		let yNode = document.querySelector('#y');
+		let button = document.querySelector('button');
+		let output = document.querySelector('.output');
+
+		button.addEventListener('click',function(e) {
+			let x = +xNode.value;
+			console.log(typeof(x));
+			let y = yNode.value ;
+			output.innerHTML = x+y;
+		} )
+
+	</script>
+</body>
+</html>
