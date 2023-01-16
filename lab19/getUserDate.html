@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>getUserDate </title>
+</head>
+<body>
+	<label>x: <input type="number" id="x"></label>
+	<label>y: <input type="number" id="y"></label>
+	<button>+</button>
+	<hr>
+	<div class="output"></div>
+
+	<script>
+		let xInput = document.querySelector('#x');
+		let yInput = document.querySelector('#y');
+		let btn = document.querySelector('button');
+		let output = document.querySelector('.output');
+
+		btn.addEventListener('click', function () {
+			let x = xInput.value * 1;
+			let y = yInput.value * 1;
+
+			let res = x+y;
+			output.innerHTML = res;
+			console.log( res );
+
+		})
+	</script>
+</body>
+</html>
