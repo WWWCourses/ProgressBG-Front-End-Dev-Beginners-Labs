@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>index </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<script src="./lib.js"></script>
+</head>
+<body>
+	<script src="./scope.js"></script>
+	<script>
+		console.log( add(2,3) );
+		console.log( mult(5,10) );
+		console.log( Math );
+	</script>
+</body>
+</html>
+<!--
+GLOBAL:
+	document: 0x123:
+	Math:     0x234:
+			....
+		   x: 0x765: 5 -->
