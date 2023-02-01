@@ -1,0 +1,8 @@
+class-based OOP 		=> C++, Java, C#
+prototype based OOP => JavaScript
+
+
+JavaScript =>
+	prototype based OOP
+	functional programming (Lisp)
+	procedural programming
