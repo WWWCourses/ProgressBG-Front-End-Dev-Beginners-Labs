@@ -1,0 +1,7 @@
+Procedural programming (JavaScript, C, )
+Functional programming (Lisp, JavaScript)
+Object-oriented programming:
+	Class-based OOP (C++, Java, C#)
+	Prototype-based OOP (JavaScript)
+
+
