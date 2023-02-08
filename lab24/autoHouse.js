@@ -78,8 +78,6 @@ console.log(`${carWithMaxSpeed.model} has max speed of: ${carWithMaxSpeed.speed}
 
 
 
-
-
 // let x = 2;
 // let y = 5;
 // let z = 6;
