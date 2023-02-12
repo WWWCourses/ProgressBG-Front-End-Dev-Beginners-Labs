@@ -28,14 +28,44 @@
 // test.childNodes[0].data = '#####'
 
 // Example
-console.dir(divTest.childNodes);
-for (let i = 0; i < divTest.childNodes.length; i++) {
-	const node = divTest.childNodes[i];
+// console.dir(divTest.childNodes);
+// for (let i = 0; i < divTest.childNodes.length; i++) {
+// 	const node = divTest.childNodes[i];
 
-	if(node.nodeType!==1){
-		// TODO: why comment is not filtered
-		console.log(node.nodeType, node.nodeName);
-		divTest.removeChild(node);
-	}
+// 	if(node.nodeType!==1){
+// 		// TODO: why comment is not filtered
+// 		console.log(node.nodeType, node.nodeName);
+// 		divTest.removeChild(node);
+// 	}
+// }
 
-}
+
+
+/* --------------------------- Get Element Objects -------------------------- */
+// let divTestNode = document.getElementById('divTest');
+// divTestNode.innerHTML = '@@@@@@@@@@@@@';
+
+
+// let divs = document.getElementsByClassName('red');
+// console.dir(divs);
+// for (let i = 0; i < divs.length; i++) {
+// 	const div = divs[i];
+// 	div.innerHTML = '############';
+// }
+
+
+
+// const divTest = document.getElementById('divTest');
+// const divTest = document.querySelector('#divTest');
+// const span = divTest.children[0];
+
+// const spans = document.getElementsByTagName('span');
+// const spa
+
+// const span = document.querySelector('#divTest>span');
+// const span = document.querySelectorAll('#divTest>span')[0];
+// console.dir(span);
+// span.innerHTML = '@@@@@';
+
+const userNameInput= document.querySelector('[type="text"]');
+console.log(userNameInput.value);

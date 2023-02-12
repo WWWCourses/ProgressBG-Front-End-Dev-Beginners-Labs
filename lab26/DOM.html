@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>index </title>
+	<style>
+		#divTest>span{
+			background-color: red;
+		}
+		.red{
+			border:2px solid red;
+		}
+	</style>
+</head>
+<body>
+	<label>userName:
+		<input type="text">
+	</label>
+	<label>age:
+		<input type="number">
+	</label>
+	<div>Do not change me</div>
+	<div id="divTest" class="red">
+		<span>span in red</span>
+	</div>
+	<span>not in red</span>
+	<div class="red">other red</div>
+	<script src="./DOM.js"></script>
+</body>
+</html>
+
+<!--
+div#test = {
+	childNodes : [
+		{
+			nodeType: 3
+			data: '\n\t'
+		},
+	]
+} -->

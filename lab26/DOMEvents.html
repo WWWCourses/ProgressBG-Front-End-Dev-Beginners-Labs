@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DOMEvents </title>
+	<style>
+		.output{
+			width: 10em;
+			height: 3em;
+			border:2px solid red;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<label>userName:
+			<input type="text">
+		</label>
+		<label>age:
+			<input type="number">
+		</label>
+		<button id="btnOK" onclick="onClickHandler()">OK</button>
+	</div>
+	<div class="output"></div>
+
+	<script>
+		const userNameInput = document.querySelector('[type="text"]');
+		const btnOK = document.querySelector('#btnOk');
+		const output = document.querySelector('.output');
+
+		// when user click on the btnOK:
+		function onClickHandler() {
+			const userNameValue = userNameInput.value;
+			output.innerHTML = userNameValue;
+		}
+
+		// onClickHandler();
+
+	</script>
+</body>
+</html>
