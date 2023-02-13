@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>events </title
+</head>
+<body onload="console.log(`Loaded`);">
+	<label>x : <input type="number" onkeydown="someHandler(1)"; onkeyup="someHandler(2)"></label>
+	<button onclick="clickHandler()">OK</button>
+	<img src="" alt="">
+	<script>
+		const input = document.querySelector('[type="number"]');
+		function clickHandler() {
+			console.dir(input.value);
+		};
+
+		function someHandler(x) {
+			console.log(`Fired!: ${x}`);
+		}
+
+
+
+
+		// clickHandler();
+
+		// console.log(input);
+	</script>
+</body>
+</html>

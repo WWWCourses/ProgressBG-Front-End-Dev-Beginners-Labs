@@ -1,0 +1,2 @@
+// let arr = [1,3,2,4,3,2,1,3];
+// remove all elements which are !==1

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DOM </title>
+	<style>
+		ul>li:nth-child(1){
+			background-color: red;
+		}
+
+
+	</style>
+</head>
+<body>
+	<ul>
+		<li>Ietm 1</li>
+		<li>Item 2</li>
+		<li>Item 3</li>
+	</ul>
+	<script>
+		// const ul = document.getElementsByTagName('ul')[0];
+		// ul.children[0].innerHTML='<b>New text</b>';
+		// const element = document.querySelector('ul>li:nth-child(1)');
+		// element.innerHTML= '<b>New text</b>';
+
+		const ul = document.querySelectorAll('ul');
+		console.dir(ul);
+
+		const ul2 = document.getElementsByTagName('ul');
+		console.dir(ul2);
+
+	</script>
+</body>
+</html>
+
+<!--
+window = {
+	document: {
+		doctype: 'HTML5',
+		head: {},
+		body:{
+			children: [
+				{
+					nodeName: 'div',
+					attributes:[
+						{
+							id:''
+						},
+						{
+							class: 'red'
+						}
+					],
+					innerHTML: 'Div',
+					parentElement:'body',
+					nextSibling: span
+				},
+				{
+
+				}
+			]
+		}
+
+	}
+} -->
