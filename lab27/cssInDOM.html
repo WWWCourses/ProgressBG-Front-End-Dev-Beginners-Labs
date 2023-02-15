@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>cssInDOM </title>
+	<style>
+		.red{
+			width:10em;
+			height: 10em;
+			background-color: red;
+		}
+		.changed{
+			background-color: blue;
+			width :15em;
+			height:15em;
+			transform: rotate(45deg)
+		}
+		.big{
+			width :15em;
+			height:15em;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="red">red</div>
+	<button>Change div</button>
+	<script>
+		const div = document.querySelector('.red');
+		console.dir(div.style);
+
+		const divComputedStyle = window.getComputedStyle( div );
+		console.dir(divComputedStyle);
+
+		const btn = document.querySelector('button');
+		btn.addEventListener('click', function(e) {
+			////// using style object directly
+			// div.style.backgroundColor = 'blue';
+			// div.style.width = '15em';
+			// div.style.height = '15em';
+			// div.style.transform = 'rotate(45deg)'
+
+
+			///// change using className
+			// div.className = 'big';
+
+			///// change using classList
+			// div.classList.add('big')
+			div.classList.toggle('big')
+
+		})
+	</script>
+</body>
+</html>

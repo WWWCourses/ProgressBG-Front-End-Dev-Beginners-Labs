@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>createListItemsOnClick </title>
+</head>
+<body>
+	<label><input type="text" placeholder="task title"></label>
+	<button class="btnAdd">Add</button>
+	<hr>
+	<h2>Current Tasks</h2>
+	<ul class="list">
+
+	</ul>
+
+	<script>
+		// cache DOM:
+		let nodes = {
+			input: document.querySelector('[type="text"]'),
+			btnAdd: document.querySelector('.btnAdd'),
+			ul: document.querySelector('.list')
+		};
+
+		nodes.btnAdd.addEventListener('click', function (e) {
+			const inputValue = nodes.input.value;
+
+			// create li node:
+			const li = document.createElement('li');
+			li.innerText = inputValue;
+
+			// get current first li:
+			const firstLI = nodes.ul.children[0];
+
+			nodes.ul.insertBefore(li, firstLI)
+		})
+	</script>
+</body>
+</html>

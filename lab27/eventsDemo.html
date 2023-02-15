@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>eventsDemo </title>
+</head>
+<body>
+	<label>select bg color: <input id="colorInput" type="color"></label>
+	<button id="btnGreet">Greet</button>
+
+	<script>
+		function changeBgColor(color) {
+			document.body.style.backgroundColor = color
+		}
+
+		function greet(userName) {
+			return function (e) {
+				console.log(`Greet is called`);
+				btnGreet.innerHTML = `Hello, ${userName}`
+			}
+		}
+
+		const colorInput = document.querySelector('#colorInput');
+		const btnGreet = document.querySelector('#btnGreet');
+
+
+		colorInput.addEventListener('change', function(e) {
+			changeBgColor(colorInput.value)
+		})
+
+		btnGreet.addEventListener('click', greet('Maria') )
+
+	</script>
+</body>
+</html>

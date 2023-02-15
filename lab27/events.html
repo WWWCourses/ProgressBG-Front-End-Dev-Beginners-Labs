@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>events </title>
+	<style>
+		label:nth-child(2)>input{
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<body onload="console.log(`Loaded`);">
+	<label>x :
+		<input
+			type="number"
+
+			onkeydown="someHandler('onkeydown')"
+			onkeyup="someHandler('onkeyup')"
+			onkeypress="someHandler('onkeypress')"
+			onclick="someHandler('onclik')"
+			onblur="someHandler('onblur')"
+			>
+	</label>
+	<label>y : <input type="text"></label>
+	<button onclick="clickHandler()">OK</button>
+	<img src="" alt="">
+	<script>
+		function someHandler(msg) {
+			console.log(msg);
+		}
+
+		function addEventListener(eventName, f){
+			if (eventName=="input"){
+				f(eventObject);
+			}
+		}
+
+		const input1 = document.querySelector('[type="number"]');
+		const input2 = document.querySelector('label:nth-child(2)>input');
+
+		input2.addEventListener('input', someHandler)
+
+
+
+		// input2.addEventListener('click', someHandler('Second input clicked') ); // WRONG!!!
+		input2.addEventListener('click',  function() {
+			console.log(`click`);
+			console.log(input2.value);
+		});
+
+
+
+
+
+
+
+		// clickHandler();
+
+		// console.log(input);
+	</script>
+</body>
+</html>

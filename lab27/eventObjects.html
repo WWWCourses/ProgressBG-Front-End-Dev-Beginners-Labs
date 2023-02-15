@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>eventObjects </title>
+</head>
+<body>
+	<label><input type="text" placeholder="task title"></label>
+	<button class="btnAdd">Add</button>
+
+	<script>
+		let nodes = {
+			btnAdd: document.querySelector('.btnAdd'),
+			input: document.querySelector('[type="text"]')
+		}
+
+		nodes.input.addEventListener('keypress', function(event) {
+			console.dir(event);
+		})
+
+		nodes.btnAdd.addEventListener('click', function(event) {
+			console.dir(event);
+		})
+	</script>
+</body>
+</html>

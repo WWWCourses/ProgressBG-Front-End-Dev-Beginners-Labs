@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>timers </title>
+</head>
+<body>
+	<div class="countdown"></div>
+
+	<script>
+		function countDown(x) {
+			console.log(x);
+			counter--;
+			div.innerHTML = counter;
+			if(counter===0){
+				clearInterval(countdownId)
+			}
+		}
+
+		const div = document.querySelector('.countdown');
+		let counter = 10;
+
+		div.innerHTML = counter;
+
+		// for (let i = 0; i < 10; i++) {
+		// 	setTimeout(function () {
+		// 		countDown(3*i)
+		// 	}, 1000*i)
+
+		// }
+
+		const countdownId = setInterval(countDown, 1000);
+
+
+
+
+
+	</script>
+</body>
+</html>
