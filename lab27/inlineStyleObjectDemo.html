@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>inlineStyleObjectDemo </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<style>
+		div{
+			width: 5em;
+			height: 5em;
+			/* color:white; */
+			border:5px solid #000;
+		}
+		.big{
+			font-size: 30px;
+		}
+		.changed{
+			background-color:#000;
+			color:#F00;
+			transform: rotate(45deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="big">Test</div>
+	<button>Change Div</button>
+
+	<script>
+		const div = document.querySelector('div');
+		const button = document.querySelector('button');
+
+		button.addEventListener('click', function(e) {
+			// div.style.backgroundColor='#000';
+			// div.style.color='#F00';
+			// div.style.transform = "rotate(45deg)"
+
+			// change class attribute:
+			// div.className += ' changed'
+			div.classList.toggle('changed')
+
+		})
+
+		// console.dir( window.getComputedStyle(div));
+	</script>
+</body>
+</html>

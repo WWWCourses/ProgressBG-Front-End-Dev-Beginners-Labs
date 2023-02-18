@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DOMEvents </title>
+	<style>
+		.output{
+			width: 10em;
+			height: 3em;
+			border:2px solid red;
+		}
+		img{
+			width: 5em;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<label>userName:
+			<input type="text">
+		</label>
+		<button id="btnOK1" onclick="onClickHandler();">OK</button>
+		<button id="btnOK2">OK</button>
+		<div class="output"></div>
+
+		<hr>
+		<img src="" alt="">
+		<select id="imgChanger">
+			<option value="../images/business-man.png">Img1</option>
+			<option value="../images/checkmate-1511866_640.jpg">Img2</option>
+		</select>
+	</div>
+
+	<script>
+		const dom = {
+			userNameInput : document.querySelector('[type="text"]'),
+			imgInput : document.querySelector('#imgChanger'),
+			btnOK1 : document.querySelector('#btnOK1'),
+			btnOK2 : document.querySelector('#btnOK2'),
+			output : document.querySelector('.output'),
+			img: document.querySelector('img')
+		}
+
+
+		dom.imgInput.addEventListener('input',function() {
+			console.log(dom.imgInput.value);
+			dom.img.src = dom.imgInput.value;
+
+		})
+
+
+		// }
+		// element.addEventListener(eventName, functionDefinition)
+		// btnOK2.addEventListener('click', onClickHandler )
+		btnOK2.addEventListener('click', function() {
+			console.log(`@@@@@@`);
+			const userNameValue = userNameInput.value;
+			output.innerHTML = userNameValue;
+		})
+
+
+
+
+		// function addEventListener(eventName, f) {
+		// 	console.log(f); //undfe
+		// 	if(eventName==='click'){
+		// 		f({});
+		// 	}
+
+	</script>
+</body>
+</html>

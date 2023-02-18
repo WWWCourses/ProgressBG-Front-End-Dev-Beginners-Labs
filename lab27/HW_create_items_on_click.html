@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HW_create_items_on_click </title>
+</head>
+<body>
+	<label><input type="text" placeholder="todo title"></label>
+	<button>Add</button>
+	<hr>
+	<h2>Current Tasks</h2>
+
+	<ul>
+		<!-- <li id="li1">jfddjfdhs</li> -->
+	</ul>
+
+	<script>
+		// const li1 = document.querySelector('#li1');
+		// create LI element
+
+		const dom = {
+			ul:document.querySelector('ul'),
+			btnAdd: document.querySelector('button'),
+			input: document.querySelector('[type="text"]')
+		};
+
+		dom.btnAdd.addEventListener('click', function() {
+			const liNew = document.createElement('li');
+			liNew.innerHTML = dom.input.value
+			dom.ul.appendChild(liNew)
+		})
+	</script>
+</body>
+</html>

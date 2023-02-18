@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>counter </title>
+</head>
+<body>
+	<div>Продължаваме след: <span class="counter"></span></div>
+
+	<script>
+		function decrementCounter() {
+			counter--;
+			dom.counter.innerHTML = counter;
+			if(counter===0){
+				clearInterval(id)
+			}
+		}
+		let counter = 100;
+
+
+
+		const dom = {
+			counter: document.querySelector('.counter')
+		}
+
+		dom.counter.innerHTML = counter;
+
+		let id = setInterval(decrementCounter, 10);
+
+
+		// setTimeout(function(userName) {
+		// 	console.log(userName);
+		// }, 1000, 'Ada')
+
+		// setTimeout(function() {
+		// 	console.log(`BUY`);
+		// }, 2000)
+
+		// HI
+		// Buy
+
+		// 12.00.00:0000 => 12.00.00:1000 ('Hi')
+		// 12.00.00:0001 => 12.00.00:2001 ('Buy')
+
+
+	</script>
+</body>
+</html>

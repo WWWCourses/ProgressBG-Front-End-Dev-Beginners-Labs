@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>tmp </title>
+	<style>
+		.red{
+			width: 10em;
+			height: 10em;
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="red">red</div>
+
+	<script>
+		function changeColor(color){
+			console.log(`Changed Color`);
+			dom.div.style.backgroundColor = color
+		}
+
+		const dom = {
+			div: document.querySelector('.red')
+		}
+
+		dom.div.addEventListener('click', function() {
+			changeColor('blue')
+		});
+
+
+
+		// function changeColor(color){
+		// 	return function () {
+		// 		console.log(`Changed Color`);
+		// 		dom.div.style.backgroundColor = color
+		// 	}
+		// }
+
+		// dom.div.addEventListener('click', changeColor('blue') );
+
+	</script>
+</body>
+</html>

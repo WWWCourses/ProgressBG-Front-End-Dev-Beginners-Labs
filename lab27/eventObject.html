@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>eventObject </title>
+	<style>
+		ul{
+			border: 5px solid red;
+		}
+		li{
+			border: 2px solid blue;
+		}
+	</style>
+</head>
+<body>
+	<label>userName:
+		<input type="text">
+	</label>
+	<button id="btnOK">OK</button>
+	<hr>
+	<ul>
+		<li>Item1</li>
+		<li>Item2</li>
+	</ul>
+	<div class="output"></div>
+
+	<script>
+		const dom = {
+			input: document.querySelector('input'),
+			btn: document.querySelector('button'),
+			ul:document.querySelector('ul'),
+			li:document.querySelector('li'),
+			output: document.querySelector('.output')
+		};
+
+		// dom.li.addEventListener('click', function name(e) {
+		// 	console.log(`Child (LI) clicked`);
+		// 	console.log(e.target);
+		// 	dom.output.innerHTML = dom.li.innerHTML;
+		// })
+
+		dom.ul.addEventListener('click', function name(e) {
+			console.log(`Parent (UL) clicked`);
+			console.log(e.target);
+			console.log(e.currentTarget);
+			dom.output.innerHTML = e.target.innerHTML;
+		})
+
+		dom.input.addEventListener('keypress', function(event) {
+			console.dir(event.target);
+			if(event.key ==='Enter'){
+				console.log('ENter was clicked!')
+			}
+		} )
+
+		dom.btn.addEventListener('click', function(event) {
+			console.dir(event.target);
+		})
+	</script>
+</body>
+</html>
