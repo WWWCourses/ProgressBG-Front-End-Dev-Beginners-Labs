@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jQueryDemo </title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+	<div class="hidden">
+		<div>Div1</div>
+		<div>Div2</div>
+		<div>Div3</div>
+		<div>Div4</div>
+	</div>
+	<!-- <img src="https://cdn.pixabay.com/photo/2023/01/31/05/59/zebra-7757193_960_720.jpg" alt=""> -->
+
+	<script>
+		$('.hidden').children().click(function (e) {
+			$(this).parent().css('border','5px solid red')
+		})
+
+
+
+		// let jQuery = function(sel) {
+		// 	return {
+		// 		hide:function (node) {
+		// 			node.style.display = 'none'
+		// 		}
+		// 	}
+		// }
+		// let $ = jQuery;
+
+		// let divs = document.querySelectorAll('div');
+		// for (let i = 0; i < divs.length; i++) {
+		// 	const div = divs[i];
+		// 	div.style.display="none"
+		// }
+
+		// $(selector).action()
+
+		// $("div").hide();
+		// jQuery("div").hide();
+
+		// $('div').click(function () {
+		// 	$(this).css('font-size', '50px')
+		// })
+
+
+
+	</script>
+</body>
+</html>
