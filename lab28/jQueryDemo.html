@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>createListItemsOnClick </title>
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js"
+  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+	<label><input type="text" placeholder="task title"></label>
+	<button class="btnAdd">Add</button>
+	<hr>
+	<h2>Current Tasks</h2>
+	<ul class="list">
+
+	</ul>
+	<hr>
+
+	<div>Div1</div>
+	<div>Div2</div>
+	<div>Div3</div>
+	<button id="btnHide">hide divs</button>
+	<img src="" alt="">
+	<script>
+		// window.onload = function () {
+		// 	// Get elements
+		// 	// let input = document.querySelector('input');
+		// 	// let button = document.querySelector('button');
+
+		// 	// // Do something with elements
+		// 	// button.addEventListener('click', function(e) {
+		// 	// 	console.log( input.value);
+		// 	// })
+
+		// 	let btnHide = document.querySelector('#btnHide');
+		// 	let divs = document.querySelectorAll('div');
+
+		// 	btnHide.addEventListener('click', function(e) {
+		// 		for (let i = 0; i < divs.length; i++) {
+		// 			const div = divs[i];
+		// 			div.style.display="none";
+
+		// 		}
+		// 	})
+		// }
+
+
+
+		// with jQuery
+		$( function() {
+			$('button').click(function() {
+				console.log( $('input').val());
+			})
+
+			let divs = $('div');
+			let body = $('body');
+
+			// jQuery('#btnHide').click(function() {
+			// 	divs.hide();
+			// 	body.css('background-color', '#F00');
+			// })
+
+
+			// jQuery('#btnHide').on('click',function() {
+			// 	divs.hide();
+			// 	body.css('background-color', '#F00');
+			// }).on('dblclick', function name(params) {
+			// 	body.css('background-color', '#0F0');
+			// })
+		})
+
+
+
+	</script>
+</body>
+</html>
