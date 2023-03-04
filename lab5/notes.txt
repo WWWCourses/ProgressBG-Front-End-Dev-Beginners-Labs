@@ -1,0 +1,14 @@
+ISP => Internet Service Provider (A1)
+
+LAN (Local Area Network)
+pc1 () 		-> ISP (Router WIFI)
+pc2
+bulb1
+phone1
+
+
+# ----------------------------------- DNS: ----------------------------------- #
+
+https://www.abv.bg
+
+abv.bg => DNS => 194.153.145.104
