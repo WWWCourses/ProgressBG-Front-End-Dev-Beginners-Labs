@@ -1,10 +1,10 @@
 ISP => Internet Service Provider (A1)
 
 LAN (Local Area Network)
-pc1 () 		-> ISP (Router WIFI)
-pc2
-bulb1
-phone1
+	pc1 (192.168.0.1) 		-> ISP (Router WIFI) -> (23.56.0.213)
+	pc2 (192.168.0.2)
+	bulb1 (192.168.0.3)
+	phone1 (192.168.0.4)
 
 
 # ----------------------------------- DNS: ----------------------------------- #
@@ -12,3 +12,5 @@ phone1
 https://www.abv.bg
 
 abv.bg => DNS => 194.153.145.104
+
+

@@ -1,0 +1,44 @@
+# ------------------------------------ URL ----------------------------------- #
+
+https://www.abv.bg:443/
+https://progressbg.net/kurs-po-front-end-development/
+
+https://www.google.com/search?q=test&oq=test&aqs=chrome..69i57j0i67l3j0i512l6.546j0j15&sourceid=chrome&ie=UTF-8
+	Path: search => search.py
+
+test =>
+
+file:///media/nemsys/data/projects/courses/ProgressBG/ProgressBG-Front-End-Dev/Labs/lab6/mysite.com/index.html
+ftp://abv.bg/book1.pdf
+
+https://bnr.bg/news.php
+
+https://bnr.bg/
+
+
+
+http://127.0.0.1:8080/pages/about.html
+	Protocol: http
+	Host: 127.0.0.1:8080
+	Path: /pages/about.html
+
+http://127.0.0.1:8080/index.html
+	Protocol: http
+	Host: 127.0.0.1:8080
+	Path: /
+
+https://progressbg.net/wp-content/uploads/2013/apples/logo-4.png
+	Protocol: https
+	Host    : progressbg.net
+	Path	: /wp-content/uploads/2013/03/logo-4.png
+
+
+127.0.0.1:8080 == / => mysite.com
+
+index.html != Index.html
+
+
+http://127.0.0.1:8080/docs/text.txt
+http://127.0.0.1:8080/home.html
+
+
