@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>index </title>
+</head>
+<body>
+	<form action="/" method="get">
+		<textarea name="comment" cols="30" rows="2"></textarea>
+		<hr>
+		<div>
+			<label>town:
+				<select name="town" multiple>
+					<optgroup label="BG">
+						<option value="sofia">София</option>
+						<option value="burgas">Бургас</option>
+						<option value="varna">Варна</option>
+						<option value="plovdiv">Пловдив</option>
+					</optgroup>
+					<optgroup label="UK">
+						<option value="london">London</option>
+					</optgroup>
+				</select>
+			</label>
+		</div>
+		<hr>
+		user name: <input type="text" name="userName">
+		gender:
+		<label for="female">female:</label>
+		<input type="radio" name="gender" value="f" id="female"> |
+		<label>male: <input type="radio" name="gender" value="m"></label> |
+		<label>other: <input type="radio" name="gender" value="o"> |</label>
+		<hr>
+		<div>
+			gift:
+			beer: <input type="checkbox" name="gift" value="beer">
+			cola: <input type="checkbox" name="gift" value="cola">
+			water: <input type="checkbox" name="gift" value="water">
+		</div>
+		<hr>
+		<div><input type="text" name="name" autocomplete="off" placeholder="enter your name" value="Anonymous"></div>
+		<div>pass: <input type="password" name="pass"></div>
+		<div>avatar: <input type="file" name="avatar"></div>
+		<div>color: <input type="color" name="color" id="" value="#FF0000"></div>
+		<div>ID: <input type="number" name="id"></div>
+		<div>phone: <input type="tel" name="phone"></div>
+		<button type="submit">Send</button>
+		<button type="reset">Clear</button>
+		<button type="button">CLick me</button>
+		<hr>
+		<input type="submit" value="Send">
+		<input type="reset" value="Clear">
+		<input type="button" value="Click me">
+	</form>
+
+</body>
+</html>
