@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>block_VS_inline_elements </title>
+	<style>
+		.outer, .inner, .inline, a, img{
+			border: 10px solid;
+		}
+		.outer{
+			border-color: red;
+			margin-left: 50px ;
+		}
+		.inner{
+			border-color: green;
+		}
+		.inline{
+			padding: 10px;
+			border-color:blue;
+		}
+		a{
+			width: 300px;
+			height: 300px;
+			border-color:orange;
+			margin: 30px 50px;
+		}
+		img{
+			width: 30px;
+			height: 30px;
+			border-color:purple;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="inline">
+		<a href="#">link1</a>
+		<a href="#">link2</a>
+		<hr>
+
+		<img src="../images/checkmate-1511866_640.jpg" alt="">
+		<img src="../images/checkmate-1511866_640.jpg" alt="">
+	</div>
+	<div class="outer">
+		<div class="inner"></div>
+		<div class="inner">Div2</div>
+	</div>
+</body>
+</html>
