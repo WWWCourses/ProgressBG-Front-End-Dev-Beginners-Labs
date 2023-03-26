@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>positionProperty </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<style>
+		p{
+			font-size: 30px;
+		}
+		.box{
+			font-size: 10px;
+			width: 5em;
+			height: 5em;
+		}
+		.container{
+			position: relative;
+			border:1px solid #000;
+			background-color:#666;
+			width: 60%;
+			margin: 0 auto;
+			/* margin-top:50px; */
+
+		}
+
+		.relative{
+			position: relative;
+			top:50px;
+			left:50px;
+			background-color:#F99;
+			/* margin-top: 200px;
+			margin-left: 50px; */
+		}
+		.fixed{
+			position: fixed;
+			bottom:0;
+			right: 0;
+			/* top:0px;
+			left:0px;
+			bottom: 0;
+			right: 0;
+			opacity: .5; */
+			/* margin-top:50px;
+			margin-left: 50px; */
+			background-color:#D55;
+		}
+		.absolute{
+			position: absolute;
+			top:50px;
+			left:50px;
+			/* margin-top:50px;
+			margin-left: 50px; */
+			background-color:#b55;
+		}
+		.green{
+			background-color:#9F9;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<!-- <div class="box relative"></div> -->
+		<div class="box fixed">fixed</div>
+		<!-- <div class="box absolute"></div> -->
+		<div class="box green"></div>
+	</div>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit beatae, voluptatibus aperiam a dolorum inventore molestiae! Rem expedita sint quod corrupti voluptatum voluptates? A excepturi provident, hic reiciendis nostrum laudantium.</p>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit beatae, voluptatibus aperiam a dolorum inventore molestiae! Rem expedita sint quod corrupti voluptatum voluptates? A excepturi provident, hic reiciendis nostrum laudantium.</p>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit beatae, voluptatibus aperiam a dolorum inventore molestiae! Rem expedita sint quod corrupti voluptatum voluptates? A excepturi provident, hic reiciendis nostrum laudantium.</p>
+</body>
+</html>
