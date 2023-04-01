@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>pseudoClasses </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<style>
+		.box{
+			width: 10em;
+			height: 10em;
+			border: 5px solid #000;
+		}
+		.box:{
+			background-color: red;
+		}
+
+		a{
+			text-decoration: none;
+		}
+
+		a:link{
+			border-bottom: 2px solid red;
+			color:green;
+		}
+		a:visited{
+			color: gray;
+		}
+		a:hover{
+			color:lightblue;
+		}
+		a:active{
+			border:2px solid red;
+		}
+
+
+		.button{
+			width: 5em;
+			height: 2em;
+			background-color: #000;
+			color: #FFF;
+			border-radius: 10px;
+			text-align: center;
+			padding-top: .3em;
+		}
+		.button:active{
+			border:2px solid #666;
+		}
+
+		input:focus{
+			outline: none;
+			border:5px solid green;
+		}
+	</style>
+</head>
+<body>
+	<form action="">
+		<label>user name: <input type="text" tabindex="1"></label>
+		<label>user pass: <input type="password" tabindex="3"></label>
+		<label>user pass repaear: <input type="password" tabindex="2"></label>
+		<button>Send</button>
+	</form>
+	<hr>
+	<div class="button">Click me</div>
+	<hr>
+	<a href="https://www.google.com/">goolge</a>
+	<a href="https://progressbg.net/">progressbg</a>
+	<a href="https://progressbg.net#1">alabala</a>
+	<hr>
+	<div class="box"></div>
+</body>
+</html>
+<!--
+
+profile1:
+	visited:
+		https://progressbg.net/ -->

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>floatProblem </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		header{
+			height: 10vh;
+			background-color: #999;
+		}
+		.logo{
+			width: 10em;
+			height: 3em;
+			background-color: #f99;
+		}
+		nav{
+			width: 50%;
+			border:5px solid #9f9;
+			background-color:#9F9;
+		}
+		.menu>li{
+			float: left;
+			/* width: 7em; */
+			height: 60px;
+			border:5px solid red;
+		}
+
+
+	</style>
+</head>
+<body>
+	<header>
+		<div class="logo"></div>
+		<nav>
+			<ul class="menu">
+				<li><a href="#">page1</a></li>
+				<li style="font-size: 1.5em;"><a href="#">page2</a></li>
+				<li><a href="#">page3</a></li>
+			</ul>
+		</nav>
+	</header>
+</body>
+</html>

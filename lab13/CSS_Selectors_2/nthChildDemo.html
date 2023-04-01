@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>nthChildDemo </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<style>
+		div:nth-child(2n+1){
+			background-color:red
+		}
+		div:nth-of-type(2n){
+			background-color:blue
+		}
+
+		/* n : 2n+1
+		0 : 1
+		1 : 3
+		2 : 5
+		3 : 7
+		4
+		5 */
+	</style>
+</head>
+<body>
+	<div>item1</div>
+	<div>item2</div>
+	<div>item3</div>
+	<div>item4</div>
+	<div>item5</div>
+	<div>item6</div>
+	<div>item7</div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>dropDownMenu </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<style>
+		.red{
+			width: 10em;
+			height: 10em;
+			background-color: red;
+		}
+		.blue{
+			width: 50%;
+			height: 50%;
+			background-color: blue;
+		}
+		/* when the parent(red) is hover, then select child(blue) */
+		/* selctor1>selctor2 */
+		.red:hover >.blue{
+			background-color:orange
+		}
+		.main-menu>li{
+			width: 5em;
+			border:2px solid red;
+		}
+		.sub-item>ol{
+			/* opacity: 0; */
+			display: none;
+		}
+		.sub-item:hover>ol{
+			display:block;
+		}
+		.main-menu>li{
+			float: left;
+		}
+		.clear{
+			clear:both;
+		}
+	</style>
+</head>
+<body>
+	<div class="red">
+		<div class="blue"></div>
+	</div>
+	<hr>
+	<ul class="main-menu">
+		<li class="sub-item">Супи
+			<ol>
+				<li>Супа 1</li>
+				<li>Супа 2</li>
+				<li>Супа 3</li>
+			</ol>
+		</li>
+		<li class="sub-item">Deserti
+			<ol>
+				<li>Desert 1</li>
+				<li>Desert 2</li>
+				<li>Desert 3</li>
+			</ol>
+		</li>
+		<div class="clear"></div>
+	</ul>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis a tempora repellendus officia amet ratione eaque unde quas illo corporis maxime, adipisci suscipit debitis aspernatur voluptate omnis qui dolore fugit.</p>
+</body>
+</html>

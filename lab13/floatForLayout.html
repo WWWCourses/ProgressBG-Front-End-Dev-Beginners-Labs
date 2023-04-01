@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>floatForLayout </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		header{
+			background-color: #666;
+			height: 10vh;
+		}
+		main{
+			background-color: #F66;
+			height: 80vh;
+		}
+		footer{
+			background-color: #6F6;
+			height: 10vh;
+		}
+		.left, .right{
+			float: left;
+			height: 100%;
+			/* display: inline-block;
+			vertical-align: top; */
+
+		}
+		.left{
+			width: 30%;
+			background-color:#333;
+			color: #FFF;
+		}
+		.right{
+			width: 70%;
+			background-color:#CCC;
+			color: #222;
+			/* margin-left: -0.4em; */
+		}
+	</style>
+</head>
+<body>
+	<header>header</header>
+	<main>
+		<aside class="left">left </aside>
+		<aside class="right">
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus perspiciatis quo deserunt. Voluptate, itaque necessitatibus non nobis fugit eveniet veniam nihil molestias hic facilis vel! Tempore doloribus sint nemo nulla?</p>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, quibusdam ullam! In minima amet commodi ab, architecto corporis est iusto non earum illum nihil velit minus maiores aut. Architecto, nemo.</p>
+		</aside>
+	</main>
+	<footer>footer</footer>
+</body>
+</html>

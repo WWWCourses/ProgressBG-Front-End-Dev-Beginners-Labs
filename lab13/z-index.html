@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>z-index </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<style>
+		.box{
+			width: 5em;
+			height: 5em;
+		}
+		.red{
+			/* z-index: 3; */
+			position: relative;
+			top: 30px;
+			left: 20px;
+			background-color:red;
+			/* opacity: .3; */
+		}
+		.green{
+			z-index: 4;
+			position: relative;
+			background-color:green
+		}
+	</style>
+</head>
+<body>
+	<div class="box red"></div>
+	<div class="box green"></div>
+
+	<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit sed esse facere nisi exercitationem voluptates iusto laborum animi quisquam fugit! Dolores sint eos dolorum eveniet est inventore, labore consequuntur. Laboriosam.</p>
+</body>
+</html>
