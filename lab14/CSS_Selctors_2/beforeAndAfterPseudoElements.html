@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>beforeAndAfterPseudoElements </title>
+	<style>
+		.red{
+			/* width: 10em;
+			height: 10em; */
+			background-color:#F99;
+		}
+		.product{
+			float: left;
+			width: 7em;
+			height: 4em;
+			border:5px solid #9F9;
+		}
+		.red::after{
+			content:"";
+			display: block;
+			clear:both;
+			/* border:2px solid #99F; */
+		}
+		ul{
+			list-style-type: none;
+		}
+		ul>li::before{
+			content:"\2602"
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li>	Item 1</li>
+		<li>	Item 2</li>
+		<li>	Item 3</li>
+	</ul>
+	<hr>
+	<div class="red">
+		<!-- <span>@@@</span> -->
+		<div class="product"></div>
+		<div class="product"></div>
+		<div class="product"></div>
+		<div class="product"></div>
+		<div class="product"></div>
+		<!-- <div class="clear"></div> -->
+	</div>
+	<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut beatae delectus magnam quasi soluta! Repudiandae accusantium soluta nam molestiae impedit, adipisci quia doloremque autem nihil, distinctio et repellat eos sequi!</p>
+</body>
+</html>
