@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<label>x: <input type="number" id="x"></label>
+	<label>y: <input type="number" id="y"></label>
+	<button>Add</button>
+
+	<script>
+		// get dom nodes
+		let xInput = document.querySelector('#x');
+		let yInput = document.querySelector('#y');
+		let btn = document.querySelector('button');
+
+		// on button click = > add x and y
+		btn.addEventListener('click', function () {
+			let x = xInput.value;
+			let y = yInput.value;
+
+			// TODO: fix bug
+			console.log( x+y );
+		})
+
+	</script>
+</body>
+</html>
