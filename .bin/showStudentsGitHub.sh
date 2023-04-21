@@ -11,7 +11,12 @@ if [ ! -f $githubAcountsURLsFilePath ];then
 fi
 
 
-githubAcountsURLs=$(tr '\n' ' ' < ${githubAcountsURLsFilePath})
-# echo $githubAcountsURLs
+readarray -t githubAcountsURLs < $githubAcountsURLsFilePath
 
-google-chrome --new-window $githubAcountsURLs
+
+### append '/?tab=repositories' to URLs:
+str='/?tab=repositories'
+githubAcountsURLs=( "${githubAcountsURLs[@]/%/$str}" )
+# echo ${githubAcountsURLs[@]}
+
+google-chrome --new-window ${githubAcountsURLs[@]}
