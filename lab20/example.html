@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>example </title>
+</head>
+<body>
+	<input type="text">
+	<button>Show</button>
+	<div class="output"></div>
+
+	<script>
+		function  onClick() {
+			let userName = input.value;
+			output.innerHTML = userName;
+		}
+
+		let input = document.querySelector('[type="text"]');
+		let btn = document.querySelector('button');
+		let output = document.querySelector('.output');
+
+		btn.addEventListener('click', onClick)
+
+
+	</script>
+
+</body>
+</html>
