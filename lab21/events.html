@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>events </title>
+	<style>
+		.output{
+			border: 5px solid red;
+		}
+	</style>
+</head>
+<body onbeforeprint="onBeforePrint()">
+	<button class="test" onclick="clickHandler()" oncontextmenu="onContextMenuHandler()">test your mouse on me</button>
+	<div id="o1" class="output"></div>
+	<div id="o2" class="output"></div>
+	<div id="o3" class="output"></div>
+
+	<script>
+		function setContent(node, content){
+			node.innerHTML=content;
+		}
+
+		function clickHandler(){
+			console.log('clickHandler is called')
+			console.log(this);
+
+			// setContent(o1, '@@@@@@');
+			// setContent(o2, '%%%%%%');
+		}
+
+		function onBeforePrint() {
+			alert('Print will be done')
+		}
+
+		function onContextMenuHandler() {
+			console.log('onContextMenuHandler is called')
+			console.log(this);
+		}
+
+		// get DOM nodes
+		let o1 = document.querySelector('#o1');
+		let o2 = document.querySelector('#o2');
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>addEventLIstenerDemo </title>
+</head>
+<body>
+	<button id="btn1">Btn1</button>
+	<button id="btnChangeColor">ChangeColor</button>
+
+	<script>
+		function onChangeColor(color) {
+			return function() {
+				console.log(`onChangeColor called`);
+				document.body.style.backgroundColor = color
+			}
+
+		};
+
+		const btn1 = document.querySelector('#btn1');
+		const btnChangeColor = document.querySelector('#btnChangeColor');
+
+		btn1.addEventListener( "click", function() {
+			console.log('click')
+		} );
+
+		btnChangeColor.addEventListener('click', onChangeColor('red') );
+
+
+	</script>
+</body>
+</html>

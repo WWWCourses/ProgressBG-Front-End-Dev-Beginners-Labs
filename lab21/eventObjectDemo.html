@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>eventObjectDemo </title>
+	<style>
+		.play-area{
+			width: 10em;
+			height: 10em;
+			background-color:#F00;
+		}
+	</style>
+</head>
+<body>
+
+	<button id="btn1">Btn1</button>
+	<div class="play-area"></div>
+	<hr>
+	<label>user name: <input type="text" id="userName"></label>
+
+	<script>
+		function onClick(event) {
+			console.log(`Click`);
+			console.dir(event);
+		}
+
+		const btn1 = document.querySelector('#btn1');
+		const playArea = document.querySelector('.play-area');
+		const userNameInput = document.querySelector('#userName');
+
+		btn1.addEventListener('click', onClick);
+		playArea.addEventListener('mousemove', function name(e) {
+			console.log(`mousemove`);
+			console.dir(e);
+		})
+
+		userNameInput.addEventListener('input', function(e) {
+			// console.log(`input`);
+			// console.log(e);
+			if(e.data ==='q'){
+				console.log(`Q is pressed`);
+			}
+		})
+
+		userNameInput.addEventListener('keypress', function(e) {
+			// console.log(`keypress`);
+			// console.log(e);
+			if(e.code === "Enter"){
+				console.log( userNameInput.value);
+			}
+		})
+
+	</script>
+</body>
+</html>

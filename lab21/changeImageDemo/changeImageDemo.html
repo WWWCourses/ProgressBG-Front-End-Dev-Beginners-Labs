@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>changeImageDemo </title>
+	<style>
+		#img1{
+			width: 5em;
+			height: 8em;
+		}
+	</style>
+</head>
+<body>
+	<img id="img1" src="" alt="">
+	<!-- <button onclick="onBtnClick()">Change img</button> -->
+	<button>Change img</button>
+
+	<script>
+		function onBtnClick() {
+			// TODO: fix bug
+			if(i===2){
+				i=0
+			}
+
+			i++;
+			console.log(`i= ${i}`); // 0, 1, 2
+			img.src = images[i];
+
+
+		}
+
+		// get dom nodes:
+		const btn = document.querySelector('button');
+		const img = document.querySelector('#img1');
+
+
+		// atach events
+		btn.addEventListener( 'click', onBtnClick )
+
+		let images = [
+			'./images/man.jpg',
+			'./images/netherlands.jpg',
+			'./images/sunset.jpg'
+		];
+		let i = 0;
+
+		// On page render:
+		img.src = images[i];
+
+
+
+	</script>
+</body>
+</html>
