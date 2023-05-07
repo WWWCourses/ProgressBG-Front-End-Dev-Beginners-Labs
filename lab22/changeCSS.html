@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>changeCSS </title>
+	<style>
+		.box{
+			width: 5em;
+			height: 5em;
+			background-color: #F00
+		}
+
+		.new-box{
+			width: 10em;
+			height: 10em;
+			background-color: #00F;
+		}
+
+		.circle{
+			border-radius: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+	<button>Change Box</button>
+
+	<script>
+		const nodes = {
+			btn: document.querySelector('button'),
+			box: document.querySelector('.box')
+		}
+
+		console.dir(nodes.box.className);
+
+		nodes.btn.addEventListener('click', function(e) {
+			// nodes.box.style.width = '10em';
+			// nodes.box.style.height = '10em';
+			// nodes.box.style.backgroundColor = '#00F';
+			// nodes.box.style.borderRadius = '100%';
+
+			// nodes.box.className +=  ' circle';
+			nodes.box.classList.toggle('circle')
+		})
+	</script>
+</body>
+</html>

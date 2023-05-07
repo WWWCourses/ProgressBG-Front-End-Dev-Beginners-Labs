@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>eventObject </title>
+	<style>
+		.parent{
+			width: 10em;
+			height: 10em;
+			background-color: #F00;
+		}
+		.child{
+			width: 50%;
+			height: 50%;
+			background-color: #0F0;
+		}
+	</style>
+</head>
+<body>
+	<div class="parent">
+		<div class="child"></div>
+	</div>
+
+	<script>
+		const domNodes = {
+			parent: document.querySelector('.parent'),
+			child: document.querySelector('.child'),
+			body: document.body,
+			html: document.documentElement
+		}
+
+		domNodes.body.addEventListener('click', function(e) {
+			console.log(`body is clicked`);
+			console.dir(e.target);
+			console.dir(e.currentTarget);
+		})
+
+		domNodes.html.addEventListener('click', function(e) {
+			console.log(`html is clicked`);
+			console.dir(e.target);
+			console.dir(e.currentTarget);
+		})
+
+		domNodes.parent.addEventListener('click', function(e) {
+			console.log(`parent is clicked`);
+			console.dir(e.target);
+			console.dir(e.currentTarget);
+		})
+
+		domNodes.child.addEventListener('click', function(e) {
+			console.log(`child is clicked`);
+			console.dir(e.target);
+			console.dir(e.currentTarget);
+		})
+
+	</script>
+</body>
+</html>

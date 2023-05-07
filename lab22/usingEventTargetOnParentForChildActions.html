@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>usingEventTargetOnParentForChildActions </title>
+	<style>
+		ul{
+			border: 1px solid red;
+		}
+		li{
+			border: 1px solid green;
+		}
+		.output{
+			border:1px solid blue;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li>Item 1</li>
+		<li>Item 2</li>
+		<li>Item 3</li>
+	</ul>
+	<div class="output"></div>
+
+	<script>
+		//-- ---------------------- Variant 1 - get all child ----------------------
+		// const output = document.querySelector('.output');
+		// const li1 = document.querySelector('li');
+		// const items = document.querySelectorAll('li')
+		// for (let i = 0; i < items.length; i++) {
+		// 	const item = items[i];
+		// 	item.addEventListener('click', function(e) {
+		// 		output.innerHTML =  item.innerHTML
+		// 	})
+		// }
+
+
+		//--------------- Variant2 - add listenter to parent only ---------------
+		const output = document.querySelector('.output');
+		const ul = document.querySelector('ul');
+
+		ul.addEventListener('click', function(e) {
+			const item = e.target;
+			console.log(`${item.innerHTML} was cliked`);
+			output.innerHTML =  item.innerHTML
+		})
+
+
+	</script>
+</body>
+</html>

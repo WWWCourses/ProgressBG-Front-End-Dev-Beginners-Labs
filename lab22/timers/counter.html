@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>counter </title>
+</head>
+<body>
+	<div class="counter">1</div>
+	<button>Stop</button>
+
+	<script>
+		function incrementCounter(e) {
+			const current = nodes.counter.innerHTML*1;
+			nodes.counter.innerHTML = current+1
+		}
+		const nodes = {
+			btn : document.querySelector('button'),
+			counter : document.querySelector('.counter'),
+		}
+
+		nodes.btn.addEventListener('click', function (e) {
+			clearInterval(counterID)
+		})
+
+		const counterID = setInterval(incrementCounter, 1000)
+	</script>
+</body>
+</html>

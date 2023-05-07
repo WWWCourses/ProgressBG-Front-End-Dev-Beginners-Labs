@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DOMStyleObject </title>
+	<style>
+		body{
+			font-size: 20px;
+		}
+		h1{
+			background-color: #F00;
+		}
+	</style>
+</head>
+<body>
+	<h1 style="font-size: 2em;">Heading 1</h1>
+	<button>A+</button>
+
+	<script>
+		// const h1 = document.querySelector('h1');
+		// console.dir(h1.style);
+		// h1.style.fontSize = '1em';
+		// h1.style.backgroundColor = 'green';
+
+
+		const bodyComputedStyle = window.getComputedStyle(document.body)
+		// console.dir(document.body.style.fontSize);
+		// console.dir(bodyComputedStyle.fontSize);
+
+
+		const btn = document.querySelector('button')
+		btn.addEventListener('click', function(e) {
+			let currentFontSize = bodyComputedStyle.fontSize;
+			console.dir(currentFontSize);
+
+			currentFontSize = currentFontSize.slice(0,-2)*1
+			document.body.style.fontSize = 2*currentFontSize + 'px';
+		})
+
+	</script>
+</body>
+</html>
