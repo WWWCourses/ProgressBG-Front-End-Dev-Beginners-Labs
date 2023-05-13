@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>demo </title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+<body>
+	<input type="text">
+	<button id="btnOk">OK</button>
+	<div class="output">output</div>
+
+	<script>
+		// // select element:
+		// let btn = document.querySelector('#btnOk');
+		// let output = document.querySelector('#output');
+
+		// // action
+		// btn.addEventListener('click', function() {
+		// 	console.log(`Hi`);
+		// })
+
+		// $('#btnOk').click(function(e) {
+		// 	// Very bad!!!
+		// 	$('.output').css('color','#F00')
+		// })
+
+		// get elements:
+		let output = $('.output')
+		// $('#btnOk').click(function(e) {
+		// 	// Good!!!
+		// 	// output.css('color','#F00')
+		// 	output.hide()
+		// })
+
+		$('#btnOk').on('click',function(e) {
+			// Good!!!
+			// output.css('color','#F00')
+			output.hide()
+		})
+
+
+
+
+
+	</script>
+</body>
+</html>

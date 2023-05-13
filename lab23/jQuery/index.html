@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>index </title>
+</head>
+<body>
+	<label>name: <input type="text" name="userName" autofocus></label>
+	<label>score: <input type="number" name="userScore"></label>
+	<button id="btnOk">OK</button>
+	<button id="btnShow">Show best student</button>
+	<div id="output"></div>
+
+
+	<script>
+		function addToUserScores(userName, userScore) {
+			userData[0].push(userName);
+			userData[1].push(userScore);
+
+			return userScore;
+		};
+
+		function getBestStudent() {
+			let userScores = userData[1];
+
+			let maxScore = 0;
+			let maxScoreIdx = 0;
+
+			for (let i = 0; i < userScores.length; i++) {
+				const score = userScores[i];
+				if(score>maxScore){
+					maxScore = score;
+					maxScoreIdx = i;
+				}
+			}
+
+			return userData[0][maxScoreIdx];
+		}
+
+		let dom = {
+			'userName':document.querySelector('[name="userName"]'),
+			'userScore':document.querySelector('[name="userScore"]'),
+			'btnOk':document.querySelector('#btnOk'),
+			'btnShow':document.querySelector('#btnShow'),
+			'output':document.querySelector('#output'),
+
+		}
+
+		let userData = [[],[]];
+
+		window.addEventListener("DOMContentLoaded",function(e) {
+			dom.btnOk.addEventListener('click', function(e) {
+				let userName = dom.userName.value;
+				let userScore = dom.userScore.value;
+				console.log(userName, userScore);
+
+				// clean inputs
+				dom.userName.value = "";
+				dom.userScore.value = "";
+				// set focus
+				dom.userName.focus();
+
+				addToUserScores(userName,userScore);
+			})
+
+			dom.btnShow.addEventListener('click', function(e) {
+				let bestStudentName = getBestStudent();
+				dom.output.innerHTML = `The best student is ${bestStudentName}`
+			})
+		}
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>
