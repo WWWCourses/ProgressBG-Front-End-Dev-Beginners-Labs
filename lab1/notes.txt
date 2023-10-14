@@ -1,0 +1,31 @@
+# ------------------------------- git vs github ------------------------------ #
+git != github
+git = version (source) control  (must be installed!)
+github = online service integrated with git
+
+# ----------------- Terminal (CLI = Command Line Interface): ----------------- #
+Windows:
+ 	Command Prompt (CMD)
+ 	Power Shell
+Linux/MacOS:
+	Terminal
+
+# ---------------------------------- Hours: ---------------------------------- #
+	4*40min + 2*10 break
+
+# ---------------------------- IDE vs Code Editors --------------------------- #
+IDE: Integrated Development Environment
+	Visual Studio, PyCharm, Eclipse
+
+Code Editors:
+	VSCode, Sublime Text
+	VSCode: (HMTL, CSS, JS), Pyhton, Rubi, PHP
+
+# -------------------------------- Open-source ------------------------------- #
+Windows vs Linux,
+Github = where open-source lives
+
+
+
+
+
