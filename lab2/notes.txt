@@ -1,0 +1,14 @@
+Search Engine Optimization
+Search Engine: Google bot, Bing bot
+
+Page1 <= 5 mention:
+курс: 10
+front-end: 20
+
+Page1 <= 200 mention:
+курс: 2
+front-end: 3
+
+
+
+
