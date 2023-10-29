@@ -1,0 +1,33 @@
+== Info:   Trying 185.45.67.70:80...
+== Info: TCP_NODELAY set
+== Info: Connected to progressbg.net (185.45.67.70) port 80 (#0)
+=> Send header, 78 bytes (0x4e)
+0000: GET / HTTP/1.1
+0010: Host: progressbg.net
+0026: User-Agent: curl/7.68.0
+003f: Accept: */*
+004c:
+== Info: Mark bundle as not supporting multiuse
+<= Recv header, 32 bytes (0x20)
+0000: HTTP/1.1 301 Moved Permanently
+<= Recv header, 37 bytes (0x25)
+0000: Date: Sat, 28 Oct 2023 09:45:22 GMT
+<= Recv header, 16 bytes (0x10)
+0000: Server: Apache
+<= Recv header, 26 bytes (0x1a)
+0000: X-Redirect-By: WordPress
+<= Recv header, 35 bytes (0x23)
+0000: Location: https://progressbg.net/
+<= Recv header, 29 bytes (0x1d)
+0000: Cache-Control: max-age=3600
+<= Recv header, 40 bytes (0x28)
+0000: Expires: Sat, 28 Oct 2023 10:45:22 GMT
+<= Recv header, 45 bytes (0x2d)
+0000: Referrer-Policy: no-referrer-when-downgrade
+<= Recv header, 19 bytes (0x13)
+0000: Content-Length: 0
+<= Recv header, 40 bytes (0x28)
+0000: Content-Type: text/html; charset=UTF-8
+<= Recv header, 2 bytes (0x2)
+0000:
+== Info: Connection #0 to host progressbg.net left intact
