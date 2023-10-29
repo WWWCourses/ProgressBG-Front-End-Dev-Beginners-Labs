@@ -1,0 +1,39 @@
+ISP: Internet Service Provider (X)
+
+Web Site == a set of Web Pages (Web Documents)
+
+HTTP: HyperText Transfer Protocol
+
+
+DNS: Domain Name Server
+iva.com : 93.245.63.2
+
+192.168. => Local Network Addres
+127.0.0.1 => the same machine
+
+URL: Uniform Resource Locator:
+
+https://progressbg.net/
+ftp://progressbg.net/
+
+http://127.0.0.1:42249/lab5/Client-Server/mysite.com/front-end/index.html
+
+file:///media/nemsys/data/projects/courses/ProgressBG/ProgressBG-Front-End-Dev/Labs/lab5/Client-Server/mysite.com/front-end/index.html
+
+chrome://extensions/
+
+https://www.google.com/search?q=url&oq=url&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDIMCAEQABgUGIcCGIAEMgcIAhAAGIAEMgcIAxAAGIAEMgcIBBAAGIAEMgcIBRAAGIAEMgcIBhAAGIAEMgcIBxAAGIAEMgcICBAAGIAEMgcICRAAGIAE0gEJMzkwOWowajE1qAIAsAIA&sourceid=chrome&ie=UTF-8
+
+
+PATH: search => search.py
+
+http://127.0.0.1:8080/
+
+PATH:
+
+http://127.0.0.1:8080//lab5/Client-Server/mysite.com/front-end/
+
+
+
+
+

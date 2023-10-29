@@ -1,0 +1,14 @@
+UserName=ada&
+Pass=1234
+Gender=male
+
+
+Users:
+id| UserName| Pass | Gender | Color
+1 | ada     | 123  | female | red;blue
+1 | pesho   | 1234 | male
+1 | kkk     | 1234 | other
+
+
+Server-Side Rendering
+Client-Side Rendering

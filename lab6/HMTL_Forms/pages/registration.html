@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>index </title>
+</head>
+<body>
+	<h1><b>Registration</b></h1>
+	<a href="../index.html">index.html</a>
+	<form action="/registration" method="get">
+		<h2>Personal Data:</h2>
+		<div>UserName: <input type="text" name="UserName"></div>
+		<div>Gender:
+			<label>мъж <input type="radio" name="Gender" value="male"></label>
+			<label for="fm">жена</label><input id="fm" type="radio" name="Gender" value="female">
+			<label for="other">друг</label><input id="other" type="radio" name="Gender" value="other">
+		</div>
+		<hr>
+		<fieldset>
+			<legend>gender</legend>
+			<select name="Gender">
+				<option value="male">мъж</option>
+				<option value="female">жена</option>
+				<optgroup label="Other">
+					<option value="A">other a</option>
+					<option value="A">other b</option>
+				</optgroup>
+
+			</select>
+		</fieldset>
+		<h2>Favourites:</h2>
+		<div>
+			Color:
+			red: <input type="checkbox" name="Color" value="red">
+			green: <input type="checkbox" name="Color" value="green">
+			blue: <input type="checkbox" name="Color" value="blue">
+		</div>
+		<button type="submit">Изпрати</button>
+		<input type="submit" value="Izprati" >
+
+		<button type="reset">Reset</button>
+		<button type="button">Click</button>
+	</form>
+	<hr>
+	<input type="checkbox"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eius saepe quod molestias ut nulla vero inventore assumenda illum quia eligendi, sed velit aspernatur. Delectus ratione culpa id pariatur quo?</span>
+	<hr>
+	<input type="text">
+	<textarea name="" id="" cols="30" rows="10"></textarea>
+</body>
+</html>
