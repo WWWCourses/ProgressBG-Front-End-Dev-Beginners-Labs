@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="registration.py" method="get">
+        <fieldset>
+            <h1>Регистрация</h1>
+            <fieldset>
+                <legend>Лични данни</legend>
+                <label for="username">Име:</label>
+                <input type="text" name="username" id="username" placeholder="малко име, на латиница">
+                <br>
+                <br>
+                <label for="surname">Име:</label>
+                <input type="text" name="Surname" id="Surname" placeholder="фамилия на латиница">
+                <br>
+                <br>
+                <p>Пол:
+                    <label for="gender">мъж:</label>
+                    <input type="radio" name="gender" id="gender" value="мъж:">
+                    <label for="gender">жена</label>
+                    <input type="radio" name="gender" id="gender" value="жена:">
+                </p>
+            </fieldset>
+            <br>
+            <label for="comment">Коментар:</label>
+            <br>
+            <textarea placeholder="напишете ни нещо" id="comment" name="comment" rows="5" cols="30"></textarea>
+            <br>
+            <button type="submit" name="comment" value="comment">Израти
+            </button>
+        </fieldset>
+    </form>
+</body>
+</html>
