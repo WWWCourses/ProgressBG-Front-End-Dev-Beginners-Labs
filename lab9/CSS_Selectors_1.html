@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS_Selectors_1 </title>
+	<style>
+
+
+		.dark-red{
+			color: #990000;
+		}
+		h2.dark-red{
+			color:orange;
+		}
+
+		.bg-gray{
+			background: #999;
+		}
+		h1{
+			font-family: 'Courier New', Courier, monospace;
+			font-size: 20px;
+
+		}
+		h2{
+			font-size: 14px;
+		}
+		#h2{
+			border-bottom: 2px dotted orange;
+		}
+
+		/* selector1<combinator>selector2 */
+		header a{
+			color: red;
+		}
+		header>ul{
+			border:2px solid red;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<ul>
+			<li><a href="">page 1</a></li>
+			<li><a href="">page 2</a></li>
+		</ul>
+	</header>
+	<h1 class="dark-red bg-gray">Book Title</h1>
+	<footer>
+		<ul>
+			<li><a href="">add1</a></li>
+			<li><a href="">add2</a></li>
+		</ul>
+	</footer>
+</body>
+</html>
