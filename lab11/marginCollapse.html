@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>marginCollapse </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<style>
+		.box{
+			border:10px solid gray;
+		}
+		.box>div{
+			width: 100px;
+			height: 100px;
+		}
+		.red{
+			margin-bottom: 100px;
+			background-color:red
+		}
+		.green{
+			margin-top: 200px;
+			background-color:green
+		}
+
+		.parent{
+			box-sizing:border-box;
+			width: 200px;
+			height: 200px;
+			background-color:red;
+			border-top:1px solid red;
+		}
+		.child{
+			margin-top: 100px;
+			width: 100px;
+			height: 100px;
+			background-color:green;
+		}
+	</style>
+</head>
+<body>
+	<!-- <section>
+		<h2>Adjacent blocks</h2>
+		<div class="box">
+			<div class="red"></div>
+			<div class="green"></div>
+		</div>
+	</section> -->
+	<hr>
+	<section>
+		<h2>Parent - child</h2>
+		<div class="parent">
+			<div class="child"></div>
+		</div>
+	</section>
+</body>
+</html>
