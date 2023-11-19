@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>mainMenuAlignVariants </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+	<style>
+		.example-one nav{
+			margin-top: 1em;
+		}
+		.example-one nav li{
+			display: inline-block;
+			vertical-align:top;
+			text-align: center;
+			height: 3em;
+			width: 10em;
+			margin-left: -6px;
+			border: 2px solid #000;
+		}
+		.example-one nav a{
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+			background-color:#AAA;
+		}
+		.example-one #a2{
+			font-size: 1.5em;
+		}
+
+		.example-second ul{
+			display: flex;
+		}
+
+		.example-second li{
+			height: 3em;
+			width: 10em;
+			border: 2px solid #000;
+		}
+		.example-second #lia2{
+			border:2px solid red;
+
+		}
+		.example-second nav a{
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+			background-color:#AAA;
+		}
+		.example-second #a2{
+			font-size: 1.5em;
+		}
+	</style>
+</head>
+<body>
+	<div class="example-one">
+		<nav>
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a id="a2" href="">Products</a></li>
+				<li><a href="">About</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="example-second">
+		<nav>
+			<ul>
+				<li><a href="">Home</a></li>
+				<li id="lia2"><a id="a2" href="">Products</a></li>
+				<li><a href="">About</a></li>
+			</ul>
+		</nav>
+	</div>
+</body>
+</html>
