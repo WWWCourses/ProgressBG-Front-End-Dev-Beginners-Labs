@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>z-index </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<style>
+		.red{
+			width: 10em;
+			height: 10em;
+			background-color: red;
+		}
+		.blue{
+			position: relative;
+			z-index: 100;
+			width: 5em;
+			height: 5em;
+			background-color: blue;
+		}
+		.green{
+			position: relative;
+			z-index: -1;
+			top:-1em;
+			left: 1em;
+			width: 5em;
+			height: 5em;
+			background-color: green;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="red">
+		<div class="blue"></div>
+		<div class="green"></div>
+	</div>
+	<div class="red">
+		<div class="blue"></div>
+		<div class="green"></div>
+	</div>
+</body>
+</html>

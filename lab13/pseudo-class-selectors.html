@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>pseudo-class-selectors </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<style>
+		.red{
+			width: 10em;
+			height: 10em;
+			background-color:blue;
+			transition: 2s;
+		}
+		.red:hover{
+			background-color:green;
+			border-radius: 100%;
+			/* margin-left: auto; */
+		}
+		li:nth-child(2){
+			color:red;
+		}
+		li:nth-child(2):hover{
+			color:green;
+		}
+		.button{
+			width: 3em;
+			padding: 2px 0;
+			text-align: center;
+			border:1px solid #333;
+			background-color:#333;
+			color:#CCC;
+			border-radius:5px;
+			cursor: pointer;
+		}
+		.button:active{
+			background-color:#FFF;
+		}
+		/* a{
+			display: inline-block;
+			width: 10em;
+			height: 5em;
+			border: 2px solid #F99;
+		}
+		a:hover{
+			color: green;
+			background-color: #9F9;
+		} */
+
+		p a:visited{
+			color:#999;
+			border-color: red;
+		}
+
+		p a:link{
+			color:#9d9;
+			border:5px solid red;
+		}
+		p a:hover{
+			color:#99F;
+			text-decoration: underline;
+		}
+		p a{
+			text-decoration: none;
+		}
+		p a:active{
+			color:orange;
+		}
+	</style>
+</head>
+<body>
+	<hr>
+	<p>Lorem ipsum dolor sit amet consectetur, <a href="#h1jdsffjdsfkdskdsjk">unvisited</a>. Unde molestias ab numquam, aperiam ea et nam <a href="#">visited</a>? Repudiandae quidem omnis, officia suscipit ipsa perspiciatis delectus neque porro. Praesentium, minus!</p>
+	<hr>
+	<button>OK</button>
+	<div class="button" contenteditable="false">OK</div>
+	<hr>
+	<a href="#">link1</a>
+	<div class="red"></div>
+	<ul>
+		<li>Item1</li>
+		<li>Item2</li>
+		<li>Item3</li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>form_styling </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<style>
+		input:focus{
+			border:5px solid green;
+			outline: none;
+		}
+		input[type="radio"]{
+			display: none;
+			background-color:red;
+		}
+		.gender>label>div{
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			border:1px solid green;
+			border-radius: 100%;
+		}
+		input[type="radio"]:checked+div{
+			background-color:green;
+		}
+	</style>
+</head>
+<body>
+	<form action="">
+		<label>user name <input type="text"></label>
+		<div class="gender">
+			<label>male:
+				<input type="radio" name="g" value="male">
+				<div></div>
+			</label>
+			<label>female:
+				<input type="radio" name="g" value="female">
+				<div></div>
+			</label>
+		</div>
+		<button>Submit</button>
+	</form>
+</body>
+</html>

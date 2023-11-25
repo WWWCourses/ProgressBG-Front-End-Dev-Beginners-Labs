@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>drop-down-menu </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<style>
+		.main-item{
+			width: 5em;
+			height: 1em;
+			border:2px solid red;
+		}
+		.main-item:hover{
+			height: 5em;
+		}
+		.main-item>ul{
+			border:5px solid green;
+			/* display: none; */
+			visibility: hidden;
+		}
+		.main-item:hover>ul{
+			visibility:visible;
+		}
+	</style>
+
+</head>
+<body>
+	<nav>
+		<ul>
+			<li class="main-item">Item1
+				<ul>
+					<li>SubItem1</li>
+					<li>SubItem2</li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<main>
+		<h1>Welcome</h1>
+	</main>
+</body>
+</html>

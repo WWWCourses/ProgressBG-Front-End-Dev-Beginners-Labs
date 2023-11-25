@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>selectChildWhileHoverOnParent </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<style>
+		#parent{
+			width: 10em;
+			height: 10em;
+			background-color:red;
+		}
+		#child{
+			width: 5em;
+			height: 5em;
+			background-color:blue;
+		}
+		#parent:hover>#child{
+			background-color:green
+		}
+
+
+	</style>
+</head>
+<body>
+	<h1>Hover Examples</h1>
+	<section id="hoverOnParent">
+		<h2>Select child while hover on Parent</h2>
+		<div id="parent">
+			<div id="child"></div>
+		</div>
+	</section>
+	<section id="hoverOnSibling">
+		<h2>Select sibling while hover on previous node</h2>
+		<div id="previous"></div>
+		<div id="sibling"></div>
+	</section>
+</body>
+</html>
