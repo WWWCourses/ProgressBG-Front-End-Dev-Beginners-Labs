@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>grid_layout </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		.products{
+			background-color:  #F99;
+		}
+		.products div{
+			float: left;
+			width: 5em;
+			height: 8em;
+			margin:.5em ;
+			border:5px solid #9F9;
+		}
+		.products::after{
+			content:"";
+			display: block;
+			float: none;
+			clear:both;
+			/* border:5px solid red; */
+			/* height: 1em; */
+		}
+	</style>
+</head>
+<body>
+	<div class="products">
+		<div>product</div>
+		<div>product</div>
+		<div>product</div>
+		<div>product</div>
+		<div>product</div>
+		<div>product</div>
+		<div>product</div>
+		<div>product</div>
+		<div>product</div>
+		<div>product</div>
+		<div>product</div>
+		<div>product</div>
+		<div>last product</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css">
+	<title>Document</title>
+	<style>
+		p::first-line{
+			font-size: 2em;
+			font-weight: bold;
+		}
+		span.smily::before{
+			content:"\1F600";
+			color: red;
+		}
+		span.quote::before,span.quote::after{
+			content:'"';
+			font-size: 2em;
+			font-weight: bold;
+		}
+		ul>li{
+			list-style: none;
+			vertical-align: middle;
+		}
+		ul>li::before{
+			content:"";
+			display: inline-block;
+			/* border:1px solid red; */
+			width: 2em;
+			height: 2em;
+			background-image: url('../images/business-man.png');
+			background-size: 100% 100%;
+			vertical-align: middle;
+		}
+	</style>
+</head>
+<body>
+	<p>Lorem <span class="smily">ipsum doloripsum dolor</span> sit amet, consectetur adipisicing elit. Est laudantium voluptas <span class="quote">asperiores sunt</span> amet laborum magnam, corrupti <span class="quote">autem ducimus</span> placeat ea quaerat fugit deserunt cupiditate, saepe quibusdam? Labore.</p>
+	<p>Test FontAwesome <span class=" fa-house-fire"></span></p>
+	<p>test My <span class="smily"></span></p>
+
+	<ul>
+		<li>Item 1</li>
+		<li>Item 1</li>
+		<li>Item 1</li>
+	</ul>
+</body>
+</html>
