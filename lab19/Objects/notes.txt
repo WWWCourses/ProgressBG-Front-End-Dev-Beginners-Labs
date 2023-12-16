@@ -1,0 +1,19 @@
+Procedural Programming:
+	function subTask1() {
+		console.log(1);
+	}
+
+	function subTask2() {
+
+	}
+
+
+	subTask1()
+	subTask2()
+
+Object-Oriented Programming
+
+Functional Programming
+
+	let data = [1,2,3]
+	let sum = data.reduce( function(a,b){return a+b} )
