@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>taskGetInputValue </title>
+	<style>
+		#output{
+			color: red;
+			font-size: 3em;
+		}
+		input[type="text"]{
+			background-color:aqua;
+		}
+	</style>
+</head>
+<body>
+	<input type="text"  name="uname" placeholder="Enter some text here">
+	<button onclick="getAndShowContent();">SHOW</button>
+	<div id="output"></div>
+
+	<script>
+		let inputElement = document.querySelector('input[type="text"]');
+		let output = document.querySelector('#output');
+
+		function getAndShowContent() {
+			output.innerHTML = inputElement.value;
+		}
+	</script>
+</body>
+</html>

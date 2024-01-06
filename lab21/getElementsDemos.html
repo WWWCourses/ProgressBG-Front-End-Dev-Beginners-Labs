@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>getElementsDemos </title>
+	<style>
+		div.div-test>.test{
+			background-color:blue;
+		}
+	</style>
+</head>
+<body>
+	<h1>H1</h1>
+	<h2 class="red">H2 red</h2>
+	<div class="red">DIV red</div>
+	<h3 id="h3"><i>H3</i></h3>
+	<h4 class="h4">H4 blue</h4>
+	<h3 class="test"><i>H3 in DIV</i></h3>
+	<div class="div-test">
+		<h3 class="test"><i>H3 in DIV</i></h3>
+		<h4 class="test">H4 in DIV</h4>
+		<h4>H4</h4>
+	</div>
+	<script>
+		// TASK: get all elements with class="test", which are in div.div-test:
+		// let divTest = document.getElementsByClassName("div-test")[0];
+		// let divsTest = divTest.getElementsByClassName('test');
+		// console.log(divsTest);
+
+		let divsTest = document.querySelectorAll("div.div-test>.test");
+
+		// // TASK: get element with id "h3", append "!!!" in content"
+		// let h3 = document.getElementById('h3');
+		// h3.innerHTML +=  "!!!"
+
+		// // TASK: append "!!!" in content of all elements with class="red";
+		// // get all class="red" elementS:
+		// let redElements = document.getElementsByClassName('red');
+		// console.dir(redElements);
+		// for (let i = 0; i < redElements.length; i++) {
+		// 	const element = redElements[i];
+		// 	element.innerHTML +=  "!!!";
+		// }
+
+		// TASK: get element H4.h4", append "!!!" in content"
+		// let h4 = document.getElementsByClassName('h4')[0];
+		// let h4 = document.querySelector('.h4')
+		// h4.innerHTML+="!!!";
+
+		// // TASK: get all elements with class="test":
+		// let testElements=document.querySelectorAll('.test');
+		// console.dir(testElements);
+	</script>
+</body>
+</html>

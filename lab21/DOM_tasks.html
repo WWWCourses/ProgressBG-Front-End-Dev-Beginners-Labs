@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DOM_tasks </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+</head>
+<body>
+	<h1>H1</h1>
+	<!-- Comment1 -->
+	<h2>H2</h2>
+	<!-- ------------------------------ Comment 2 ------------------------------ -->
+
+	<script>
+		// TASK: remove all comments in body:
+		let bodyNodes = document.body.childNodes;
+		// console.dir(bodyNodes);
+		for (let i = 0; i < bodyNodes.length; i++) {
+			const element = bodyNodes[i];
+			console.dir(`${element.nodeName} - ${element.nodeType}`);
+			// if(element.nodeType===8){
+			// 	element.remove()
+			// }
+		}
+	</script>
+</body>
+</html>
