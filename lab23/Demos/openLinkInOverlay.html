@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>openLinkInOverlay </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<style>
+		.map{
+			width: 5em;
+			height: 5em;
+			background-color: blue;
+			transform: rotate(45deg);
+		}
+		.overlay{
+			display: none;
+			position: fixed;
+			left:calc((100vw - 10em)/2);
+			top:calc((100vh - 10em)/2);
+			width:10em ;
+			height:10em ;
+			background-color:red;
+		}
+	</style>
+</head>
+<body>
+	<div class="overlay"><iframe src="" frameborder="0"></iframe></div>
+	<div class="map"></div>
+	<script>
+		let map = document.querySelector('.map');
+		let overlay = document.querySelector('.overlay');
+
+		map.addEventListener('click', function(e) {
+			console.log(overlay);
+			overlay.style.dispaly = "block"
+		})
+	</script>
+</body>
+</html>

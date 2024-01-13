@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="./Automatic-Gallery-Slideshow/jquery-gallery.css">
+	<script src="./Automatic-Gallery-Slideshow/jquery-gallery.js"></script>
+</head>
+<body>
+	<ul class="gallery-slideshow">
+		<li><img src="../../../images/small/microsoft-365-K7DehNGIOxI-unsplash.jpg"/></li>
+		<li><img src="../../../images/small/netherlands-5039354_1920.jpg"/></li>
+		<li><img src="../../../images/small/sunset-5560658_1920.jpg"/></li>
+		<li><img src="../../../images/small/microsoft-365-K7DehNGIOxI-unsplash.jpg"/></li>
+	</ul>
+
+	<script>
+		$(function() {
+			$('.gallery-slideshow').slideshow({
+				// default: 2000
+				interval: 3000,
+				// default: 500
+				width: 600,
+				// default: 350
+				height: 400
+			});
+		});
+	</script>
+</body>
+</html>
