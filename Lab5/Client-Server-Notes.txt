@@ -1,0 +1,34 @@
+# -------------------------------- IP Address -------------------------------- #
+
+
+
+REST API
+unique device identifier:
+192.168.X.Y = > LAN (internal) IP Address
+54.231.121.8 = > Internet (External) IP Address
+127.0.0.1 (localhost)=> Local Machine IP
+
+URL (Unified Resource Locator):
+file://C:\media/nemsys/data/projects/courses/ProgressBG/ProgressBG-Front-End-Dev/Labs/Lab5/tables.html
+
+
+
+https://54.231.121.8
+https://progressbg.net
+
+
+54.231.121.8 =>sofia, Mladost, bl1.
+54.231.121.8:12 =>ap.12 food (mysyte.com)
+54.231.121.8:36 =>ap.36 drinks (othersite.com)
+
+
+DNS (Domain Name Service):
+    progressbg.net => 54.231.121.8
+
+
+http://127.0.0.1:8080
+http://127.0.0.1:8080/index.html
+
+PATH: /index.html
+
+
