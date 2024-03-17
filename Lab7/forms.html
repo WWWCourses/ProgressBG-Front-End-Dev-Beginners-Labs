@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- http://127.0.0.1:41629/Lab7/forms.html?userName=Ada -->
+    <!-- http://127.0.0.1:41629/Lab7/forms.html?userName=Ada# -->
+
+    <form action="">
+        <h1>Registration</h1>
+        <fieldset>
+            <legend>Personal Data</legend>
+            <div>
+                <input
+                    type="text"
+                    autofocus
+                    placeholder="Enter your name"
+                    name="userName"
+                    tabindex="1"
+                    autocomplete="off"
+                    required
+                >
+            </div>
+            <div><label>email: <input type="mail" autocomplete="on" name="email"></label></div>
+            <div><input type="password" placeholder="enter password" name="pass" tabindex="3"></div>
+        </fieldset>
+        <div>gender:
+            <label for="male">male</label><input type="radio" id="male" name="gender" value="0" tabindex="2">
+            <label>female: <input type="radio" name="gender" value="1"></label>
+        </div>
+        <hr>
+        <textarea name="" id="" cols="10" rows="2" name="comment"></textarea>
+        <select name="town" multiple>
+            <optgroup label="Aaaa">
+                <option value="Sofia">София</option>
+                <option value="Plovdiv">Пловдив</option>
+            </optgroup>
+            <optgroup label="Bbbbb">
+                <option value="Varna">Варна</option>
+            </optgroup>
+        </select>
+        <button>Send</button>
+        <hr>
+        <input type="submit">
+        <input type="reset">
+        <input type="button">
+        <hr>
+        <button type="submit">Изпрати</button>
+        <button type="reset">Изчисти</button>
+        <button type="button">Клик ме</button>
+    </form>
+</body>
+</html>

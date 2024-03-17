@@ -1,0 +1,10 @@
+/* -------------------------------- REST API: ------------------------------- */
+    Create: POST /add
+    Read: GET /
+    Update: PUT
+    Delete:
+
+USERS:
+id | name | gender | town
+1  | ada  | 1      | Soffiiq
+1  | pesho| 0
