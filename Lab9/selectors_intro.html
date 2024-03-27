@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selctors 1</title>
+    <style>
+        p{
+            border:5px solid blue;
+            color:red;
+        }
+        .odd gray-font-color bg-red{
+            border-bottom: 1px solid green;
+        }
+        .gray-font-color{
+            color:gray;
+        }
+        .bg-red{
+            background:#ff7867;
+        }
+        h1.bg-red{
+            background:#003333;
+        }
+        #p1{
+            background:orange;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="bg-red">Heading</h1>
+    <p id="p1" class="odd gray-font-color bg-red test">Paragraph 1</p>
+    <p id="p2" class="even">Paragraph 2</p>
+    <p id="p3" class="odd gray-font-color bg-red">Paragraph 3</p>
+    <p class="even">Paragraph 4</p>
+    <p class="odd gray-font-color bg-red">Paragraph 5</p>
+    <p class="even">Paragraph 6</p>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+    <style>
+
+        /* selector1<combinator>selector2{} */
+        h2{
+            font-weight: normal;
+        }
+        img<a{}
+        .red>p{
+            border:2px solid red;
+        }
+        .red span{
+            color:red;
+        }
+        h2+p{
+            font-weight: bold;
+        }
+        .red .test>p{
+            background-color:orange;
+        }
+
+
+    </style>
+</head>
+<body>
+    <a href="#">
+        <img src="" alt="test">
+    </a>
+    <a href="#">test</a>
+    <div class="red">
+        <p>Paragraph <span>text</span> 1</p>
+        <p class="test">Paragraph 2</p>
+        <p>Paragraph 3</p>
+    </div>
+    <div class="main">
+        <p>Paragraphs</p>
+        <h2>Heading 2</h2>
+        <p class="test">Paragraph <span>text</span> 4</p>
+        <p>Paragraph 5</p>
+    </div>
+    <div class="footer">
+        <p>Paragraph 6</p>
+    </div>
+</body>
+</html>
