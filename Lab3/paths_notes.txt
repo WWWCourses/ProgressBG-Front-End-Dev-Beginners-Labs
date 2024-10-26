@@ -1,0 +1,12 @@
+Absolute paths:
+    Linux && MackOS:
+    /home/nemsys/projects/courses/ProgressBG/ProgressBG-Front-End-Dev/Labs
+
+    Windows:
+    C:\home\nemsys\projects\courses\ProgressBG\ProgressBG-Front-End-Dev\Labs\
+
+    /media/nemsys/data/projects/courses/ProgressBG/ProgressBG-Front-End-Dev/Labs/Lab3/images/business-man.png
+
+
+Relative Path (according Current Working Directory):
+    Lab3/images/business-man.png
