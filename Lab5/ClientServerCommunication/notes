@@ -1,0 +1,15 @@
+ISP: Internet Service Provider
+
+HTML: HyperTextMarkupLanguage
+HTTP: HyperTextTranferProtocol
+
+
+IP v4 addres:
+0.0.0.0 => ok
+192.168.0.125 => ok
+255.255.255.255 => ok
+256.0.23.45
+
+
+192.168.0.125
+192.168.0.1
