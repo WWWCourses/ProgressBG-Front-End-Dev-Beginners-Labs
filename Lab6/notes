@@ -1,0 +1,74 @@
+News
+
+id | Title | Content | Image
+1  | News 1
+
+
+
+Server-Side Rendering=> Server=> registration.py=> HTML Template + Data => HTML
+Client-Side Rendering=> Server=> registration.py=> Data +JSON
+    SPA (Single Page Application)
+
+URL:
+file://C:/index.html
+chrome://settings/
+
+
+http://127.0.0.1:8080/
+http://127.0.0.1:8080/index.html
+http://localhost:8080/index.html
+http://127.0.0.1:37801/index.html
+
+http://192.168.0.125:8080/
+
+https://wwwcourses.github.io/ProgressBG-Front-End-Dev/pages/agenda/beginners.html#CSS_Selectors_1
+
+
+https://bnr.bg/
+PATH:/ => back-end/index.py
+
+http://127.0.0.1:37801/
+PATH:/ => index.html
+
+https://files.binar.bg/media/2018/01/Damata-s-rentgenovite-ochi.mp3
+
+PATH: /media/2018/01/Damata-s-rentgenovite-ochi.mp3
+
+http://127.0.0.1:37801/index.html
+
+http://127.0.0.1:37801/images/checkmate.jpg
+PATH:
+
+
+http://127.0.0.1:37801/pages/registration?userName=Ada&userPass=1234
+
+
+userName=Ada&userPass=1234
+
+
+https://www.google.com/search?q=ssl+port+default&oq=&gs_lcrp=EgZjaHJvbWUqCQgAECMYJxjqAjIJCAAQIxgnGOoCMgkIARAjGCcY6gIyCQgCECMYJxjqAjIJCAMQIxgnGOoCMgkIBBAjGCcY6gIyCQgFECMYJxjqAjIJCAYQIxgnGOoCMgkIBxAjGCcY6gLSAQkyNjQ3ajBqMTWoAgiwAgE&sourceid=chrome&ie=UTF-8
+
+PATH: search=> /
+
+GET search
+
+http://127.0.0.1:8080
+http://127.0.0.1:8080/pages/контакти.html
+http://127.0.0.1:8080/pages/%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D0%B8.html
+
+
+DNS (Domain Name System)
+    localhost=>127.0.0.1
+    github.io=>185.199.108.153
+    aviopop.com=>34.231.0.8
+
+
+
+
+
+HTTP Methods (RESTfull)
+
+GET => Read
+POST=> Insert
+PUT/PATHCH=>Update
+DELETE=>Delete

@@ -1,0 +1,9 @@
+userName=Ada
+userPass=1234
+
+insert into User (userName=Ada,userPass=1234)
+
+User:
+
+id | userName | userPass
+1  |   Ada    | 4567
