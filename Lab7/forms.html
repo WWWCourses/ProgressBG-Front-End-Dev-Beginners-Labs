@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        h1{
+            background-color: #F00;
+        }
+    </style>
+</head>
+<body>
+    <h1>Forms</h1>
+    <form action="">
+        <fieldset><legend>Personal</legend>
+            <input
+                type="text"
+                name="userName"
+                autocomplete="off"
+                autofocus
+                placeholder="user name:"
+                required
+            >
+            <label>color: <input type="color" value="#FF0000" name="color"></label>
+            VAT: <input type="number" value="20" name="vat">
+        </fieldset>
+        <fieldset><legend>Gender</legend>
+            <!-- <div>
+                gender:
+                <label for="gm">male</label>: <input type="radio" name="gender" value="m" id="gm">
+                <label>female: <input type="radio" name="gender" value="f" id="gf"></label>
+            </div> -->
+        </fieldset>
+        <fieldset>
+            <div>
+                Drinks:
+                <label>cola: <input type="checkbox" name="drinks" value="cola"></label>
+                <label>beer: <input type="checkbox" name="drinks" value="beer"></label>
+            </div>
+        </fieldset>
+        <fieldset><legend>Town</legend>
+            <label for="town">town:</label>
+            <select name="town" id="town" multiple>
+                <optgroup label="Bulgaria">
+                    <option value="Sofia">София</option>
+                    <option value="Varna">Варна</option>
+                    <option value="Burgas">Бургас</option>
+                </optgroup>
+                <optgroup label="World Wide">
+                    <option value="London">Лондон</option>
+                    <option value="Paris">Париж</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <fieldset>
+            birth date: <input type="date">
+            comment: <textarea name="" id=""></textarea>
+        </fieldset>
+        <fieldset>
+            <div>
+                <label>I've read the aggreament: <input type="checkbox" value="yes"></label>
+            </div>
+            <hr>
+            <input type="submit"  value="Изпрати">
+            <input type="reset"  value="Изчисти">
+            <input type="button" value="Click me">
+            <hr>
+            <button type="submit">Изпрати</button>
+            <button type="reset">Изчисти</button>
+            <button type="button">Click me</button>
+        </fieldset>
+
+    </form>
+</body>
+</html>

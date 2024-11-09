@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        div{
+            margin: 1em;
+        }
+    </style>
+</head>
+<body>
+    <form action="registration" method="POST">
+        <div>user name: <input type="text" name="userName"></div>
+        <div>password: <input type="password" name="pass"></div>
+        <div>
+            gender:
+            male: <input type="radio" name="gender" value="m">
+            female: <input type="radio" name="gender" value="f">
+        </div>
+        <div>
+            Drinks:
+            cola: <input type="checkbox" name="drinks" value="cola">
+            beer: <input type="checkbox" name="drinks" value="beer">
+        </div>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
+
+<!--
+query:name=Ada
+userName=Pesho&pass=9999&gender=m&drinks=cola&drinks=beer&
+userName=Ada&pass=1234&gender=f&drinks=cola
+userName=Ada&pass=1234&gender=f&drinks=cola
+
+userName=Ada&pass=1234
+
+INSER into UserData (name=userName, password=pass, gender=gender)
+
+Table UserData:
+
+id | name    | password | gender | drinks      | Town
+1  | Ada     | 1234     | f      | cola        | Sofia
+2  | Pesho   | pesho    | m      | beer&cola   | Varna
+2  | Pesho   | pesho    | m      | beer&cola   | Burgas
+
+
+-->
