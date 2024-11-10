@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <style>
+        /*
+        CSS Rule:
+        selector {
+            property1: value1;
+            property2: value2;
+                ...
+        }
+        */
+
+        p,h1{
+            color:red;
+            font-style: italic;
+            font-weight: bold
+        }
+        p:nth-of-type(1):hover{
+            color:blue
+        }
+        flag{
+            display: inline-block;
+            line-height: 2em;
+            width: 20em;
+            border: .2em solid #333;
+        }
+        .flag>span{
+            display: block;
+        }
+        .bg>span:nth-child(1){
+            background: white;
+            color: #CCC;
+        }
+        .bg>span:nth-child(2){
+            background: green;
+            color: #CCC;
+        }
+        .bg>span:nth-child(3){
+            background: red;
+            color: #CCC;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heaing 1</h1>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <p>Paragraph 3</p>
+    <hr>
+    <div class="flag bg">
+        <span>Бяло</span><span>Зелено</span><span>Червено</span>
+    </div>
+</body>
+</html>
