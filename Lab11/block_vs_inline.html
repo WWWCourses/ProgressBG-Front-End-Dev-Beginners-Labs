@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tmp</title>
+    <style>
+        body{
+            border:5px solid blue;
+        }
+        .block-test{
+            width: 200px;
+            height: 50px;
+            border: 5px solid red;
+        }
+        .inline-test{
+            width: 200px;
+            height: 50px;
+            padding: 10px;
+            border: 5px solid green;
+        }
+        .replaced-test>*{
+            width: 200px;
+            height: 50px;
+            border: 5px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Block elements</h2>
+        <div class="block-test">Div1</div>
+        <div class="block-test">Div2</div>
+    </div>
+    <div>
+        <h2>Inline elements</h2>
+        <span class="inline-test">Span1</span>
+        <span class="inline-test">Span2</span>
+    </div>
+    <div class="replaced-test">
+        <h2>Replaced elements</h2>
+        <img src="../images/small/netherlands-5039354_1920.jpg" alt="">
+        <img src="../images/small/netherlands-5039354_1920.jpg" alt="">
+        <input type="text">
+        <input type="checkbox">
+        <input type="checkbox">
+    </div>
+    <p>Lorem ipsum dolor sit <span style="color: red;">AMET CONSECTETUR</span> adipisicing elit. Unde ea, non itaque sunt possimus impedit id delectus nihil repellat reiciendis maiores, vel dolorum quas consectetur totam ab nobis. Error, earum.</p>
+</body>
+</html>
