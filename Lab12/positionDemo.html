@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
+    <style>
+        body{
+            border: 10px solid #000;
+        }
+        .red{
+            width: 5em;
+            height: 5em;
+            background-color: red;
+        }
+        .blue{
+            position: fixed;
+            top:50px;
+            left:50px;
+
+
+            /* left: calc(100vw - 5em); */
+            /* top:0; */
+            /* right: 50px; */
+            /* margin-top: 100px;
+            margin-left: 50px; */
+
+            width: 5em;
+            height: 5em;
+            background-color: blue;
+        }
+        main>p{
+            font-size: 5em;
+        }
+
+        .product{
+            position: relative;
+
+            width: 6em;
+            height: 10em;
+            background-color:#ff9;
+        }
+        .product>.image{
+            width: 80%;
+            height: 3em;
+            background-color:#F99;
+        }
+        .product>.price{
+            position: absolute;
+            bottom:0;
+            background-color:#99F;
+        }
+    </style>
+</head>
+<body>
+    <div class="product">
+        <div class="image"></div>
+        <span class="price">Price: 50lv</span>
+    </div>
+    <hr>
+    <!-- <div class="blue"></div>
+    <div class="red"></div> -->
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, tempore ullam aliquam eaque commodi accusantium officiis illum officia laudantium molestias iure amet id exercitationem eius voluptatum reprehenderit expedita doloremque distinctio.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum nemo voluptates dolore molestiae beatae. Nemo numquam tenetur inventore quaerat. Molestiae sapiente, quasi earum facere culpa alias mollitia molestias dolorem fuga!</p>
+    </main>
+
+</body>
+</html>
