@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            width: 20em;
+            height: 20em;
+            background-color:red;
+        }
+        .blue{
+            width: 10em;
+            height: 10em;
+            background-color:blue;
+        }
+
+        .parent-child-demo>.red:hover>.blue{
+            background-color:green;
+        }
+
+        .siblings-demo>.red:hover+.blue{
+            background-color:green;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="parent-child-demo">
+        <div class="red">
+            <div class="blue"></div>
+        </div>
+    </div>
+    <hr>
+    <div class="siblings-demo">
+        <div class="red"></div>
+        <div class="blue"></div>
+    </div>
+
+
+</body>
+</html>

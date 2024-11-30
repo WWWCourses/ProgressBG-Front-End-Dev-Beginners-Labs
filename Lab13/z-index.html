@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <style>
+        .square{
+            width: 10em;
+            height: 10em;
+        }
+        .red{
+            background-color:red
+        }
+        .green{
+            position: relative;
+            top:2em; left:2em;
+            /* transform: translate(2em,5em); */
+            z-index: -1;
+            background-color:green
+        }
+        .blue{
+            background-color:blue
+        }
+    </style>
+</head>
+<body>
+    <div class="square red"></div>
+    <div class="square green"></div>
+    <div class="square blue"></div>
+</body>
+</html>
