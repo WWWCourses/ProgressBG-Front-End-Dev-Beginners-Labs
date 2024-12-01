@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSAnimation </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <style>
+        p{
+            border: 5px solid red;
+            opacity: 1;
+            color: black;
+            font-size:1em;
+            transition:3s;
+        }
+        p:hover{
+            /* opacity: 0; */
+            color: red;
+            font-size: 3em;
+        }
+        .rotating-square{
+            width: 5em;
+            height: 5em;
+            background-color:red;
+            /* transform: rotate(45deg); */
+            animation: rotate 3s infinite;
+        }
+        @keyframes rotate{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="rotating-square"></div>
+    <hr>
+    <p>Paragraph</p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis est ducimus obcaecati veniam amet expedita non excepturi totam blanditiis reprehenderit nobis, mollitia voluptas temporibus atque! Quia nulla iste deserunt aperiam.
+</body>
+</html>

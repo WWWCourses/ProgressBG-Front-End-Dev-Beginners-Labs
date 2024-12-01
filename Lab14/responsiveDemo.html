@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media only screen and (min-width: 700px) {
+            nav>ul{
+                display: flex;
+            }
+        }
+        @media only screen and (max-width: 700px) {
+            nav>ul{
+                display: block;
+            }
+            nav>ul>li{
+                width: 6em;
+            }
+        }
+
+        nav>ul{
+            list-style-type: none;
+            padding: 0;
+        }
+        nav>ul>li{
+            background-color: #f99;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </nav>
+</body>
+</html>

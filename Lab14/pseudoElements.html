@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <style>
+        /* p::first-line{
+            font-size: 2em;
+            color: red;
+        } */
+
+        .quote {
+            color: red;
+        }
+
+        .quote::before {
+            content: open-quote;
+        }
+
+        .quote::after {
+            content: close-quote;
+        }
+
+        .quote::before,
+        .quote::after {
+            font-size: 2em;
+        }
+
+        /* .wrapper{
+            border: 5px solid red;
+        }
+        .wrapper::before{
+            content:"###";
+            display: block;
+            border: 5px solid blue;
+        }
+        .wrapper::after{
+            content:"###";
+            border: 5px solid green;
+        } */
+        .smile::before {
+            content: "\1F605";
+        }
+
+        .my-bullets {
+            list-style-type: none;
+        }
+
+        .my-bullets>li::before {
+            content: "";
+            display: inline-block;
+            height: 2em;
+            width: 1em;
+            /* border:2px solid red; */
+
+            background-image: url('../images/small/microsoft-365-K7DehNGIOxI-unsplash.jpg');
+            background-size: 1em;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="my-bullets">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <hr>
+    <i class="fa-brands fa-facebook"></i>
+    <hr>
+    <div class="wrapper smile"></div>
+    <p>Lorem <span class="quote">ipsum dolor</span> sit amet consectetur adipisicing elit. Amet placeat qui atque
+        mollitia expedita esse repellendus. Saepe delectus ipsa magnam temporibus velit debitis consequuntur asperiores
+        adipisci. Cumque odit maxime consectetur!</p>
+</body>
+
+</html>
