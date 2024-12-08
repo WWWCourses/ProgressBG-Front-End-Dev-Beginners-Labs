@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split background with mask</title>
+    <style>
+        .image {
+            --rows-number: 3;
+            --scale-factor: 1.1;
+            width: 80vw;
+            height: 40vh;
+            display: inline-block;
+            overflow: hidden;
+            position: relative;
+            background-image: url('../../images/checkmate-1511866_640.jpg');
+            background-size: 0 0;
+        }
+
+        .image > div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: inherit;
+            background-size: cover;
+            mask: linear-gradient(#fff, #fff) no-repeat;
+            mask-size: calc(100% / var(--rows-number)) calc(100% / var(--rows-number));
+            mask-position: var(--position);
+            transform-origin: var(--position);
+            transform: scale(calc(1 / var(--scale-factor)));
+        }
+
+        /* set tiles position  */
+        .image > :nth-child(1) { --position: 0% 0%; }
+        .image > :nth-child(2) { --position: 50% 0%; }
+        .image > :nth-child(3) { --position: 100% 0%; }
+        .image > :nth-child(4) { --position: 0% 50%; }
+        .image > :nth-child(5) { --position: 50% 50%; }
+        .image > :nth-child(6) { --position: 100% 50%; }
+    </style>
+</head>
+<body>
+    <div class="image">
+        <!-- ------------------------------ the tiles ------------------------------ -->
+        <div></div><div></div><div></div>
+        <div></div><div></div><div></div>
+    </div>
+</body>
+</html>
