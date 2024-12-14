@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>x: <input type="number" id="userInput"></label>
+    <button id="btnAdd">Add</button>
+    <button id="btnShow">Show</button>
+
+    <script>
+        // Get elements
+        const userInput = document.querySelector('#userInput');
+        const btnAdd = document.querySelector('#btnAdd');
+        const btnShow = document.querySelector('#btnShow');
+
+        const userNumbers = [];
+
+        btnAdd.addEventListener('click', function(){
+            // on btnAdd click
+            let x = +userInput.value*1;
+            userNumbers.push(x);
+            console.log(userNumbers);
+        })
+
+        btnShow.addEventListener('click', function() {
+            // if no numbers => 'Empty'
+            if(userNumbers.length=0){
+                console.log(`Empty`);
+            }else{
+                console.log(`Non Empty`);
+                console.log(userNumbers); // []
+            }
+        })
+    </script>
+</body>
+</html>
