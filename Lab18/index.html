@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./mylib.js"></script>
+</head>
+<body>
+    <button id="#btn">Click</button>
+    <script>
+        console.log(x);
+        const btn = document.querySelector('#btn');
+        btn.addEventListener('click', function() {
+            console.log(`Button is clicked`);
+        });
+    </script>
+</body>
+</html>
+
+<!-- global:
+document: 0x123:...
+...
+x:0x423: 1 -->
