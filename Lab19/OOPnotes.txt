@@ -1,0 +1,15 @@
+let x = 1;
+
+function task1(){
+    x = 9;
+    console.log(`Do task1`);
+    task1();
+}
+
+function task2(){
+    console.log(`Do task2`);
+}
+
+task1();
+task1();
+
