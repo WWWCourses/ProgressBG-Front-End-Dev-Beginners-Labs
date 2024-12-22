@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper" id="test">
+        <h1>My header</h1>
+        <input type="text">
+        <img src="" alt="">
+        <a href="https://google.com">google.com</a>
+        <!-- this is a comment -->
+    </div>
+    <script>
+        const div = document.querySelector('.wrapper');
+        // console.dir(div.childNodes); //9
+        // console.dir(div.children); //3
+        // console.dir(div.attributes);
+
+        const img = div.children[2];
+        // img.attributes[0].nodeValue="../images/business-man.png";
+        // img.src = "../images/business-man.png";
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcUserAge </title>
+</head>
+<body>
+    <label>Enter your birth date: <input type="date" name=""></label>
+
+    <button>Calculate my age</button>
+    <div class="output"></div>
+
+    <script>
+        function calcUserAge() {
+            const userBirthDateString = userBirthDateInput.value;
+            const userBirthDate = new Date(userBirthDateString);
+
+            const currentYear = (new Date()).getFullYear();
+            console.log(currentYear - userBirthDate.getFullYear());
+
+        };
+
+        const userBirthDateInput = document.querySelector('input[type="date"]');
+        const btn = document.querySelector('button');
+        const output = document.querySelector('.output');
+
+        btn.addEventListener('click', calcUserAge);
+    </script>
+</body>
+</html>

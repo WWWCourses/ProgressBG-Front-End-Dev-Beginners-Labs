@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/date-fns@4.1.0/cdn.min.js"></script>
+</head>
+<body>
+
+    <script>
+        const dateString = '06.05.1990';
+        const format = 'dd.MM.yyyy';
+        const parsedDate = dateFns.parse(dateString, format, new Date());
+        console.log(parsedDate);
+
+    </script>
+</body>
+</html>
