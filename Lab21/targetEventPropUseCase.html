@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .player ul {
+            border: 1px solid red;
+            list-style-type: none;
+        }
+        .player ul li {
+            border: 1px solid blue;
+        }
+        .player ul > li:hover {
+            cursor: pointer;
+        }
+
+        .player ul li > i {
+            font-size: 0.8em;
+            margin-right: 0.5em;
+            color: #00ffdd;
+        }
+        .output {
+            display: block;
+            border: 2px groove #00ffdd;
+            padding: 0.5em;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="player">
+        <h2>Select track:</h2>
+        <ul>
+            <li><i class="fa fa-play"></i><span>Track 1</span></li>
+            <li><i class="fa fa-play"></i><span>Track 2</span></li>
+            <li><i class="fa fa-play"></i><span>Track 3</span></li>
+            <li><i class="fa fa-play"></i><span>Track 4</span></li>
+            <li><i class="fa fa-play"></i><span>Track 5</span></li>
+            <li><i class="fa fa-play"></i><span>Track 6</span></li>
+            <li><i class="fa fa-play"></i><span>Track 7</span></li>
+            <li><i class="fa fa-play"></i><span>Track 8</span></li>
+            <li><i class="fa fa-play"></i><span>Track 9</span></li>
+            <li><i class="fa fa-play"></i><span>Track 10</span></li>
+            <li><i class="fa fa-play"></i><span>Track 11</span></li>
+            <li><i class="fa fa-play"></i><span>Track 12</span></li>
+        </ul>
+        <div class="output">playing track</div>
+
+        <script>
+            const output = document.querySelector('.output');
+
+            // Variant 1
+            // const liItems = document.querySelectorAll('ul>li');
+            // for (let i = 0; i < liItems.length; i++) {
+            //     const item = liItems[i];
+            //     item.addEventListener('click', function name(params) {
+            //         output.innerText = item.innerText;
+            //     })
+            // }
+
+            // Variant 2
+            const ul = document.querySelector('ul');
+            ul.addEventListener('click', function(event) {
+                console.log(`Ul was clicked, and event.target is: `, event.target);
+                let item;
+
+                if(event.target.nodeName==='LI' || event.target.nodeName==='SPAN'){
+                    item = event.target
+                }else if(event.target.nodeName==='I'){
+                    item = event.target.nextSibling
+                }
+
+                output.innerText = item.innerText;
+            })
+        </script>
+    </div>
+</body>
+</html>

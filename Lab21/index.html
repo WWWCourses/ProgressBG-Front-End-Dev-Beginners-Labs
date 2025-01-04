@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #p1999{
+            background-color: red;
+        }
+        p:nth-child(even){
+            background-color:green;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper22222">
+        <p id="p1999">Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+        <p>Paragraph 4</p>
+        <!-- ---------------------------- some comment ----------------------------- -->
+    </div>
+    <script>
+        function example1(){
+            // "взимаме" обекта представящ p елемента:
+            // const p = document.getElementById('p1');
+
+            // // логваме пропъртитата innerHTML и innerText:
+            // console.log(p.innerHTML); //
+            // console.log(p.innerText); //
+            // p.innerText = `Some <b>text</b>`;
+            // p.innerHTML = `Some <b>text</b>`;
+        }
+        function example2(){
+            const wrapper = document.querySelector('.wrapper');
+            const children = wrapper.childNodes;
+            for (let i = 0; i < children.length; i++) {
+                const node = children[i];
+                console.dir(node);
+                console.log(node.nodeType);
+            }
+        }
+        function getElements() {
+            const p = document.getElementById('p1');
+            console.log(p);
+
+            const wrapper = document.getElementsByClassName('wrapper');
+            if(wrapper){
+                console.log(`No elements`);
+            }
+            console.log(wrapper);
+        }
+
+        function querySelectoDemo(){
+            console.dir( document.querySelector('p') );
+            console.dir( document.querySelectorAll('p:nth-child(2n') );
+        }
+
+        querySelectoDemo();
+    </script>
+</body>
+</html>

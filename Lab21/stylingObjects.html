@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .single{
+            width: 5em;
+            height: 5em;
+        }
+        .double{
+            width: 10em;
+            height: 10em;
+        }
+        .red{
+            background-color: red;
+        }
+        .green{
+            background-color:green;
+        }
+        .orange{
+            background-color:orange;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="single red" style="border:5px solid blue;">div</div>
+    <button>Change style</button>
+    <button id="btn2">Change to orange</button>
+
+    <script>
+        // console.log(`Inline style`);
+        // console.dir( dom.div.style );
+        // console.log(`Computed style`);
+        // console.dir( wCindow.getomputedStyle(dom.div) );
+
+        const dom = {
+            div: document.querySelector('.red'),
+            button: document.querySelector('button'),
+            btn2:document.querySelector('#btn2')
+        }
+        dom.btn2.addEventListener('click', function(e) {
+            // dom.div.className = dom.div.className + ' orange';
+        })
+        dom.button.addEventListener('click', function() {
+            // const divCompStyle = window.getComputedStyle(dom.div);
+            // const currentWidth = divCompStyle.width.replace('px', '')*1;
+            // const currentHeight = divCompStyle.height.replace('px', '')*1;
+            // console.log(currentWidth, currentHeight);
+
+            // console.log(dom.div.style.width);
+            // console.log(dom.div.style.Width);
+
+            // dom.div.style.backgroundColor = 'green';
+            // dom.div.style.width = currentWidth*2 + 'px';
+            // dom.div.style.height = currentHeight*2 + 'px';
+            dom.div.className = "double green";
+        })
+
+    </script>
+</body>
+</html>

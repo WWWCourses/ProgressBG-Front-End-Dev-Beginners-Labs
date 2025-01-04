@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            border: 5px solid red;
+        }
+    </style>
+</head>
+<body>
+    <!-- <p class="test" onclick="clickHandler(this);">test your mouse on me</p> -->
+    <p class="test">test your mouse on me</p>
+    <div class="output"></div>
+    <button>Change color</button>
+
+
+    <script>
+        function clickHandler() {
+            // console.log(node);
+            output.innerHTML = p.innerHTML;
+            console.log(this);
+        }
+        function changeColor(node, color) {
+            console.log(`Change color is called!`);
+            node.style.backgroundColor = color;
+
+        }
+
+        const p = document.querySelector('.test');
+        const output = document.querySelector('.output');
+        const btnClick = document.querySelector('button');
+
+        p.addEventListener( 'click', clickHandler );
+        btnClick.addEventListener('click', function() {
+            changeColor(p, 'blue');
+        } )
+    </script>
+</body>
+</html>

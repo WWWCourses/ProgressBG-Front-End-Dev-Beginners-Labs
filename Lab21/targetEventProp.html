@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer {
+            width: 10em;
+            height: 10em;
+        }
+        .inner {
+            width: 5em;
+            height: 5em;
+            opacity: .5
+        }
+        .outer,
+        .inner {
+            cursor: pointer;
+        }
+        #red {
+            background: #f99;
+        }
+        #blue {
+            background: #99f;
+        }
+        #green {
+            background: #9f9;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="outer" id="red">
+        <div id="green" class="inner"></div>
+        <div id="blue" class="inner"></div>
+    </div>
+
+    <div class="output"></div>
+
+
+    <script>
+        const dom = {
+            body:document.body,
+            red:document.querySelector('#red'),
+            green:document.querySelector('#green'),
+            output:document.querySelector('.output'),
+        }
+
+        dom.green.addEventListener('click', function(event) {
+            console.log('Green was clicked');
+            console.dir(event.target);
+            console.dir(event.currentTarget);
+        })
+        dom.red.addEventListener('click', function(event) {
+            console.log('Red was clicked');
+            console.dir(event.target);
+            console.dir(event.currentTarget);
+        })
+    </script>
+</body>
+</html>

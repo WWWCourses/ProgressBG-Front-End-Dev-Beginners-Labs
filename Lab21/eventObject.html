@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventObject </title>
+</head>
+<body>
+    <h1>Demo</h1>
+    <label>x=<input type="number"></label>
+    <button>x**2=</button>
+    <span class="output"></span>
+
+
+    <script>
+        function calcSquare(x){
+            output.innerHTML = x**2;
+        }
+        const input = document.querySelector('input[type="number"]');
+        const output = document.querySelector('.output');
+        const button = document.querySelector('button');
+
+        button.addEventListener('click', function(event) {
+            console.dir(event);
+            calcSquare(input.value*1)
+        })
+
+        input.addEventListener('keypress', function(event) {
+            // console.dir(event);
+            if(event.charCode===13){
+                calcSquare(input.value*1)
+            }
+        })
+
+
+    </script>
+</body>
+</html>
