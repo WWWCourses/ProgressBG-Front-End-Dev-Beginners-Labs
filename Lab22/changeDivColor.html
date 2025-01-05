@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>changeDivColor </title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #999;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <button class="btnStop">Stop</button>
+    <script>
+        const box = document.querySelector('.box');
+        const btnStop = document.querySelector('.btnStop');
+
+        const colors = ['red', 'blue', 'green'];
+        let i = 0;
+
+        const changeColorIntervalId = setInterval(function(){
+            console.log(`i=${i}`);
+            box.style.backgroundColor = colors[i];
+            i = ++i%colors.length;
+            // i++;
+            // if(i===colors.length){
+            //     i=0
+            // }
+
+        }, 1000);
+
+        btnStop.addEventListener('click', function(e) {
+            clearInterval(changeColorIntervalId)
+        })
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .single{
+            width: 5em;
+            height: 5em;
+        }
+        .double{
+            width: 10em;
+            height: 10em;
+        }
+        .red{
+            background-color: red;
+        }
+        .green{
+            background-color:green;
+        }
+        .orange{
+            background-color:orange;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="single red" style="border:5px solid blue;">div</div>
+    <button>Change style</button>
+    <button id="btn2">Change to orange</button>
+
+    <script>
+        const dom = {
+            div: document.querySelector('.red'),
+            button: document.querySelector('button'),
+            btn2:document.querySelector('#btn2')
+        }
+        dom.btn2.addEventListener('click', function(e) {
+            // dom.div.className = dom.div.className + ' orange';
+            console.dir(dom.div.classList);
+        })
+        dom.button.addEventListener('click', function() {
+            // dom.div.className = "double green";
+            // console.log( dom.div.classList.contains('red') );
+            // dom.div.classList.add('orange');
+            // dom.div.classList.replace('single', 'double');
+            dom.div.classList.toggle('orange');
+        })
+
+    </script>
+</body>
+</html>

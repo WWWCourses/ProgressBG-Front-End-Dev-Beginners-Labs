@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index </title>
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <ul id="shoppint-list">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+    <button>Change to red</button>
+
+    <script>
+
+        const li2 = $('li:nth-child(1)');
+        console.dir( li2.siblings().text() );
+
+        // $('button').on('click dblclick', function(e) {
+        //     console.dir(e);
+        //     li2.css('backgroundColor', 'red')
+        // })
+        // const button = document.querySelector('button');
+        // const li2 = document.querySelector('li:nth-child(2)');
+
+        // button.addEventListener('click', function(e) {
+        //     li2.style.backgroundColor = 'red'
+        // })
+
+    </script>
+</body>
+</html>
